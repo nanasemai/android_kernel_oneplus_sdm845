@@ -2,6 +2,7 @@
 # Makefile for the nios2 linux kernel.
 #
 
+ccflags-y += -I$(src)
 extra-y	+= head.o
 extra-y	+= vmlinux.lds
 

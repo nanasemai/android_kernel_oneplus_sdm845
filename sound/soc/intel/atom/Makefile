@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 snd-soc-sst-mfld-platform-objs := sst-mfld-platform-pcm.o \
 	        sst-mfld-platform-compress.o sst-atom-controls.o
 

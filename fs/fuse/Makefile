@@ -2,6 +2,7 @@
 # Makefile for the FUSE filesystem.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FUSE_FS) += fuse.o
 obj-$(CONFIG_CUSE) += cuse.o
 

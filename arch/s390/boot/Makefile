@@ -2,6 +2,7 @@
 # Makefile for the linux s390-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 COMPILE_VERSION := __linux_compile_version_id__`hostname |  \
 			tr -c '[0-9A-Za-z]' '_'`__`date | \
 			tr -c '[0-9A-Za-z]' '_'`_t

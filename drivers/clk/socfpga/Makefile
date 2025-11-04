@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y += clk.o
 obj-y += clk-gate.o
 obj-y += clk-pll.o

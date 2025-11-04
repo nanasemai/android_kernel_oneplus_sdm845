@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 CFLAGS += -I../../../../usr/include/
 
 all: kcmp_test

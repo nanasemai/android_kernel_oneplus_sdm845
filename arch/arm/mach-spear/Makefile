@@ -2,6 +2,7 @@
 # SPEAr Platform specific Makefile
 #
 
+ccflags-y += -I$(src)
 ccflags-$(CONFIG_ARCH_MULTIPLATFORM) := -I$(srctree)/$(src)/include
 
 # Common support

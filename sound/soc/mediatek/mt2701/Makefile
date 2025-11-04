@@ -12,6 +12,7 @@
 #
 
 # platform driver
+ccflags-y += -I$(src)
 snd-soc-mt2701-afe-objs := mt2701-afe-pcm.o mt2701-afe-clock-ctrl.o
 obj-$(CONFIG_SND_SOC_MT2701) += snd-soc-mt2701-afe.o
 

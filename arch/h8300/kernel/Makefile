@@ -2,6 +2,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 extra-y := vmlinux.lds
 
 obj-y := process.o traps.o ptrace.o \

@@ -2,6 +2,7 @@
 # Makefile for HSR
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_HSR)	+= hsr.o
 
 hsr-y			:= hsr_main.o hsr_framereg.o hsr_device.o \

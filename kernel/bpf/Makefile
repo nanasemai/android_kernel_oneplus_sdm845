@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y := core.o
 CFLAGS_core.o += $(call cc-disable-warning, override-init)
 

@@ -1,4 +1,5 @@
 # To find a header included by define_trace.h.
+ccflags-y += -I$(src)
 CFLAGS_amdtp-stream.o	:= -I$(src)
 
 snd-firewire-lib-objs := lib.o iso-resources.o packets-buffer.o \

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 agpgart-y := backend.o frontend.o generic.o isoch.o
 
 agpgart-$(CONFIG_COMPAT)	+= compat_ioctl.o

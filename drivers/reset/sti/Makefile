@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_STI_RESET_SYSCFG) += reset-syscfg.o
 
 obj-$(CONFIG_STIH415_RESET) += reset-stih415.o

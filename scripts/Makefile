@@ -9,6 +9,7 @@
 # docproc:       Used in Documentation/DocBook
 # check-lc_ctype: Used in Documentation/DocBook
 
+ccflags-y += -I$(src)
 HOST_EXTRACFLAGS += -I$(srctree)/tools/include
 
 CRYPTO_LIBS = $(shell pkg-config --libs libcrypto 2> /dev/null || echo -lcrypto)

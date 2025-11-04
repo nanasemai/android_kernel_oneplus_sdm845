@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TARGETS = breakpoints
 TARGETS += capabilities
 TARGETS += cpu-hotplug

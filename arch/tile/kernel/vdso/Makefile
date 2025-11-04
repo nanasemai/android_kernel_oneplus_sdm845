@@ -1,4 +1,5 @@
 # Symbols present in the vdso
+ccflags-y += -I$(src)
 vdso-syms = rt_sigreturn gettimeofday
 
 # Files to link into the vdso

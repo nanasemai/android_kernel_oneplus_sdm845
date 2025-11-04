@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 shmob-drm-y := shmob_drm_backlight.o \
 	       shmob_drm_crtc.o \
 	       shmob_drm_drv.o \

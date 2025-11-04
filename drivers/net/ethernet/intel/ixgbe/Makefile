@@ -30,6 +30,7 @@
 # Makefile for the Intel(R) 10GbE PCI Express ethernet driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_IXGBE) += ixgbe.o
 
 ixgbe-objs := ixgbe_main.o ixgbe_common.o ixgbe_ethtool.o \

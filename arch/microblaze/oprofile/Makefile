@@ -2,6 +2,7 @@
 # arch/microblaze/oprofile/Makefile
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_OPROFILE) += oprofile.o
 
 DRIVER_OBJS := $(addprefix ../../../drivers/oprofile/, \

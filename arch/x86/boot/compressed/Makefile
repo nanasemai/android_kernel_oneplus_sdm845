@@ -16,6 +16,7 @@
 #	(see scripts/Makefile.lib size_append)
 #	compressed vmlinux.bin.all + u32 size of vmlinux.bin.all
 
+ccflags-y += -I$(src)
 KASAN_SANITIZE			:= n
 OBJECT_FILES_NON_STANDARD	:= y
 

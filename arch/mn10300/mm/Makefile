@@ -2,6 +2,7 @@
 # Makefile for the MN10300-specific memory management code
 #
 
+ccflags-y += -I$(src)
 cache-smp-wback-$(CONFIG_MN10300_CACHE_WBACK) := cache-smp-flush.o
 
 cacheflush-y	:= cache.o

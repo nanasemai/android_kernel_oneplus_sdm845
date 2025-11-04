@@ -2,6 +2,7 @@
 # Makefile for the linux Meta-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 obj-y				+= cache.o
 obj-y				+= extable.o
 obj-y				+= fault.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y					+= pinctrl-uniphier-core.o
 
 obj-$(CONFIG_PINCTRL_UNIPHIER_LD4)	+= pinctrl-uniphier-ld4.o

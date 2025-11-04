@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 dts-dirs += al
 dts-dirs += altera
 dts-dirs += amd

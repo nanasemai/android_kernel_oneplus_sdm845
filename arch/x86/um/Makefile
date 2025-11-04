@@ -2,6 +2,7 @@
 # Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
 #
 
+ccflags-y += -I$(src)
 ifeq ($(CONFIG_X86_32),y)
 	BITS := 32
 else

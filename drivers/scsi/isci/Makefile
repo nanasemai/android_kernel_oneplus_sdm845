@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_SCSI_ISCI) += isci.o
 isci-objs := init.o phy.o request.o \
 	     remote_device.o port.o \

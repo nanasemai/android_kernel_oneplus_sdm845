@@ -2,6 +2,7 @@
 # VxFS Makefile
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_VXFS_FS) += freevxfs.o
 
 freevxfs-objs := vxfs_bmap.o vxfs_fshead.o vxfs_immed.o vxfs_inode.o \

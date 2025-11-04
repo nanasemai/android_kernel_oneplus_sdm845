@@ -2,6 +2,7 @@
 # Makefile for the Linux SuperH-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 obj-y			:= alignment.o cache.o init.o consistent.o mmap.o
 
 cacheops-$(CONFIG_CPU_J2)		:= cache-j2.o

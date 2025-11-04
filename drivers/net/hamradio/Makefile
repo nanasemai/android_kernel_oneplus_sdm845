@@ -10,6 +10,7 @@
 #		Christoph Hellwig <hch@infradead.org>
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_DMASCC)		+= dmascc.o
 obj-$(CONFIG_SCC)		+= scc.o
 obj-$(CONFIG_MKISS)		+= mkiss.o

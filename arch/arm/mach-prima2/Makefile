@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y += rstc.o
 obj-y += common.o
 obj-y += rtciobrg.o

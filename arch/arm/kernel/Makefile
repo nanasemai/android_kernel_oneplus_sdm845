@@ -2,6 +2,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 CPPFLAGS_vmlinux.lds := -DTEXT_OFFSET=$(TEXT_OFFSET)
 AFLAGS_head.o        := -DTEXT_OFFSET=$(TEXT_OFFSET)
 

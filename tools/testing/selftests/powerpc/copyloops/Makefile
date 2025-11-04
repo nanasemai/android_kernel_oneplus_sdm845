@@ -1,4 +1,5 @@
 # The loops are all 64-bit code
+ccflags-y += -I$(src)
 CFLAGS += -m64
 CFLAGS += -I$(CURDIR)
 CFLAGS += -D SELFTEST

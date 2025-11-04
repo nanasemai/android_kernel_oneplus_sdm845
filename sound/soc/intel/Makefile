@@ -1,4 +1,5 @@
 # Core support
+ccflags-y += -I$(src)
 obj-$(CONFIG_SND_SOC_INTEL_SST) += common/
 
 # Platform Support

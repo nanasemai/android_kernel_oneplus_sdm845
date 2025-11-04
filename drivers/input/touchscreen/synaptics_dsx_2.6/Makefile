@@ -4,6 +4,7 @@
 
 # Each configuration option enables a list of files.
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_TOUCHSCREEN_SYNAPTICS_DSX_I2C_v26) += synaptics_dsx_i2c.o
 obj-$(CONFIG_TOUCHSCREEN_SYNAPTICS_DSX_SPI_v26) += synaptics_dsx_spi.o
 obj-$(CONFIG_TOUCHSCREEN_SYNAPTICS_DSX_RMI_HID_I2C_v26) += synaptics_dsx_rmi_hid_i2c.o

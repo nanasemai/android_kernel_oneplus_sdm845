@@ -2,6 +2,7 @@
 # Arch-specific CryptoAPI modules.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_CRYPTO_AES_ARM) += aes-arm.o
 obj-$(CONFIG_CRYPTO_AES_ARM_BS) += aes-arm-bs.o
 obj-$(CONFIG_CRYPTO_SHA1_ARM) += sha1-arm.o

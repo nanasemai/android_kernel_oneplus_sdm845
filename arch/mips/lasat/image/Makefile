@@ -6,6 +6,7 @@
 # Author: Thomas Horsten <thh@i-data.com>
 #
 
+ccflags-y += -I$(src)
 ifndef Version
  Version = "$(USER)-test"
 endif

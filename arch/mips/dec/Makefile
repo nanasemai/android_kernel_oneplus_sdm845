@@ -2,6 +2,7 @@
 # Makefile for the DECstation family specific parts of the kernel
 #
 
+ccflags-y += -I$(src)
 obj-y		:= ecc-berr.o int-handler.o ioasic-irq.o kn01-berr.o \
 		   kn02-irq.o kn02xa-berr.o platform.o reset.o setup.o time.o
 

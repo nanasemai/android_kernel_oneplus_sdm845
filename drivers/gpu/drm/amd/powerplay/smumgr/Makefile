@@ -2,6 +2,7 @@
 # Makefile for the 'smu manager' sub-component of powerplay.
 # It provides the smu management services for the driver.
 
+ccflags-y += -I$(src)
 SMU_MGR = smumgr.o cz_smumgr.o tonga_smumgr.o fiji_smumgr.o fiji_smc.o \
 	  polaris10_smumgr.o iceland_smumgr.o polaris10_smc.o tonga_smc.o \
 	  smu7_smumgr.o iceland_smc.o

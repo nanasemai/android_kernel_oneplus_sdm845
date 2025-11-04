@@ -2,6 +2,7 @@
 # Makefile for bootable kernel images
 #
 
+ccflags-y += -I$(src)
 OBJCOPYFLAGS_vmlinux.bin := -O binary
 $(obj)/vmlinux.bin: vmlinux FORCE
 	$(call if_changed,objcopy)

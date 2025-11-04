@@ -5,6 +5,7 @@
 #
 # Networking Core Drivers
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_BONDING) += bonding/
 obj-$(CONFIG_IPVLAN) += ipvlan/
 obj-$(CONFIG_DUMMY) += dummy.o

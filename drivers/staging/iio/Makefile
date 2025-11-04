@@ -2,6 +2,7 @@
 # Makefile for the industrial I/O core.
 #
 
+ccflags-y += -I$(src)
 obj-y += accel/
 obj-y += adc/
 obj-y += addac/

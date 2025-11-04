@@ -3,6 +3,7 @@
 # Copyright (c) 2008 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-wss-lib-objs := wss_lib.o
 
 # Toplevel Module Dependency

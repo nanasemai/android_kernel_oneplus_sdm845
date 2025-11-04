@@ -3,6 +3,7 @@
 #
 
 # The WatchDog Timer Driver Core.
+ccflags-y += -I$(src)
 obj-$(CONFIG_WATCHDOG_CORE)	+= watchdog.o
 
 watchdog-objs	+= watchdog_core.o watchdog_dev.o

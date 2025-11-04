@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 rtl8723-common-objs :=		\
 		main.o		\
 		dm_common.o	\

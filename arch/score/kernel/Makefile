@@ -2,6 +2,7 @@
 # Makefile for the Linux/SCORE kernel.
 #
 
+ccflags-y += -I$(src)
 extra-y	:= head.o vmlinux.lds
 
 obj-y += entry.o irq.o process.o ptrace.o \

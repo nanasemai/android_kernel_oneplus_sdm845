@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_SH_7619_SOLUTION_ENGINE)	+= board-se7619.o
 
 obj-$(CONFIG_SH_SOLUTION_ENGINE)	+= 770x/

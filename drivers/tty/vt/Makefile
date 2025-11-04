@@ -1,6 +1,7 @@
 #
 # This file contains the font map for the default (hardware) font
 #
+ccflags-y += -I$(src)
 FONTMAPFILE = cp437.uni
 
 obj-$(CONFIG_VT)			+= vt_ioctl.o vc_screen.o \

@@ -1,6 +1,7 @@
 #
 # Makefile for the MN10300-specific core kernel code
 #
+ccflags-y += -I$(src)
 extra-y := head.o vmlinux.lds
 
 fpu-obj-y := fpu-nofpu.o fpu-nofpu-low.o

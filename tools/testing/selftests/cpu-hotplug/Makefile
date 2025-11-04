@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 all:
 
 TEST_PROGS := cpu-on-off-test.sh

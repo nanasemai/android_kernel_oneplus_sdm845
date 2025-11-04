@@ -3,6 +3,7 @@
 #
 
 # Build PCI Express ASPM if needed
+ccflags-y += -I$(src)
 obj-$(CONFIG_PCIEASPM)		+= aspm.o
 
 pcieportdrv-y			:= portdrv_core.o portdrv_pci.o portdrv_bus.o

@@ -12,6 +12,7 @@
 # asflags-y := -DTRAP_DBG_INTERRUPT
 #
 
+ccflags-y += -I$(src)
 asflags-$(CONFIG_FULLDEBUG) := -DDEBUGGER_COMPATIBLE_CACHE=1
 
 obj-$(CONFIG_COLDFIRE)	+= cache.o clk.o device.o dma.o entry.o vectors.o

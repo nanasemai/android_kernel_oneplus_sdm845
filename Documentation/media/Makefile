@@ -1,5 +1,6 @@
 # Generate the *.h.rst files from uAPI headers
 
+ccflags-y += -I$(src)
 PARSER = $(srctree)/Documentation/sphinx/parse-headers.pl
 UAPI = $(srctree)/include/uapi/linux
 KAPI = $(srctree)/include/linux

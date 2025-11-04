@@ -1,4 +1,5 @@
 # Core
+ccflags-y += -I$(src)
 obj-$(CONFIG_PINCTRL_STM32) += pinctrl-stm32.o
 
 # SoC Drivers

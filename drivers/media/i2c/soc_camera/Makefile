@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_SOC_CAMERA_IMX074)		+= imx074.o
 obj-$(CONFIG_SOC_CAMERA_MT9M001)	+= mt9m001.o
 obj-$(CONFIG_SOC_CAMERA_MT9T031)	+= mt9t031.o

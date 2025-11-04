@@ -2,6 +2,7 @@
 # arch/microblaze/boot/Makefile
 #
 
+ccflags-y += -I$(src)
 targets := linux.bin linux.bin.gz linux.bin.ub simpleImage.%
 
 OBJCOPYFLAGS := -R .note -R .comment -R .note.gnu.build-id -O binary

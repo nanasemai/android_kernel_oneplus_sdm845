@@ -7,6 +7,7 @@
 #
 # Note 2! The CFLAGS definitions are now in the main makefile...
 
+ccflags-y += -I$(src)
 obj-y   := unit-init.o leds.o irq-fpga.o
 
 obj-$(CONFIG_SMSC911X) += smsc911x.o

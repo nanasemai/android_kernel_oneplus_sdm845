@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_PROGS := dnotify_test
 all: $(TEST_PROGS)
 

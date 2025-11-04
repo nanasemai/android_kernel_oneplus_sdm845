@@ -2,6 +2,7 @@
 # Makefile for the ia64-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 obj-y := init.o fault.o tlb.o extable.o ioremap.o
 
 obj-$(CONFIG_HUGETLB_PAGE) += hugetlbpage.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_USB_GL860) += gspca_gl860.o
 
 gspca_gl860-objs := gl860.o \

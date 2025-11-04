@@ -3,6 +3,7 @@
 #
 
 # base objects
+ccflags-y += -I$(src)
 obj-y	:= netlabel_user.o netlabel_kapi.o
 obj-y	+= netlabel_domainhash.o netlabel_addrlist.o
 

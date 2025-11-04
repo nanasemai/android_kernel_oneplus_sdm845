@@ -1,4 +1,5 @@
 # Berlin SoC Family
+ccflags-y += -I$(src)
 dtb-$(CONFIG_ARCH_BERLIN) += berlin4ct-dmp.dtb
 dtb-$(CONFIG_ARCH_BERLIN) += berlin4ct-stb.dtb
 

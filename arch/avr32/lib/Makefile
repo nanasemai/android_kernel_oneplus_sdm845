@@ -2,6 +2,7 @@
 # Makefile for AVR32-specific library files
 #
 
+ccflags-y += -I$(src)
 lib-y	:= copy_user.o clear_user.o
 lib-y	+= strncpy_from_user.o strnlen_user.o
 lib-y	+= delay.o memset.o memcpy.o findbit.o

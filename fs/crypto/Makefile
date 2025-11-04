@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_FS_ENCRYPTION)	+= fscrypto.o
 
 ccflags-y += -Ifs/ext4

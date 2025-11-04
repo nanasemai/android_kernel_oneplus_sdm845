@@ -3,6 +3,7 @@
 #
 
 # Check the p8022 selections against net/core/Makefile.
+ccflags-y += -I$(src)
 obj-$(CONFIG_LLC)	+= p8022.o psnap.o
 obj-$(CONFIG_NET_FC)	+=                 fc.o
 obj-$(CONFIG_FDDI)	+=                 fddi.o

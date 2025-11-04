@@ -1,5 +1,6 @@
 # Makefile for vm selftests
 
+ccflags-y += -I$(src)
 ifndef OUTPUT
   OUTPUT := $(shell pwd)
 endif

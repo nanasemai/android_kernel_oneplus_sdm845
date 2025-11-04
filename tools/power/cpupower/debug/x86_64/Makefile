@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 OUTPUT=./
 ifeq ("$(origin O)", "command line")
 	OUTPUT := $(O)/

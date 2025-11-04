@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 snd-hda-intel-objs := hda_intel.o
 snd-hda-tegra-objs := hda_tegra.o
 

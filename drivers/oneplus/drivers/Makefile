@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y += boot_mode/
 obj-y += debugdriver/
 obj-y += input/fingerprint/

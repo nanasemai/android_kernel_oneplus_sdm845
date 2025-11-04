@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 r8192e_pci-objs :=		\
 	r8192E_dev.o		\
 	r8192E_phy.o		\

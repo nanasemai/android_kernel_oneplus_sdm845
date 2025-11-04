@@ -3,6 +3,7 @@
 #
 
 # Common support
+ccflags-y += -I$(src)
 obj-y := clock.o generic.o #nmi-oopser.o
 
 # Specific board support

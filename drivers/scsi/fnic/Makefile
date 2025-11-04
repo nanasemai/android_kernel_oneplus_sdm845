@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_FCOE_FNIC) += fnic.o
 
 fnic-y	:= \

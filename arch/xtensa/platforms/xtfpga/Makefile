@@ -6,5 +6,6 @@
 #
 # Note 2! The CFLAGS definitions are in the main makefile...
 
+ccflags-y += -I$(src)
 obj-y			+= setup.o
 obj-$(CONFIG_XTFPGA_LCD) += lcd.o

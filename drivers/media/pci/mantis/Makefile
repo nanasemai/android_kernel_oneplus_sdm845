@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 mantis_core-objs :=	mantis_ioc.o	\
 			mantis_uart.o	\
 			mantis_dma.o	\

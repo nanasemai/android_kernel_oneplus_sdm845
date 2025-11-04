@@ -2,6 +2,7 @@
 # arch/blackfin/mach-bf527/boards/Makefile
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_BFIN527_EZKIT)            += ezkit.o
 obj-$(CONFIG_BFIN527_EZKIT_V2)         += ezkit.o
 obj-$(CONFIG_BFIN527_BLUETECHNIX_CM)   += cm_bf527.o

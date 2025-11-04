@@ -1,5 +1,6 @@
 
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_VIDEO_MEDIATEK_VCODEC) += mtk-vcodec-enc.o mtk-vcodec-common.o
 
 

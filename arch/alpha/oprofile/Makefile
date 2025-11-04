@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y := -Werror -Wno-sign-compare
 
 obj-$(CONFIG_OPROFILE) += oprofile.o

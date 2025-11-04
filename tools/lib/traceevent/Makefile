@@ -1,4 +1,5 @@
 # trace-cmd version
+ccflags-y += -I$(src)
 EP_VERSION = 1
 EP_PATCHLEVEL = 1
 EP_EXTRAVERSION = 0

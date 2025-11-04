@@ -2,6 +2,7 @@
 # Makefile for the kernel multimedia device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-y        +=	ttpci/		\
 		b2c2/		\
 		pluto2/		\

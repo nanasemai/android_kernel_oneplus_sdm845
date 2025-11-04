@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 ccflags-y += -Iarch/x86/kvm
 
 CFLAGS_x86.o := -I.

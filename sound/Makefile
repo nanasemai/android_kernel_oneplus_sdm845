@@ -1,6 +1,7 @@
 # Makefile for the Linux sound card driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_SOUND) += soundcore.o
 obj-$(CONFIG_SOUND_PRIME) += oss/
 obj-$(CONFIG_DMASOUND) += oss/

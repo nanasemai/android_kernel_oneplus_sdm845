@@ -3,6 +3,7 @@
 # Direct Rendering Infrastructure (DRI)
 #
 
+ccflags-y += -I$(src)
 obj-y += dss/
 obj-y += displays/
 

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y = base.o device.o platform.o
 obj-$(CONFIG_OF_KOBJ) += kobj.o
 obj-$(CONFIG_OF_DYNAMIC) += dynamic.o

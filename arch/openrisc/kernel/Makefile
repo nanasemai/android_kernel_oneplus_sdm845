@@ -2,6 +2,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 extra-y	:= head.o vmlinux.lds
 
 obj-y	:= setup.o or32_ksyms.o process.o dma.o \

@@ -2,6 +2,7 @@
 # Makefile for industrial I/O accelerometer drivers
 #
 
+ccflags-y += -I$(src)
 adis16201-y             := adis16201_core.o
 obj-$(CONFIG_ADIS16201) += adis16201.o
 

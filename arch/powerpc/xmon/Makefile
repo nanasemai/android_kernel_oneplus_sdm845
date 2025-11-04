@@ -1,5 +1,6 @@
 # Makefile for xmon
 
+ccflags-y += -I$(src)
 subdir-ccflags-$(CONFIG_PPC_WERROR) := -Werror
 
 GCOV_PROFILE := n

@@ -5,6 +5,7 @@
 # License.  See the file "COPYING" in the main directory of this archive
 # for more details.
 
+ccflags-y += -I$(src)
 targets := zImage
 subdir- := compressed
 

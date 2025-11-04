@@ -2,6 +2,7 @@
 # Makefile for ALSA
 #
 
+ccflags-y += -I$(src)
 snd-sgi-o2-objs := sgio2audio.o ad1843.o
 snd-sgi-hal2-objs := hal2.o
 

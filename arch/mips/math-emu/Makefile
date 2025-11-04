@@ -2,6 +2,7 @@
 # Makefile for the Linux/MIPS kernel FPU emulation.
 #
 
+ccflags-y += -I$(src)
 obj-y	+= cp1emu.o ieee754dp.o ieee754sp.o ieee754.o \
 	   dp_div.o dp_mul.o dp_sub.o dp_add.o dp_fsp.o dp_cmp.o dp_simple.o \
 	   dp_tint.o dp_fint.o dp_maddf.o dp_2008class.o dp_fmin.o dp_fmax.o \

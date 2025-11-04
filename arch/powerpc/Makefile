@@ -12,6 +12,7 @@
 # Rewritten by Cort Dougan and Paul Mackerras
 #
 
+ccflags-y += -I$(src)
 HAS_BIARCH	:= $(call cc-option-yn, -m32)
 
 # Set default 32 bits cross compilers for vdso and boot wrapper

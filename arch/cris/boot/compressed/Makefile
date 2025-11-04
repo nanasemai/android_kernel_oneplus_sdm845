@@ -2,6 +2,7 @@
 # arch/cris/boot/compressed/Makefile
 #
 
+ccflags-y += -I$(src)
 asflags-y += $(LINUXINCLUDE)
 ccflags-y += -O2 $(LINUXINCLUDE)
 

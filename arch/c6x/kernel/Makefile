@@ -2,6 +2,7 @@
 # Makefile for arch/c6x/kernel/
 #
 
+ccflags-y += -I$(src)
 extra-y := head.o vmlinux.lds
 
 obj-y := process.o traps.o irq.o signal.o ptrace.o

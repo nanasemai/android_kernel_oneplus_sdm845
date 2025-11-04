@@ -1,5 +1,6 @@
 #
 
+ccflags-y += -I$(src)
 obj-y += linked_dtb.o
 
 # Ensure system.dtb exists

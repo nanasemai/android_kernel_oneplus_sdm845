@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y				+= setup.o nlm_hal.o cop2-ex.o dt.o
 obj-$(CONFIG_SMP)		+= wakeup.o
 ifdef CONFIG_USB

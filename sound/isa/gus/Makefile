@@ -3,6 +3,7 @@
 # Copyright (c) 2001 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-gus-lib-objs := gus_main.o \
 		    gus_io.o gus_irq.o gus_timer.o \
 		    gus_mem.o gus_mem_proc.o gus_dram.o gus_dma.o gus_volume.o \

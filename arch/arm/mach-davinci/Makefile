@@ -4,6 +4,7 @@
 #
 
 # Common objects
+ccflags-y += -I$(src)
 obj-y 			:= time.o clock.o serial.o psc.o \
 			   usb.o common.o sram.o aemif.o
 

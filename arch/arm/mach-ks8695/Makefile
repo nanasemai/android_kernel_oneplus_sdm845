@@ -3,6 +3,7 @@
 # Makefile for KS8695 architecture support
 #
 
+ccflags-y += -I$(src)
 obj-y				:= cpu.o irq.o time.o devices.o
 
 # PCI support is optional

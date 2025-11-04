@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 PHONY += posttest
 
 ifeq ($(KBUILD_VERBOSE),1)

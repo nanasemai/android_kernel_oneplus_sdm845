@@ -2,6 +2,7 @@
 # Makefile for the MSM specific security device drivers.
 #
 
+ccflags-y += -I$(src)
 ccflags-y += -Isecurity/selinux -Isecurity/selinux/include
 #ccflags-y += -Ifs/ext4
 ccflags-y += -Ifs/crypto

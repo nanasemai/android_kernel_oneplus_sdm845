@@ -2,6 +2,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 ifdef CONFIG_DYNAMIC_FTRACE
 CFLAGS_REMOVE_ftrace.o = -pg
 endif

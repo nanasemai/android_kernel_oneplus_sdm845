@@ -6,4 +6,5 @@
 # published by the Free Software Foundation.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ARC_PLAT_AXS10X) += axs10x.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 snd-usb-line6-y := 		\
 		capture.o	\
 		driver.o	\

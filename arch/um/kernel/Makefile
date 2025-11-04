@@ -6,6 +6,7 @@
 # Don't instrument UML-specific code; without this, we may crash when
 # accessing the instrumentation buffer for the first time from the
 # kernel.
+ccflags-y += -I$(src)
 KCOV_INSTRUMENT                := n
 
 CPPFLAGS_vmlinux.lds := -DSTART=$(LDS_START)		\

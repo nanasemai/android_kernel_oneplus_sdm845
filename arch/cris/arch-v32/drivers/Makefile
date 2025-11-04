@@ -2,6 +2,7 @@
 # Makefile for Etrax-specific drivers
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ETRAX_STREAMCOPROC)        += cryptocop.o
 obj-$(CONFIG_ETRAX_AXISFLASHMAP)        += axisflashmap.o
 obj-$(CONFIG_ETRAXFS)                   += mach-fs/

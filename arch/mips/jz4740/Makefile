@@ -4,6 +4,7 @@
 
 # Object file lists.
 
+ccflags-y += -I$(src)
 obj-y += prom.o time.o reset.o setup.o \
 	platform.o timer.o
 

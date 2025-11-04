@@ -2,6 +2,7 @@
 # Makefile for the linux ncp filesystem routines.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_NCP_FS) += ncpfs.o
 
 ncpfs-y      := dir.o file.o inode.o ioctl.o mmap.o ncplib_kernel.o sock.o \

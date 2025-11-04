@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 hostprogs-y := vdsomunge
 
 obj-vdso := vgettimeofday.o datapage.o

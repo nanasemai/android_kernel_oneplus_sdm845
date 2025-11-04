@@ -2,6 +2,7 @@
 # Makefile for the ipmi drivers.
 #
 
+ccflags-y += -I$(src)
 ipmi_si-y := ipmi_si_intf.o ipmi_kcs_sm.o ipmi_smic_sm.o ipmi_bt_sm.o
 
 obj-$(CONFIG_IPMI_HANDLER) += ipmi_msghandler.o

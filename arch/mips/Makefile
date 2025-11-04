@@ -12,6 +12,7 @@
 # for "archclean" cleaning up for this architecture.
 #
 
+ccflags-y += -I$(src)
 archscripts: scripts_basic
 	$(Q)$(MAKE) $(build)=arch/mips/boot/tools relocs
 

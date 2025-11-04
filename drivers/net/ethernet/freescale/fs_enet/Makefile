@@ -2,6 +2,7 @@
 # Makefile for the Freescale Ethernet controllers
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FS_ENET) += fs_enet.o
 
 fs_enet-$(CONFIG_FS_ENET_HAS_SCC) += mac-scc.o

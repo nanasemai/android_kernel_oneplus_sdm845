@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 snd-soc-skl-objs := skl.o skl-pcm.o skl-nhlt.o skl-messages.o \
 skl-topology.o
 

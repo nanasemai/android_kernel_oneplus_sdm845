@@ -3,6 +3,7 @@
 # under Linux.
 #
 
+ccflags-y += -I$(src)
 obj-y	+= ip22-mc.o ip22-hpc.o ip22-int.o ip22-time.o ip22-nvram.o \
 	   ip22-platform.o ip22-reset.o ip22-setup.o ip22-gio.o
 

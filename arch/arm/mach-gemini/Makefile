@@ -4,6 +4,7 @@
 
 # Object file lists.
 
+ccflags-y += -I$(src)
 obj-y			:= irq.o mm.o time.o devices.o gpio.o idle.o reset.o
 
 # Board-specific support

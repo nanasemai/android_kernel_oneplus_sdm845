@@ -1,6 +1,7 @@
 # Makefile for pstore selftests.
 # Expects pstore backend is registered.
 
+ccflags-y += -I$(src)
 all:
 
 TEST_PROGS := pstore_tests pstore_post_reboot_tests

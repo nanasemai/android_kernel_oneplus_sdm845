@@ -3,6 +3,7 @@
 #
 
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_TABLET_USB_ACECAD)	+= acecad.o
 obj-$(CONFIG_TABLET_USB_AIPTEK)	+= aiptek.o
 obj-$(CONFIG_TABLET_USB_GTCO)	+= gtco.o

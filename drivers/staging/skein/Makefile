@@ -1,6 +1,7 @@
 #
 # Makefile for the skein secure hash algorithm
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_CRYPTO_SKEIN) += skein.o
 skein-y := skein_base.o \
 	   skein_api.o \

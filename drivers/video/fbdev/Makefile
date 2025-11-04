@@ -4,6 +4,7 @@
 
 # Each configuration option enables a list of files.
 
+ccflags-y += -I$(src)
 obj-y				+= core/
 
 obj-$(CONFIG_FB_MACMODES)      += macmodes.o

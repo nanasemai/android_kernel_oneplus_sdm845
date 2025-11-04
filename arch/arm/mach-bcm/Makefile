@@ -11,6 +11,7 @@
 # GNU General Public License for more details.
 
 # Cygnus
+ccflags-y += -I$(src)
 obj-$(CONFIG_ARCH_BCM_CYGNUS) +=  bcm_cygnus.o
 
 # Northstar Plus

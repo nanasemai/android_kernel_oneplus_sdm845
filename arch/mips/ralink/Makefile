@@ -6,6 +6,7 @@
 # Copyright (C) 2009-2011 Gabor Juhos <juhosg@openwrt.org>
 # Copyright (C) 2013 John Crispin <john@phrozen.org>
 
+ccflags-y += -I$(src)
 obj-y := prom.o of.o reset.o
 
 ifndef CONFIG_MIPS_GIC

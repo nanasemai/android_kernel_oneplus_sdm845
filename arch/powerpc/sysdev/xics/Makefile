@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 subdir-ccflags-$(CONFIG_PPC_WERROR) := -Werror
 
 obj-y				+= xics-common.o

@@ -2,6 +2,7 @@
 # Makefile - Intel MIC Linux driver.
 # Copyright(c) 2013, Intel Corporation.
 #
+ccflags-y += -I$(src)
 ccflags-y += -DINTEL_MIC_CARD
 
 obj-$(CONFIG_INTEL_MIC_CARD) += mic_card.o

@@ -3,6 +3,7 @@
 #
 
 # IPVS transport protocol load balancing support
+ccflags-y += -I$(src)
 ip_vs_proto-objs-y :=
 ip_vs_proto-objs-$(CONFIG_IP_VS_PROTO_TCP) += ip_vs_proto_tcp.o
 ip_vs_proto-objs-$(CONFIG_IP_VS_PROTO_UDP) += ip_vs_proto_udp.o

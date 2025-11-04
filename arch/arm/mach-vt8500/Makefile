@@ -1,1 +1,2 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_ARCH_VT8500) += vt8500.o

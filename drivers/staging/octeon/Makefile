@@ -9,6 +9,7 @@
 # Makefile for Cavium OCTEON on-board ethernet driver
 #
 
+ccflags-y += -I$(src)
 obj-${CONFIG_OCTEON_ETHERNET} :=  octeon-ethernet.o
 
 octeon-ethernet-y := ethernet.o

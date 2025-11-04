@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_HSU_DMA)		+= hsu_dma.o
 hsu_dma-objs		:= hsu.o
 

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 CFLAGS += -I$(CURDIR)
 
 TEST_PROGS := load_unaligned_zeropad

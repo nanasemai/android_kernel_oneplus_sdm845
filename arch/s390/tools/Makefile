@@ -2,6 +2,7 @@
 # Makefile for s390 specific build tools
 #
 
+ccflags-y += -I$(src)
 hostprogs-y		    += gen_facilities
 HOSTCFLAGS_gen_facilities.o += -Wall $(LINUXINCLUDE)
 

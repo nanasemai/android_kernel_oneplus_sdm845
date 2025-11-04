@@ -2,6 +2,7 @@
 # Makefile for the Linux proc filesystem routines.
 #
 
+ccflags-y += -I$(src)
 obj-y   += proc.o
 
 CFLAGS_task_mmu.o	+= $(call cc-option,-Wno-override-init,)

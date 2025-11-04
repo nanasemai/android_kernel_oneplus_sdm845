@@ -2,6 +2,7 @@
 # Makefile for common code for TXx9 based systems
 #
 
+ccflags-y += -I$(src)
 obj-y	+= setup.o
 obj-$(CONFIG_PCI)	+= pci.o
 obj-$(CONFIG_SOC_TX3927)	+= setup_tx3927.o irq_tx3927.o

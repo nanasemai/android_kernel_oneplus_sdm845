@@ -2,6 +2,7 @@
 # Makefile for Linux kernel rpcsec_gss implementation
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_SUNRPC_GSS) += auth_rpcgss.o
 
 auth_rpcgss-y := auth_gss.o gss_generic_token.o \

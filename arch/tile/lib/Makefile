@@ -2,6 +2,7 @@
 # Makefile for TILE-specific library files..
 #
 
+ccflags-y += -I$(src)
 lib-y = cacheflush.o checksum.o cpumask.o delay.o uaccess.o \
 	memmove.o memcpy_$(BITS).o memchr_$(BITS).o memset_$(BITS).o \
 	strchr_$(BITS).o strlen_$(BITS).o strnlen_$(BITS).o

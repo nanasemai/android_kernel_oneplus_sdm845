@@ -1,4 +1,5 @@
 # DAVINCI Platform Support
+ccflags-y += -I$(src)
 snd-soc-edma-objs := edma-pcm.o
 snd-soc-davinci-i2s-objs := davinci-i2s.o
 snd-soc-davinci-mcasp-objs:= davinci-mcasp.o

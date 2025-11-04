@@ -1,6 +1,7 @@
 # Makefile for linux/drivers/net/arcnet
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ARCNET) += arcnet.o
 obj-$(CONFIG_ARCNET_1201) += rfc1201.o
 obj-$(CONFIG_ARCNET_1051) += rfc1051.o

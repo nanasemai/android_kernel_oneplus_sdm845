@@ -7,6 +7,7 @@
 # ccflags-y := -DDEBUG
 # asflags-y := -DDEBUG
 
+ccflags-y += -I$(src)
 KBUILD_AFLAGS	:=$(KBUILD_AFLAGS:-msoft-float=-Wa,-mfpu=softvfp+vfp -mfloat-abi=soft)
 LDFLAGS		+=--no-warn-mismatch
 

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 OBJECT_FILES_NON_STANDARD_xen-asm_$(BITS).o := y
 OBJECT_FILES_NON_STANDARD_xen-pvh.o := y
 

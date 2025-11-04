@@ -2,6 +2,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_BLOCK) := check.o
 
 obj-$(CONFIG_ACORN_PARTITION) += acorn.o

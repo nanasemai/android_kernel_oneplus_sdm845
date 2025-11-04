@@ -2,6 +2,7 @@
 # Makefile for Samsung S3FWRN5 NFC driver
 #
 
+ccflags-y += -I$(src)
 s3fwrn5-objs = core.o firmware.o nci.o
 s3fwrn5_i2c-objs = i2c.o
 

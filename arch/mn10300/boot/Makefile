@@ -10,6 +10,7 @@
 # 2 of the Licence, or (at your option) any later version.
 #
 
+ccflags-y += -I$(src)
 targets		:= vmlinux.bin zImage
 
 subdir- 	:= compressed

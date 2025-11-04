@@ -2,6 +2,7 @@
 # Makefile for the Linux/SuperH SH-4 backends.
 #
 
+ccflags-y += -I$(src)
 obj-y	:= probe.o common.o
 common-y	+= $(addprefix ../sh3/, entry.o ex.o)
 

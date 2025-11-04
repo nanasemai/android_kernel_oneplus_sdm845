@@ -2,6 +2,7 @@
 # Makefile for the Linux/SuperH SH-3 backends.
 #
 
+ccflags-y += -I$(src)
 obj-y	:= ex.o probe.o entry.o setup-sh3.o
 
 obj-$(CONFIG_HIBERNATION)		+= swsusp.o

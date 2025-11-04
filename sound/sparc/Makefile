@@ -3,6 +3,7 @@
 # Copyright (c) 2002 by David S. Miller <davem@redhat.com>
 #
 
+ccflags-y += -I$(src)
 snd-sun-amd7930-objs := amd7930.o
 snd-sun-cs4231-objs := cs4231.o
 snd-sun-dbri-objs := dbri.o

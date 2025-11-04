@@ -2,6 +2,7 @@
 # Makefile for the Atheros network device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ATL1) += atlx/
 obj-$(CONFIG_ATL2) += atlx/
 obj-$(CONFIG_ATL1E) += atl1e/

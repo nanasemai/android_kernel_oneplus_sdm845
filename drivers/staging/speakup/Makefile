@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_SPEAKUP_SYNTH_ACNTSA) += speakup_acntsa.o
 obj-$(CONFIG_SPEAKUP_SYNTH_ACNTPC) += speakup_acntpc.o
 obj-$(CONFIG_SPEAKUP_SYNTH_APOLLO) += speakup_apollo.o

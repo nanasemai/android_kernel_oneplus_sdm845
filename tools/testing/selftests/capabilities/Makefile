@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_FILES := validate_cap
 TEST_PROGS := test_execve
 

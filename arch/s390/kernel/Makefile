@@ -2,6 +2,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 KCOV_INSTRUMENT_early.o := n
 KCOV_INSTRUMENT_sclp.o := n
 KCOV_INSTRUMENT_als.o := n

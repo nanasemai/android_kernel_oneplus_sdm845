@@ -3,6 +3,7 @@
 # Copyright (c) 2001 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-ad1848-objs := ad1848.o
 
 # Toplevel Module Dependency

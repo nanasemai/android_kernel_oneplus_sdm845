@@ -3,6 +3,7 @@
 #
 
 # When adding new entries keep the list in alphabetical order
+ccflags-y += -I$(src)
 obj-$(CONFIG_ADIS16080) += adis16080.o
 obj-$(CONFIG_ADIS16130) += adis16130.o
 obj-$(CONFIG_ADIS16136) += adis16136.o

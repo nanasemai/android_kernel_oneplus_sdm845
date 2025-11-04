@@ -2,6 +2,7 @@
 # Makefile for the Linux PPP network device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_PPP) += ppp_generic.o
 obj-$(CONFIG_PPP_ASYNC) += ppp_async.o
 obj-$(CONFIG_PPP_BSDCOMP) += bsd_comp.o

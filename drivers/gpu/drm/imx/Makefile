@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 imxdrm-objs := imx-drm-core.o
 
 obj-$(CONFIG_DRM_IMX) += imxdrm.o

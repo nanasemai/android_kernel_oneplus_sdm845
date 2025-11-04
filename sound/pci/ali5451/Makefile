@@ -3,6 +3,7 @@
 # Copyright (c) 2001 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-ali5451-objs := ali5451.o
 
 # Toplevel Module Dependency

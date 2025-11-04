@@ -1,6 +1,7 @@
 #
 # Makefile for the PowerPC 83xx linux kernel.
 #
+ccflags-y += -I$(src)
 obj-y				:= misc.o usb.o
 obj-$(CONFIG_SUSPEND)		+= suspend.o suspend-asm.o
 obj-$(CONFIG_MCU_MPC8349EMITX)	+= mcu_mpc8349emitx.o

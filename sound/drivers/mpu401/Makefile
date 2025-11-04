@@ -3,6 +3,7 @@
 # Copyright (c) 2001 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-mpu401-objs := mpu401.o
 snd-mpu401-uart-objs := mpu401_uart.o
 

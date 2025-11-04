@@ -2,6 +2,7 @@
 # Makefile for the Linux Plug-and-Play Support.
 #
 
+ccflags-y += -I$(src)
 obj-y		:= pnp.o
 
 pnp-y		:= core.o card.o driver.o resource.o manager.o support.o interface.o quirks.o

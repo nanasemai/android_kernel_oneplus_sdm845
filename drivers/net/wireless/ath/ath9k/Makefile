@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ath9k-y +=	beacon.o \
 		gpio.o \
 		init.o \

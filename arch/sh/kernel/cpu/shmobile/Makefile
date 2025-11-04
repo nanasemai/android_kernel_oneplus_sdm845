@@ -3,5 +3,6 @@
 #
 
 # Power Management & Sleep mode
+ccflags-y += -I$(src)
 obj-$(CONFIG_PM)	+= pm.o sleep.o
 obj-$(CONFIG_CPU_IDLE)	+= cpuidle.o

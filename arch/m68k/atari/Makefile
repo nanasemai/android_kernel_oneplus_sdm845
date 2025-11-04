@@ -2,6 +2,7 @@
 # Makefile for Linux arch/m68k/atari source directory
 #
 
+ccflags-y += -I$(src)
 obj-y		:= config.o time.o debug.o ataints.o stdma.o \
 			atasound.o stram.o
 

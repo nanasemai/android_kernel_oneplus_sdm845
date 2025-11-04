@@ -2,6 +2,7 @@
 # Makefile for device trees
 #
 
+ccflags-y += -I$(src)
 DTC_FLAGS ?= -p 1024
 
 ifneq ($(DTB),)

@@ -5,6 +5,7 @@
 #
 
 # Let kbuild descend into aicasm when cleaning
+ccflags-y += -I$(src)
 subdir-				+= aicasm
 
 obj-$(CONFIG_SCSI_AIC7XXX)	+= aic7xxx.o

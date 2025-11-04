@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 CC = $(CROSS_COMPILE)gcc
 BUILD_FLAGS = -DKTEST
 CFLAGS += -O3 -Wl,-no-as-needed -Wall $(BUILD_FLAGS)

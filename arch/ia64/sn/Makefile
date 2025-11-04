@@ -9,4 +9,5 @@
 # Makefile for the sn ia64 subplatform
 #
 
+ccflags-y += -I$(src)
 obj-y += kernel/ pci/

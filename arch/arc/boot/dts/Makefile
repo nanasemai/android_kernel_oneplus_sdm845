@@ -1,4 +1,5 @@
 # Built-in dtb
+ccflags-y += -I$(src)
 builtindtb-y		:= nsim_700
 
 ifneq ($(CONFIG_ARC_BUILTIN_DTB_NAME),"")

@@ -14,6 +14,7 @@
 # Based on the ia64 boot/Makefile.
 #
 
+ccflags-y += -I$(src)
 include $(srctree)/arch/arm64/boot/dts/Makefile
 
 OBJCOPYFLAGS_Image :=-O binary -R .note -R .note.gnu.build-id -R .comment -S

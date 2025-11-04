@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_CRYPTO_DEV_QAT) += intel_qat.o
 intel_qat-objs := adf_cfg.o \
 	adf_isr.o \

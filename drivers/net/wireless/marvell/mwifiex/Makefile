@@ -15,6 +15,7 @@
 # this warranty disclaimer.
 
 
+ccflags-y += -I$(src)
 mwifiex-y += main.o
 mwifiex-y += init.o
 mwifiex-y += cfp.o

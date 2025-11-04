@@ -9,6 +9,7 @@
 
 # core
 
+ccflags-y += -I$(src)
 obj-y				+= common.o
 
 obj-$(CONFIG_CPU_S3C2410)	+= s3c2410.o

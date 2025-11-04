@@ -1,5 +1,6 @@
 # arch/h8300/boot/Makefile
 
+ccflags-y += -I$(src)
 targets := vmlinux.srec vmlinux.bin zImage
 subdir- := compressed
 

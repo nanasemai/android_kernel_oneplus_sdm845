@@ -2,6 +2,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 obj-y			:= irq.o
 
 obj-$(CONFIG_MACH_GLANTANK) += glantank.o

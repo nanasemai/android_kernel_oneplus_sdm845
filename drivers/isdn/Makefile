@@ -2,6 +2,7 @@
 
 # Object files in subdirectories
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ISDN_I4L)			+= i4l/
 obj-$(CONFIG_ISDN_CAPI)			+= capi/
 obj-$(CONFIG_MISDN)			+= mISDN/

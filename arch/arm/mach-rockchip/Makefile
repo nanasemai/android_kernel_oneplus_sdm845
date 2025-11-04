@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 CFLAGS_platsmp.o := -march=armv7-a
 
 obj-$(CONFIG_ARCH_ROCKCHIP) += rockchip.o

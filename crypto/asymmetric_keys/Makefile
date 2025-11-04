@@ -2,6 +2,7 @@
 # Makefile for asymmetric cryptographic keys
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ASYMMETRIC_KEY_TYPE) += asymmetric_keys.o
 
 asymmetric_keys-y := \

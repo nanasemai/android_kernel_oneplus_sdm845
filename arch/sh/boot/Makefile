@@ -12,6 +12,7 @@
 # Assign safe dummy values if these variables are not defined,
 # in order to suppress error message.
 #
+ccflags-y += -I$(src)
 CONFIG_PAGE_OFFSET	?= 0x80000000
 CONFIG_MEMORY_START	?= 0x0c000000
 CONFIG_BOOT_LINK_OFFSET	?= 0x00800000

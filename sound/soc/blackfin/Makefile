@@ -1,4 +1,5 @@
 # Blackfin Platform Support
+ccflags-y += -I$(src)
 snd-bf5xx-ac97-objs := bf5xx-ac97-pcm.o
 snd-bf5xx-i2s-objs := bf5xx-i2s-pcm.o
 snd-soc-bf5xx-sport-objs := bf5xx-sport.o

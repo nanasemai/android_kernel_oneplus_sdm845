@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 CFLAGS = -Wall
 
 test_objs = open-unlink create-read

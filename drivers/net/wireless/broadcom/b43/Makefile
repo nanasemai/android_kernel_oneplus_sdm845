@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 b43-y				+= main.o
 b43-y				+= bus.o
 b43-$(CONFIG_B43_PHY_G)		+= phy_g.o tables.o lo.o wa.o

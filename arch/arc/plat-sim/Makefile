@@ -6,4 +6,5 @@
 # published by the Free Software Foundation.
 #
 
+ccflags-y += -I$(src)
 obj-y := platform.o

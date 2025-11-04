@@ -3,4 +3,5 @@
 #
 
 # When adding new entries keep the list in alphabetical order
+ccflags-y += -I$(src)
 obj-$(CONFIG_AD8366) += ad8366.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_PROGS := fpu_syscall fpu_preempt fpu_signal vmx_syscall vmx_preempt vmx_signal vsx_preempt
 
 all: $(TEST_PROGS)

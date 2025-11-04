@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 include ../../scripts/Makefile.include
 include ../../scripts/utilities.mak
 

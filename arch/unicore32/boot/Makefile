@@ -11,6 +11,7 @@
 # Copyright (C) 2001~2010 GUAN Xue-tao
 #
 
+ccflags-y += -I$(src)
 targets := Image zImage uImage
 
 $(obj)/Image: vmlinux FORCE

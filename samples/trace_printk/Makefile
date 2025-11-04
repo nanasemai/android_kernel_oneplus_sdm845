@@ -3,4 +3,5 @@
 
 # This module can also be used to test the trace_printk code.
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_SAMPLE_TRACE_PRINTK) += trace-printk.o

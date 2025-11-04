@@ -2,6 +2,7 @@
 # Makefile for Linux kernel RxRPC
 #
 
+ccflags-y += -I$(src)
 af-rxrpc-y := \
 	af_rxrpc.o \
 	call_accept.o \

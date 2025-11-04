@@ -2,6 +2,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 extra-y	:= head_$(BITS).o
 extra-y	+= head$(BITS).o
 extra-y	+= ebda.o

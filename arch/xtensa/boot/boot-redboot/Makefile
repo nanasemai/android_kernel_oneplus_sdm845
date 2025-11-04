@@ -4,6 +4,7 @@
 # for more details.
 #
 
+ccflags-y += -I$(src)
 ifeq ($(BIG_ENDIAN),1)
 OBJCOPY_ARGS 	:= -O elf32-xtensa-be
 else

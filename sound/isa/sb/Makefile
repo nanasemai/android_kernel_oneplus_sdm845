@@ -3,6 +3,7 @@
 # Copyright (c) 2001 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-sb-common-objs := sb_common.o sb_mixer.o
 snd-sb8-dsp-objs := sb8_main.o sb8_midi.o
 snd-sb16-dsp-objs := sb16_main.o

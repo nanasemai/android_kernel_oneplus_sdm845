@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_PROGS := hwtstamp_config timestamping txtimestamp
 
 all: $(TEST_PROGS)

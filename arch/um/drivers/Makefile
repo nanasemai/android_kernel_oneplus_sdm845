@@ -6,6 +6,7 @@
 # pcap is broken in 2.5 because kbuild doesn't allow pcap.a to be linked
 # in to pcap.o
 
+ccflags-y += -I$(src)
 slip-objs := slip_kern.o slip_user.o
 slirp-objs := slirp_kern.o slirp_user.o
 daemon-objs := daemon_kern.o daemon_user.o

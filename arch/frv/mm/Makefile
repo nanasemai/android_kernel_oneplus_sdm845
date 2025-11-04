@@ -2,6 +2,7 @@
 # Makefile for the arch-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 obj-y := init.o kmap.o
 
 obj-$(CONFIG_MMU) += \

@@ -1,4 +1,5 @@
 # NUC900 series audio
+ccflags-y += -I$(src)
 snd-soc-nuc900-pcm-objs := nuc900-pcm.o
 snd-soc-nuc900-ac97-objs := nuc900-ac97.o
 

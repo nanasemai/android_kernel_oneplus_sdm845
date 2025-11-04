@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 dtb-$(CONFIG_DTB_PIC32_MZDA_SK)		+= pic32mzda_sk.dtb
 
 dtb-$(CONFIG_DTB_PIC32_NONE)		+= \

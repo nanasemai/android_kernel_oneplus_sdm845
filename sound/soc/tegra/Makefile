@@ -1,4 +1,5 @@
 # Tegra platform Support
+ccflags-y += -I$(src)
 snd-soc-tegra-pcm-objs := tegra_pcm.o
 snd-soc-tegra-utils-objs += tegra_asoc_utils.o
 snd-soc-tegra20-ac97-objs := tegra20_ac97.o

@@ -6,6 +6,7 @@
 # for more details.
 #
 #
+ccflags-y += -I$(src)
 KASAN_SANITIZE			:= n
 OBJECT_FILES_NON_STANDARD	:= y
 

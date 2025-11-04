@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 bcm47xxnflash-y				+= main.o
 bcm47xxnflash-y				+= ops_bcm4706.o
 

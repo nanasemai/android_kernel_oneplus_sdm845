@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 dtb-y	+= skeleton.dtb
 dtb-y	+= tz1090_generic.dtb
 

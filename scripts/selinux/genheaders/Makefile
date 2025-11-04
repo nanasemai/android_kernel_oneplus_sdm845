@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 hostprogs-y	:= genheaders
 HOST_EXTRACFLAGS += -Isecurity/selinux/include
 

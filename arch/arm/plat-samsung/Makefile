@@ -4,6 +4,7 @@
 #
 # Licensed under GPLv2
 
+ccflags-y += -I$(src)
 ccflags-$(CONFIG_ARCH_S3C64XX) := -I$(srctree)/arch/arm/mach-s3c64xx/include
 ccflags-$(CONFIG_ARCH_MULTIPLATFORM) += -I$(srctree)/$(src)/include
 

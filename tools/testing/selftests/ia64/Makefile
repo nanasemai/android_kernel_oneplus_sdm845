@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_PROGS := aliasing-test
 
 all: $(TEST_PROGS)

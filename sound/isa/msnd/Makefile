@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 snd-msnd-lib-objs := msnd.o msnd_midi.o msnd_pinnacle_mixer.o
 snd-msnd-pinnacle-objs := msnd_pinnacle.o
 snd-msnd-classic-objs := msnd_classic.o

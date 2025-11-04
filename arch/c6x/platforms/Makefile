@@ -4,6 +4,7 @@
 # Copyright 2010, 2011 Texas Instruments Incorporated
 #
 
+ccflags-y += -I$(src)
 obj-y = cache.o megamod-pic.o pll.o plldata.o timer64.o
 obj-y += dscr.o
 

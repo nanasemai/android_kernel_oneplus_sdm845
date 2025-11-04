@@ -6,6 +6,7 @@
 # for more details.
 #
 
+ccflags-y += -I$(src)
 KBUILD_DEFCONFIG := dsk6455_defconfig
 
 cflags-y += -mno-dsbt -msdata=none -D__linux__

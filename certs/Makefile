@@ -2,6 +2,7 @@
 # Makefile for the linux kernel signature checking certificates.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_SYSTEM_TRUSTED_KEYRING) += system_keyring.o system_certificates.o
 
 ifeq ($(CONFIG_SYSTEM_TRUSTED_KEYRING),y)

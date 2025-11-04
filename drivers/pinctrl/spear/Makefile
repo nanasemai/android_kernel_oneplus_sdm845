@@ -1,5 +1,6 @@
 # SPEAr pinmux support
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_PINCTRL_SPEAR_PLGPIO)	+= pinctrl-plgpio.o
 obj-y				+= pinctrl-spear.o
 obj-$(CONFIG_PINCTRL_SPEAR3XX)	+= pinctrl-spear3xx.o

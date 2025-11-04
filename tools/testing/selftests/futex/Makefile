@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 SUBDIRS := functional
 
 TEST_PROGS := run.sh

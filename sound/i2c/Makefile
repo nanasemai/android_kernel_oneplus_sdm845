@@ -3,6 +3,7 @@
 # Copyright (c) 2001 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-i2c-objs := i2c.o
 snd-cs8427-objs := cs8427.o
 snd-tea6330t-objs := tea6330t.o

@@ -2,6 +2,7 @@
 # Makefile for the Linux/MIPS kernel.
 #
 
+ccflags-y += -I$(src)
 extra-y		:= head.o vmlinux.lds
 
 obj-y		+= cpu-probe.o branch.o elf.o entry.o genex.o idle.o irq.o \

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_DLM) +=		dlm.o
 dlm-y :=			ast.o \
 				config.o \

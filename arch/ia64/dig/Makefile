@@ -5,6 +5,7 @@
 # Copyright (C) Srinivasa Thirumalachar (sprasad@engr.sgi.com)
 #
 
+ccflags-y += -I$(src)
 obj-y := setup.o
 ifeq ($(CONFIG_INTEL_IOMMU), y)
 obj-$(CONFIG_IA64_GENERIC) += machvec.o machvec_vtd.o

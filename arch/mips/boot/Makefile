@@ -10,6 +10,7 @@
 #
 # Some DECstations need all possible sections of an ECOFF executable
 #
+ccflags-y += -I$(src)
 ifdef CONFIG_MACH_DECSTATION
   e2eflag := -a
 endif

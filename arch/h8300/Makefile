@@ -8,6 +8,7 @@
 # (C) Copyright 2002-2015 Yoshinori Sato <ysato@users.sourceforge.jp>
 #
 
+ccflags-y += -I$(src)
 cflags-$(CONFIG_CPU_H8300H)	:= -mh
 aflags-$(CONFIG_CPU_H8300H)	:= -mh -Wa,--mach=h8300h
 ldflags-$(CONFIG_CPU_H8300H)	:= -mh8300helf_linux

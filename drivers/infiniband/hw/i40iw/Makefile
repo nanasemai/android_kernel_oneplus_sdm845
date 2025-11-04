@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y :=  -Idrivers/net/ethernet/intel/i40e
 
 obj-$(CONFIG_INFINIBAND_I40IW) += i40iw.o

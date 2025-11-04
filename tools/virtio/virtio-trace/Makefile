@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 CC = gcc
 CFLAGS = -O2 -Wall -pthread
 

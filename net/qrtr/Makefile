@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_QRTR) := qrtr.o
 
 obj-$(CONFIG_QRTR_SMD) += qrtr-smd.o

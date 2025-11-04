@@ -2,6 +2,7 @@
 # Makefile for NXP-NCI NFC driver
 #
 
+ccflags-y += -I$(src)
 nxp-nci-objs = core.o firmware.o
 nxp-nci_i2c-objs = i2c.o
 

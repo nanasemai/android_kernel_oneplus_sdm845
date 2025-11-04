@@ -6,6 +6,7 @@
 # for more details.
 #
 
+ccflags-y += -I$(src)
 extra-y		:= vmlinux.bin vmlinux.gz
 
 OBJCOPYFLAGS_vmlinux.bin := -O binary -R .note.gnu.build-id

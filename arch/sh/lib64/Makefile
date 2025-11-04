@@ -10,6 +10,7 @@
 #
 
 # Panic should really be compiled as PIC
+ccflags-y += -I$(src)
 lib-y  := udelay.o panic.o memcpy.o memset.o \
 	  copy_user_memcpy.o copy_page.o strcpy.o strlen.o
 

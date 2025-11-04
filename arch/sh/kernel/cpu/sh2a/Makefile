@@ -2,6 +2,7 @@
 # Makefile for the Linux/SuperH SH-2A backends.
 #
 
+ccflags-y += -I$(src)
 obj-y	:= common.o probe.o opcode_helper.o
 
 common-y	+= ex.o entry.o

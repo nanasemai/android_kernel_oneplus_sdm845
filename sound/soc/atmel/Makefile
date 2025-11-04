@@ -1,4 +1,5 @@
 # AT91 Platform Support
+ccflags-y += -I$(src)
 snd-soc-atmel-pcm-pdc-objs := atmel-pcm-pdc.o
 snd-soc-atmel-pcm-dma-objs := atmel-pcm-dma.o
 snd-soc-atmel_ssc_dai-objs := atmel_ssc_dai.o

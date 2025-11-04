@@ -2,6 +2,7 @@
 # for Renesas USB
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_USB_RENESAS_USBHS)	+= renesas_usbhs.o
 
 renesas_usbhs-y			:= common.o mod.o pipe.o fifo.o rcar2.o rcar3.o

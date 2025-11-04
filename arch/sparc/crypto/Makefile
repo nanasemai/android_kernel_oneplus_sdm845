@@ -2,6 +2,7 @@
 # Arch-specific CryptoAPI modules.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_CRYPTO_SHA1_SPARC64) += sha1-sparc64.o
 obj-$(CONFIG_CRYPTO_SHA256_SPARC64) += sha256-sparc64.o
 obj-$(CONFIG_CRYPTO_SHA512_SPARC64) += sha512-sparc64.o

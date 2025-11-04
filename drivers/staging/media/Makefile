@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_I2C_BCM2048)	+= bcm2048/
 obj-$(CONFIG_MEDIA_CEC)		+= cec/
 obj-$(CONFIG_VIDEO_SAMSUNG_S5P_CEC) += s5p-cec/

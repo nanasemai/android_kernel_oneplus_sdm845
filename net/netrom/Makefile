@@ -2,6 +2,7 @@
 # Makefile for the Linux NET/ROM layer.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_NETROM) += netrom.o
 
 netrom-y		:= af_netrom.o nr_dev.o nr_in.o nr_loopback.o \

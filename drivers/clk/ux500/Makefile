@@ -3,6 +3,7 @@
 #
 
 # Clock types
+ccflags-y += -I$(src)
 obj-y += clk-prcc.o
 obj-y += clk-prcmu.o
 obj-y += clk-sysctrl.o

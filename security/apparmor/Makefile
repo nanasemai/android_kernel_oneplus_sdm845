@@ -1,5 +1,6 @@
 # Makefile for AppArmor Linux Security Module
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_SECURITY_APPARMOR) += apparmor.o
 
 apparmor-y := apparmorfs.o audit.o capability.o context.o ipc.o lib.o match.o \

@@ -9,6 +9,7 @@
 # Copyright (C) 2005-2009 Cavium Networks
 #
 
+ccflags-y += -I$(src)
 obj-y := cpu.o setup.o octeon-platform.o octeon-irq.o csrc-octeon.o
 obj-y += dma-octeon.o
 obj-y += octeon-memcpy.o

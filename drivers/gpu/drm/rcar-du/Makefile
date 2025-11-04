@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 rcar-du-drm-y := rcar_du_crtc.o \
 		 rcar_du_drv.o \
 		 rcar_du_encoder.o \

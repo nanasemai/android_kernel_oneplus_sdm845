@@ -3,6 +3,7 @@
 #
 
 #DEBUG	= -DDEBUGGING
+ccflags-y += -I$(src)
 DEBUG	=
 PARANOID = -DPARANOID
 ccflags-y += $(PARANOID) $(DEBUG) -fno-builtin $(MATH_EMULATION)

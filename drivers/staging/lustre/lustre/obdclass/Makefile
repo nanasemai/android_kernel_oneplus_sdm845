@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_LUSTRE_FS) += obdclass.o
 
 obdclass-y := linux/linux-module.o linux/linux-obdo.o linux/linux-sysctl.o \

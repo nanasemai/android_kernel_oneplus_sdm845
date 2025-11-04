@@ -2,6 +2,7 @@
 # Joshua Henderson, <joshua.henderson@microchip.com>
 # Copyright (C) 2015 Microchip Technology, Inc.  All rights reserved.
 #
+ccflags-y += -I$(src)
 obj-y			:= config.o early_clk.o init.o time.o
 
 obj-$(CONFIG_EARLY_PRINTK)	+= early_console.o      \

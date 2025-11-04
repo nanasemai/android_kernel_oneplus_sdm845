@@ -2,6 +2,7 @@
 # Makefile for the linux lock manager stuff
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_LOCKD) += lockd.o
 
 lockd-objs-y := clntlock.o clntproc.o clntxdr.o host.o svc.o svclock.o \

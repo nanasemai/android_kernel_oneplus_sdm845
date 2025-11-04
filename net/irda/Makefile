@@ -2,6 +2,7 @@
 # Makefile for the Linux IrDA protocol layer.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_IRDA) += irda.o
 obj-$(CONFIG_IRLAN) += irlan/
 obj-$(CONFIG_IRNET) += irnet/

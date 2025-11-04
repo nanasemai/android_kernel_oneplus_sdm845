@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_TEGRA_SOCTHERM)	+= tegra-soctherm.o
 
 tegra-soctherm-y				:= soctherm.o soctherm-fuse.o

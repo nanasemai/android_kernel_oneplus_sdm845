@@ -2,6 +2,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 obj-y			:= irq.o uart.o
 
 obj-$(CONFIG_ARCH_IQ80331) += iq80331.o

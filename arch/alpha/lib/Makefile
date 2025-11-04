@@ -2,6 +2,7 @@
 # Makefile for alpha-specific library files..
 #
 
+ccflags-y += -I$(src)
 asflags-y := $(KBUILD_CFLAGS)
 ccflags-y := -Werror
 

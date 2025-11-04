@@ -2,6 +2,7 @@
 # Makefile for ALSA
 #
 
+ccflags-y += -I$(src)
 snd-usb-audio-objs := 	card.o \
 			clock.o \
 			endpoint.o \

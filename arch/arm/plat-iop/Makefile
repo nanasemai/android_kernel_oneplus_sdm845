@@ -3,6 +3,7 @@
 #
 
 # IOP32X
+ccflags-y += -I$(src)
 obj-$(CONFIG_ARCH_IOP32X) += i2c.o
 obj-$(CONFIG_ARCH_IOP32X) += pci.o
 obj-$(CONFIG_ARCH_IOP32X) += setup.o

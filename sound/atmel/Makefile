@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 snd-atmel-abdac-objs		:= abdac.o
 snd-atmel-ac97c-objs		:= ac97c.o
 

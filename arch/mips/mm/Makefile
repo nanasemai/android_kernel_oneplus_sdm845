@@ -2,6 +2,7 @@
 # Makefile for the Linux/MIPS-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 obj-y				+= cache.o dma-default.o extable.o fault.o \
 				   gup.o init.o mmap.o page.o page-funcs.o \
 				   tlbex.o tlbex-fault.o tlb-funcs.o

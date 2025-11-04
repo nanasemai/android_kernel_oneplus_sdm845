@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_SPU_FS) += spufs.o
 spufs-y += inode.o file.o context.o syscalls.o
 spufs-y += sched.o backing_ops.o hw_ops.o run.o gang.o

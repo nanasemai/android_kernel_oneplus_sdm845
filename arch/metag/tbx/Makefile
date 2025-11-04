@@ -2,6 +2,7 @@
 # Makefile for TBX library files..
 #
 
+ccflags-y += -I$(src)
 asflags-y		+= -mmetac=2.1 -Wa,-mfpu=metac21 -mdsp
 asflags-$(CONFIG_SMP)	+= -DTBX_PERCPU_SP_SAVE
 

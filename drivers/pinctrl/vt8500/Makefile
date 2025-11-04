@@ -1,5 +1,6 @@
 # VIA/Wondermedia pinctrl support
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_PINCTRL_WMT)	+= pinctrl-wmt.o
 obj-$(CONFIG_PINCTRL_VT8500)	+= pinctrl-vt8500.o
 obj-$(CONFIG_PINCTRL_WM8505)	+= pinctrl-wm8505.o

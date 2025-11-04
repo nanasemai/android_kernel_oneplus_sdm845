@@ -7,6 +7,7 @@
 # Copyright (C) Srinivasa Thirumalachar (sprasad@engr.sgi.com)
 #
 
+ccflags-y += -I$(src)
 obj-y := hpsim_irq.o hpsim_setup.o hpsim.o
 obj-$(CONFIG_IA64_GENERIC) += hpsim_machvec.o
 

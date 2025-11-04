@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 FILES=					\
 	test-all.bin			\
 	test-backtrace.bin		\

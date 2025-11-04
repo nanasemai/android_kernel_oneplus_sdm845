@@ -2,6 +2,7 @@
 # S/390 character devices
 #
 
+ccflags-y += -I$(src)
 CFLAGS_REMOVE_sclp_early_core.o	+= $(CC_FLAGS_EXPOLINE)
 
 obj-y += ctrlchar.o keyboard.o defkeymap.o sclp.o sclp_rw.o sclp_quiesce.o \

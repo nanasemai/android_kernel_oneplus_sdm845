@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_XENFS) += xenfs.o
 
 xenfs-y			  = super.o

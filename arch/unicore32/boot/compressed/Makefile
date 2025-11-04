@@ -10,6 +10,7 @@
 # Copyright (C) 2001~2010 GUAN Xue-tao
 #
 
+ccflags-y += -I$(src)
 ccflags-y	:= -fpic -fno-builtin
 asflags-y	:= -Wa,-march=all
 

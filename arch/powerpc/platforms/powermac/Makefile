@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 CFLAGS_bootx_init.o  		+= -fPIC
 
 ifdef CONFIG_FUNCTION_TRACER

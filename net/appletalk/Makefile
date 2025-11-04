@@ -2,6 +2,7 @@
 # Makefile for the Linux AppleTalk layer.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ATALK) += appletalk.o
 
 appletalk-y			:= aarp.o ddp.o dev.o

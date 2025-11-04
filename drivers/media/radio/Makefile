@@ -2,6 +2,7 @@
 # Makefile for the kernel character device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_RADIO_ISA) += radio-isa.o
 obj-$(CONFIG_RADIO_AZTECH) += radio-aztech.o
 obj-$(CONFIG_RADIO_RTRACK2) += radio-rtrack2.o

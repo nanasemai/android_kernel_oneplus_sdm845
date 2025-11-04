@@ -1,6 +1,7 @@
 #
 # Common TXx9
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_MACH_TX39XX)      += generic/
 obj-$(CONFIG_MACH_TX49XX)      += generic/
 

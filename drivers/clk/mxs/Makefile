@@ -2,6 +2,7 @@
 # Makefile for mxs specific clk
 #
 
+ccflags-y += -I$(src)
 obj-y += clk.o clk-pll.o clk-ref.o clk-div.o clk-frac.o clk-ssp.o
 
 obj-$(CONFIG_SOC_IMX23) += clk-imx23.o

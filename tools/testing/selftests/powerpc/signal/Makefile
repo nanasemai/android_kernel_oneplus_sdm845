@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_PROGS := signal signal_tm
 
 all: $(TEST_PROGS)

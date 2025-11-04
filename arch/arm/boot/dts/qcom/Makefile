@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 dtb-$(CONFIG_ARCH_SDXPOORWILLS) += sdxpoorwills-rumi.dtb \
 	sdxpoorwills-cdp.dtb \
 	sdxpoorwills-mtp.dtb \

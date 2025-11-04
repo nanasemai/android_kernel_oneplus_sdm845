@@ -7,6 +7,7 @@
 # which don't have KASAN shadow. So dereference of these addresses
 # in efi_call_virt() will cause crash if this code instrumented.
 #
+ccflags-y += -I$(src)
 KASAN_SANITIZE_runtime-wrappers.o	:= n
 
 obj-$(CONFIG_EFI)			+= efi.o vars.o reboot.o memattr.o

@@ -3,6 +3,7 @@
 # Copyright (c) 2001 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-wavefront-objs := wavefront.o wavefront_fx.o wavefront_synth.o wavefront_midi.o
 
 # Toplevel Module Dependency

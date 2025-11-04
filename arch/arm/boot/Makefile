@@ -11,6 +11,7 @@
 # Copyright (C) 1995-2002 Russell King
 #
 
+ccflags-y += -I$(src)
 OBJCOPYFLAGS	:=-O binary -R .comment -S
 
 include $(srctree)/arch/arm/boot/dts/Makefile

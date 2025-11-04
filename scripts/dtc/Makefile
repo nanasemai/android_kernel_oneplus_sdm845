@@ -1,5 +1,6 @@
 # scripts/dtc makefile
 
+ccflags-y += -I$(src)
 hostprogs-y	:= dtc
 ifeq ($(DTC_EXT),)
 always		:= $(hostprogs-y)

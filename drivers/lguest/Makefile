@@ -1,4 +1,5 @@
 # Host requires the other files, which can be a module.
+ccflags-y += -I$(src)
 obj-$(CONFIG_LGUEST)	+= lg.o
 lg-y = core.o hypercalls.o page_tables.o interrupts_and_traps.o \
 	segments.o lguest_user.o

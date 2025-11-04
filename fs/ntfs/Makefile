@@ -1,5 +1,6 @@
 # Rules for making the NTFS driver.
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_NTFS_FS) += ntfs.o
 
 ntfs-y := aops.o attrib.o collate.o compress.o debug.o dir.o file.o \

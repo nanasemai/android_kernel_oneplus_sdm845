@@ -2,6 +2,7 @@
 # Makefile for the L2TP.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_L2TP) += l2tp_core.o
 
 # Build l2tp as modules if L2TP is M

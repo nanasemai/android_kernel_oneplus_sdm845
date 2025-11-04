@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-$(CONFIG_COMEDI_DEBUG)		:= -DDEBUG
 
 obj-$(CONFIG_COMEDI_KCOMEDILIB)	+= kcomedilib.o

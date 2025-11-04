@@ -2,6 +2,7 @@
 # Makefile for the Linux isofs filesystem routines.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ISO9660_FS) += isofs.o
 
 isofs-objs-y 			:= namei.o inode.o dir.o util.o rock.o export.o

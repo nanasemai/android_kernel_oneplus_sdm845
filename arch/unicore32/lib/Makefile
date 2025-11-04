@@ -4,6 +4,7 @@
 # Copyright (C) 2001-2010 GUAN Xue-tao
 #
 
+ccflags-y += -I$(src)
 lib-y	:= backtrace.o delay.o findbit.o
 lib-y	+= strncpy_from_user.o strnlen_user.o
 lib-y	+= clear_user.o copy_page.o

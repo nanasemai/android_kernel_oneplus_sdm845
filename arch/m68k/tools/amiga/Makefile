@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 CC =		m68k-cbm-amigados-gcc
 CFLAGS =	-Wall -O2
 

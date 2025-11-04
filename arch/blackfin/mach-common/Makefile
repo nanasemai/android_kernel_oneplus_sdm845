@@ -2,6 +2,7 @@
 # arch/blackfin/mach-common/Makefile
 #
 
+ccflags-y += -I$(src)
 obj-y := \
 	cache.o cache-c.o entry.o head.o \
 	interrupt.o arch_checks.o ints-priority.o

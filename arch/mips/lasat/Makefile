@@ -2,6 +2,7 @@
 # Makefile for the LASAT specific kernel interface routines under Linux.
 #
 
+ccflags-y += -I$(src)
 obj-y				+= reset.o setup.o prom.o lasat_board.o \
 				   at93c.o interrupt.o serial.o
 

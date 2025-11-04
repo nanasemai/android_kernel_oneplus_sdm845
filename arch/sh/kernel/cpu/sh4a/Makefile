@@ -3,6 +3,7 @@
 #
 
 # CPU subtype setup
+ccflags-y += -I$(src)
 obj-$(CONFIG_CPU_SUBTYPE_SH7757)	+= setup-sh7757.o
 obj-$(CONFIG_CPU_SUBTYPE_SH7763)	+= setup-sh7763.o
 obj-$(CONFIG_CPU_SUBTYPE_SH7770)	+= setup-sh7770.o

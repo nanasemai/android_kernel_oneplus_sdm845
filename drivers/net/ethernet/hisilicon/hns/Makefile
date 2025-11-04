@@ -2,6 +2,7 @@
 # Makefile for the HISILICON network device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_HNS) += hnae.o
 
 obj-$(CONFIG_HNS_DSAF) += hns_dsaf.o

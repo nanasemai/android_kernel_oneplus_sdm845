@@ -1,6 +1,7 @@
 #
 # Makefile for code common across different PXA processor families
 #
+ccflags-y += -I$(src)
 ccflags-$(CONFIG_ARCH_MMP) := -I$(srctree)/$(src)/include
 
 obj-$(CONFIG_PXA3xx)		+= mfp.o

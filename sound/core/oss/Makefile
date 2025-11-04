@@ -3,6 +3,7 @@
 # Copyright (c) 1999 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-mixer-oss-objs := mixer_oss.o
 
 snd-pcm-oss-y := pcm_oss.o

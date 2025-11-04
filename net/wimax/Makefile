@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_WIMAX)		+= wimax.o
 
 wimax-y :=		\

@@ -2,6 +2,7 @@
 # Makefile to generate or copy the latest register definitions
 # and related datastructures and helpermacros.
 # The official place for these files is probably at:
+ccflags-y += -I$(src)
 RELEASE ?= r1_alfa5
 IOPOFFICIAL_INCDIR = /n/asic/projects/guinness/releases/$(RELEASE)/design/top/sw/include/
 

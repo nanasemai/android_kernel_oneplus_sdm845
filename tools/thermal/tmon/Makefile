@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 VERSION = 1.0
 
 BINDIR=usr/bin

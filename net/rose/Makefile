@@ -2,6 +2,7 @@
 # Makefile for the Linux Rose (X.25 PLP) layer.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ROSE) += rose.o
 
 rose-y	  := af_rose.o rose_dev.o rose_in.o rose_link.o rose_loopback.o \

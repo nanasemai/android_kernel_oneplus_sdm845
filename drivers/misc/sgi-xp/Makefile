@@ -2,6 +2,7 @@
 # Makefile for SGI's XP devices.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_SGI_XP)		+= xp.o
 xp-y				:= xp_main.o
 xp-$(CONFIG_IA64_SGI_SN2)	+= xp_sn2.o xp_nofault.o

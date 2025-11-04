@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_HDM_USB) += hdm_usb.o
 
 ccflags-y += -Idrivers/staging/most/mostcore/

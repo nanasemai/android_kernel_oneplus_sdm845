@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 subdir-ccflags-y +=  -I$(srctree)/drivers/net/ethernet/freescale/fman
 
 obj-$(CONFIG_FSL_FMAN) += fsl_fman.o

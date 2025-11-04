@@ -2,6 +2,7 @@
 # Makefile for the Linux/Xtensa kernel.
 #
 
+ccflags-y += -I$(src)
 extra-y := head.o vmlinux.lds
 
 obj-y := align.o coprocessor.o entry.o irq.o pci-dma.o platform.o process.o \

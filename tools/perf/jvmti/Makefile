@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ARCH=$(shell uname -m)
 
 ifeq ($(ARCH), x86_64)

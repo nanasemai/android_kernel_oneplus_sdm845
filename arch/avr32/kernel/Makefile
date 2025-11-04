@@ -2,6 +2,7 @@
 # Makefile for the Linux/AVR32 kernel.
 #
 
+ccflags-y += -I$(src)
 extra-y				:= head.o vmlinux.lds
 
 obj-$(CONFIG_SUBARCH_AVR32B)	+= entry-avr32b.o

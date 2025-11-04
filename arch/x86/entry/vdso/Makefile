@@ -2,6 +2,7 @@
 # Building vDSO images for x86.
 #
 
+ccflags-y += -I$(src)
 KBUILD_CFLAGS += $(DISABLE_LTO)
 KASAN_SANITIZE			:= n
 UBSAN_SANITIZE			:= n

@@ -2,6 +2,7 @@
 # Makefile for the IIO Dummy Driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_IIO_SIMPLE_DUMMY) += iio_dummy.o
 iio_dummy-y := iio_simple_dummy.o
 iio_dummy-$(CONFIG_IIO_SIMPLE_DUMMY_EVENTS) += iio_simple_dummy_events.o

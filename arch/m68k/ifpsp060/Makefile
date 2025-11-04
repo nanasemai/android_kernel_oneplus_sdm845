@@ -4,6 +4,7 @@
 # License.  See the file "README.legal" in the main directory of this archive
 # for more details.
 
+ccflags-y += -I$(src)
 obj-y := fskeleton.o iskeleton.o os.o
 
 EXTRA_LDFLAGS := -x

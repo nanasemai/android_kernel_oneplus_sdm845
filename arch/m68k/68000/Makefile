@@ -9,6 +9,7 @@
 
 # 68328, 68EZ328, 68VZ328
 
+ccflags-y += -I$(src)
 obj-y			+= entry.o ints.o timers.o
 obj-$(CONFIG_M68328)	+= m68328.o
 obj-$(CONFIG_M68EZ328)	+= m68EZ328.o

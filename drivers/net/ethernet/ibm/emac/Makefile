@@ -2,6 +2,7 @@
 # Makefile for the PowerPC 4xx on-chip ethernet driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_IBM_EMAC) += ibm_emac.o
 
 ibm_emac-y := mal.o core.o phy.o

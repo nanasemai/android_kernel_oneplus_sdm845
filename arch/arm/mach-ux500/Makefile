@@ -2,6 +2,7 @@
 # Makefile for the linux kernel, U8500 machine.
 #
 
+ccflags-y += -I$(src)
 obj-y				:= pm.o
 obj-$(CONFIG_UX500_SOC_DB8500)	+= cpu-db8500.o
 obj-$(CONFIG_MACH_MOP500)	+= board-mop500-audio.o

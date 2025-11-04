@@ -3,6 +3,7 @@
 #
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_JFFS2_FS) += jffs2.o
 
 jffs2-y	:= compr.o dir.o file.o ioctl.o nodelist.o malloc.o

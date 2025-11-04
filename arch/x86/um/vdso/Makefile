@@ -3,6 +3,7 @@
 #
 
 # Prevents link failures: __sanitizer_cov_trace_pc() is not linked in.
+ccflags-y += -I$(src)
 KCOV_INSTRUMENT                := n
 
 VDSO64-y		:= y

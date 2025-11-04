@@ -2,6 +2,7 @@
 # Makefile for the linux RomFS filesystem routines.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ROMFS_FS) += romfs.o
 
 romfs-y := storage.o super.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_DEV_DAX) += dax.o
 obj-$(CONFIG_DEV_DAX_PMEM) += dax_pmem.o
 

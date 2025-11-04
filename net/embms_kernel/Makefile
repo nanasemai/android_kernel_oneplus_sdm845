@@ -2,6 +2,7 @@
 # Makefile for Embms Kernel module.
 #
 
+ccflags-y += -I$(src)
 KERNEL_SRC ?= /lib/modules/$(shell uname -r)/build
 
 obj-m += embms_kernel.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 export srctree := $(abspath ../../../..)
 export CC      := gcc
 export LD      := ld

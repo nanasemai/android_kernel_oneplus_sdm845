@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ifneq '$(CONFIG_OPENRISC_BUILTIN_DTB)' '""'
 BUILTIN_DTB := $(patsubst "%",%,$(CONFIG_OPENRISC_BUILTIN_DTB)).dtb.o
 else

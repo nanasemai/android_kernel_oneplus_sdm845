@@ -3,6 +3,7 @@
 # Copyright (c) 2003 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-ak4114-objs := ak4114.o
 snd-ak4117-objs := ak4117.o
 snd-ak4113-objs := ak4113.o

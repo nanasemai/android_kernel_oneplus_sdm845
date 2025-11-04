@@ -2,6 +2,7 @@
 # Makefile for the ARC prom monitor library routines under Linux.
 #
 
+ccflags-y += -I$(src)
 lib-y				+= cmdline.o env.o file.o identify.o init.o \
 				   misc.o salone.o time.o tree.o
 

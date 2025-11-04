@@ -1,5 +1,6 @@
 # Some of the tools (perf) use same make variables
 # as in kernel build.
+ccflags-y += -I$(src)
 export srctree=
 export objtree=
 

@@ -2,6 +2,7 @@
 # Makefile for the Linux AX.25 layer.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_AX25) += ax25.o
 
 ax25-y	 := ax25_addr.o ax25_dev.o ax25_iface.o ax25_in.o ax25_ip.o ax25_out.o \

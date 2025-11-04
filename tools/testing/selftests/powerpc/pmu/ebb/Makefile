@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 noarg:
 	$(MAKE) -C ../../
 

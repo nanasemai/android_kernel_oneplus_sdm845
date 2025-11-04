@@ -8,6 +8,7 @@
 # Copyright (C) 1995-2000 Russell King
 #
 
+ccflags-y += -I$(src)
 targets := Image zImage bootpImage
 
 SYSTEM	=$(LINUX)

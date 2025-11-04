@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 out := $(obj)/../../include/generated/asm
 uapi := $(obj)/../../include/generated/uapi/asm
 

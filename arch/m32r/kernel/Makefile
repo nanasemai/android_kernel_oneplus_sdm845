@@ -2,6 +2,7 @@
 # Makefile for the Linux/M32R kernel.
 #
 
+ccflags-y += -I$(src)
 extra-y	:= head.o vmlinux.lds
 
 obj-y	:= process.o entry.o traps.o align.o irq.o setup.o time.o \

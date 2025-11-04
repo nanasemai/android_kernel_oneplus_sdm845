@@ -1,6 +1,7 @@
 #
 # Makefile for the orinoco wireless device drivers.
 #
+ccflags-y += -I$(src)
 orinoco-objs := main.o fw.o hw.o mic.o scan.o wext.o hermes_dld.o hermes.o cfg.o
 
 obj-$(CONFIG_HERMES)		+= orinoco.o

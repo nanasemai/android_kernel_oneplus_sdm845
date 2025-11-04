@@ -1,4 +1,5 @@
 # Kernel does not boot with instrumentation of tlb.c.
+ccflags-y += -I$(src)
 KCOV_INSTRUMENT_tlb.o	:= n
 
 obj-y	:=  init.o init_$(BITS).o fault.o ioremap.o extable.o pageattr.o mmap.o \

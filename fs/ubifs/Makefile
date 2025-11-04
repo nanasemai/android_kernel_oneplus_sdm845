@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_UBIFS_FS) += ubifs.o
 
 ubifs-y += shrinker.o journal.o file.o dir.o super.o sb.o io.o

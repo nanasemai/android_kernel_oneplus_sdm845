@@ -2,6 +2,7 @@
 
 # Each configuration option enables a list of files.
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ISDN_DRV_PCBIT)	+= pcbit.o
 
 # Multipart objects.

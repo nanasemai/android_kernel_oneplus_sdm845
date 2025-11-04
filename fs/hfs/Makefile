@@ -2,6 +2,7 @@
 # Makefile for the Linux hfs filesystem routines.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_HFS_FS) += hfs.o
 
 hfs-objs := bitmap.o bfind.o bnode.o brec.o btree.o \

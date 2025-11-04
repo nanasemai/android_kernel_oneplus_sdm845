@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 DESTDIR ?=
 
 x86_energy_perf_policy : x86_energy_perf_policy.c

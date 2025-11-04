@@ -5,6 +5,7 @@
 # Heavily based on the vDSO Makefiles for other archs.
 #
 
+ccflags-y += -I$(src)
 obj-vdso-s := note.o sigreturn.o
 obj-vdso-c := vgettimeofday.o
 

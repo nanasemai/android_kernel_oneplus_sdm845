@@ -2,6 +2,7 @@
 # Makefile for SCTP support code.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_IP_SCTP) += sctp.o
 obj-$(CONFIG_NET_SCTPPROBE) += sctp_probe.o
 obj-$(CONFIG_INET_SCTP_DIAG) += sctp_diag.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_LOGFS)	+= logfs.o
 
 logfs-y	+= compr.o

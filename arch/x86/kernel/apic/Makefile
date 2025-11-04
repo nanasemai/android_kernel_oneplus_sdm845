@@ -4,6 +4,7 @@
 
 # Leads to non-deterministic coverage that is not a function of syscall inputs.
 # In particualr, smp_apic_timer_interrupt() is called in random places.
+ccflags-y += -I$(src)
 KCOV_INSTRUMENT		:= n
 
 obj-$(CONFIG_X86_LOCAL_APIC)	+= apic.o apic_noop.o ipi.o vector.o

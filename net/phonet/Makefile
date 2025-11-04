@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_PHONET) += phonet.o pn_pep.o
 
 phonet-y := \

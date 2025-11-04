@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 ccflags-$(CONFIG_PM_DEBUG)	:= -DDEBUG
 
 KASAN_SANITIZE_snapshot.o	:= n

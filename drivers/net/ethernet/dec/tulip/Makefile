@@ -2,6 +2,7 @@
 # Makefile for the Linux "Tulip" family network device drivers.
 #
 
+ccflags-y += -I$(src)
 ccflags-$(CONFIG_NET_TULIP)	:= -DDEBUG
 
 obj-$(CONFIG_PCMCIA_XIRCOM)	+= xircom_cb.o

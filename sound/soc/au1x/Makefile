@@ -1,4 +1,5 @@
 # Au1200/Au1550 PSC audio
+ccflags-y += -I$(src)
 snd-soc-au1xpsc-dbdma-objs := dbdma2.o
 snd-soc-au1xpsc-i2s-objs := psc-i2s.o
 snd-soc-au1xpsc-ac97-objs := psc-ac97.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 all: get_size
 
 get_size: get_size.c

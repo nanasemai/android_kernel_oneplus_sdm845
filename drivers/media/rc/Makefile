@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 rc-core-objs	:= rc-main.o rc-ir-raw.o
 
 obj-y += keymaps/

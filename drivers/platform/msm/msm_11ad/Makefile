@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_MSM_11AD) += msm_11ad_proxy.o
 
 msm_11ad_proxy-y := msm_11ad.o

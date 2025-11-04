@@ -3,6 +3,7 @@
 # Makefile for m68k-specific library files..
 #
 
+ccflags-y += -I$(src)
 lib-y	:= ashldi3.o ashrdi3.o lshrdi3.o muldi3.o \
 	   memcpy.o memset.o memmove.o
 

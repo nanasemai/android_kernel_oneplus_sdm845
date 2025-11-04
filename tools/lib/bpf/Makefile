@@ -1,5 +1,6 @@
 # Most of this file is copied from tools/lib/traceevent/Makefile
 
+ccflags-y += -I$(src)
 BPF_VERSION = 0
 BPF_PATCHLEVEL = 0
 BPF_EXTRAVERSION = 1

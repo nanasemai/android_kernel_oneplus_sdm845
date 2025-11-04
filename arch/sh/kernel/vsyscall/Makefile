@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y += vsyscall.o vsyscall-syscall.o
 
 $(obj)/vsyscall-syscall.o: \

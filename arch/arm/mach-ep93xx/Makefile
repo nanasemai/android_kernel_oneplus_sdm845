@@ -1,6 +1,7 @@
 #
 # Makefile for the linux kernel.
 #
+ccflags-y += -I$(src)
 obj-y			:= core.o clock.o timer-ep93xx.o
 
 obj-$(CONFIG_EP93XX_DMA)	+= dma.o

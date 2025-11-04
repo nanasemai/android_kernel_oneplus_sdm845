@@ -6,6 +6,7 @@
 # GNU General Public License.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_EDAC)			:= edac_stub.o
 obj-$(CONFIG_EDAC_MM_EDAC)		+= edac_core.o
 

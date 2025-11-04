@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_CNSS2) += cnss2.o
 
 cnss2-y := main.o

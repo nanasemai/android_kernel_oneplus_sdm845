@@ -2,5 +2,6 @@
 # This is a modified version of reed solomon lib,
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_REED_SOLOMON) += reed_solomon.o
 

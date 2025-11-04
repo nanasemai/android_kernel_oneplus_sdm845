@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 CFLAGS += -I. -g -O2 -Wall -D_LGPL_SOURCE
 LDFLAGS += -lpthread -lurcu
 TARGETS = main

@@ -3,6 +3,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 CPPFLAGS_vmlinux.lds := -DDRAM_VIRTUAL_BASE=0x$(CONFIG_ETRAX_DRAM_VIRTUAL_BASE)
 extra-y	:= vmlinux.lds
 

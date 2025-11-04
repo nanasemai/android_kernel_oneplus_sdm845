@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 tcm_fc-y +=		tfc_cmd.o \
 			tfc_conf.o \
 			tfc_io.o \

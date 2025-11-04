@@ -1,6 +1,7 @@
 # Makefile for Sparc library files..
 #
 
+ccflags-y += -I$(src)
 asflags-y := -ansi -DST_DIV0=0x02
 ccflags-y := -Werror
 

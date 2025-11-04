@@ -1,4 +1,5 @@
 # Makefile for mount selftests.
+ccflags-y += -I$(src)
 CFLAGS = -Wall \
          -O2
 all: unprivileged-remount-test

@@ -2,6 +2,7 @@
 # Common code for all Loongson based systems
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_MACH_LOONGSON64) += common/
 
 #

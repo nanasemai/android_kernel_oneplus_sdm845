@@ -1,5 +1,6 @@
 # Makefile for cgroup tools
 
+ccflags-y += -I$(src)
 CC = $(CROSS_COMPILE)gcc
 CFLAGS = -Wall -Wextra
 

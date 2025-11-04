@@ -8,6 +8,7 @@
 # asflags-y += -I $(srctree)/include/asm/arch/mach/ -I $(srctree)/include/asm/arch
 # LD = gcc-cris -mlinux -march=v32 -nostdlib
 
+ccflags-y += -I$(src)
 asflags-y += $(LINUXINCLUDE)
 ccflags-y += -O2 $(LINUXINCLUDE)
 

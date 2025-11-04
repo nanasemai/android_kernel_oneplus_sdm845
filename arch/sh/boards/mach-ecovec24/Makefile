@@ -6,4 +6,5 @@
 # for more details.
 #
 
+ccflags-y += -I$(src)
 obj-y	 := setup.o sdram.o

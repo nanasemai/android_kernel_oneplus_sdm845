@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y					:= highbank.o system.o smc.o
 
 plus_sec := $(call as-instr,.arch_extension sec,+sec)

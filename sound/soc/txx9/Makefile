@@ -1,4 +1,5 @@
 # Platform
+ccflags-y += -I$(src)
 snd-soc-txx9aclc-objs := txx9aclc.o
 snd-soc-txx9aclc-ac97-objs := txx9aclc-ac97.o
 

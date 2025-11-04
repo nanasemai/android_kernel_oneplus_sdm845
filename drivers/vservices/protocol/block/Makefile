@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y += -Werror
 
 obj-$(CONFIG_VSERVICES_PROTOCOL_BLOCK_SERVER)	+= vservices_protocol_block_server.o

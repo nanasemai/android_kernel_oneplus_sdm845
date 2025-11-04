@@ -2,6 +2,7 @@
 # Makefile for the Linux M32R-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 ifdef CONFIG_MMU
 obj-y	:= init.o fault.o mmu.o extable.o ioremap.o cache.o page.o
 else

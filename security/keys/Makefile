@@ -5,6 +5,7 @@
 #
 # Core
 #
+ccflags-y += -I$(src)
 obj-y := \
 	gc.o \
 	key.o \

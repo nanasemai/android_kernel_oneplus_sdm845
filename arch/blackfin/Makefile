@@ -6,6 +6,7 @@
 # for more details.
 #
 
+ccflags-y += -I$(src)
 ifeq ($(CROSS_COMPILE),)
 CROSS_COMPILE    := bfin-uclinux-
 endif

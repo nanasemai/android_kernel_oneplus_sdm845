@@ -1,6 +1,7 @@
 #
 # Makefile for ese devices
 #
+ccflags-y += -I$(src)
 p73-objs = ese.o sn1xx.o pn8xt.o
 obj-$(CONFIG_NXP_NFC_ESE_DEVICE)    += p73.o
 ccflags-$(CONFIG_NXP_ESE_SN1XX)     := -DNFC_PLATFORM=sn1xx

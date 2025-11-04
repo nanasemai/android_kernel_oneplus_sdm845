@@ -2,6 +2,7 @@
 # create a compressed vmlinux image from the original vmlinux
 #
 
+ccflags-y += -I$(src)
 targets		:= vmlinux head.o misc.o piggy.o vmlinux.lds
 asflags-y	:=
 

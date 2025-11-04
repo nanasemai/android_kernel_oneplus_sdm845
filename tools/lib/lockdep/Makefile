@@ -1,4 +1,5 @@
 # file format version
+ccflags-y += -I$(src)
 FILE_VERSION = 1
 
 LIBLOCKDEP_VERSION=$(shell make --no-print-directory -sC ../../.. kernelversion)

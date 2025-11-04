@@ -12,6 +12,7 @@
 # Author: Wu Zhangjin <wuzhangjin@gmail.com>
 #
 
+ccflags-y += -I$(src)
 include $(srctree)/arch/mips/Kbuild.platforms
 
 # set the default size of the mallocing area for decompressing

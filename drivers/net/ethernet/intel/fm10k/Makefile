@@ -25,6 +25,7 @@
 # Makefile for the Intel(R) Ethernet Switch Host Interface Driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FM10K) += fm10k.o
 
 fm10k-y := fm10k_main.o \

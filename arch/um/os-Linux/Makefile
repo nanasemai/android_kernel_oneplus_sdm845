@@ -4,6 +4,7 @@
 #
 
 # Don't instrument UML-specific code
+ccflags-y += -I$(src)
 KCOV_INSTRUMENT                := n
 
 obj-y = aio.o execvp.o file.o helper.o irq.o main.o mem.o process.o \

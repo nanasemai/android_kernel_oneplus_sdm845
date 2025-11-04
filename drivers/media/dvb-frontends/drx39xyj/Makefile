@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 drx39xyj-objs := drxj.o
 
 obj-$(CONFIG_DVB_DRX39XYJ) += drx39xyj.o

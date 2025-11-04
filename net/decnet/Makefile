@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_DECNET) += decnet.o
 
 decnet-y := af_decnet.o dn_nsp_in.o dn_nsp_out.o \

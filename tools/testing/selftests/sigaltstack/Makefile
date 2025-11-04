@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 CFLAGS = -Wall
 BINARIES = sas
 all: $(BINARIES)

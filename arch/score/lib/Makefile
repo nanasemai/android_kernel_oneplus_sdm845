@@ -2,6 +2,7 @@
 # Makefile for SCORE-specific library files..
 #
 
+ccflags-y += -I$(src)
 lib-y += string.o checksum.o checksum_copy.o
 
 # libgcc-style stuff needed in the kernel

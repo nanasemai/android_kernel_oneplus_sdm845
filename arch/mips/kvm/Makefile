@@ -1,6 +1,7 @@
 # Makefile for KVM support for MIPS
 #
 
+ccflags-y += -I$(src)
 common-objs-y = $(addprefix ../../../virt/kvm/, kvm_main.o coalesced_mmio.o)
 
 EXTRA_CFLAGS += -Ivirt/kvm -Iarch/mips/kvm

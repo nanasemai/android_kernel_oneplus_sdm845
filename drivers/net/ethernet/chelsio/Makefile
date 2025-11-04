@@ -2,6 +2,7 @@
 # Makefile for the Chelsio network device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_CHELSIO_T1) += cxgb/
 obj-$(CONFIG_CHELSIO_T3) += cxgb3/
 obj-$(CONFIG_CHELSIO_T4) += cxgb4/

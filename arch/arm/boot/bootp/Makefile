@@ -5,6 +5,7 @@
 # architecture-specific flags and dependencies.
 #
 
+ccflags-y += -I$(src)
 GCOV_PROFILE	:= n
 
 LDFLAGS_bootp	:= --no-undefined -X \

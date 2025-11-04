@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y				+= irq.o time.o
 obj-y				+= nlm-dma.o
 obj-y				+= reset.o

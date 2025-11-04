@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 asflags-y				+= -march=armv7-a
 
 obj-y                                   += io.o

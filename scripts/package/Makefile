@@ -22,6 +22,7 @@
 # but the binrpm-pkg target can; for some reason O= gets ignored.
 
 # Remove hyphens since they have special meaning in RPM filenames
+ccflags-y += -I$(src)
 KERNELPATH := kernel-$(subst -,_,$(KERNELRELEASE))
 KDEB_SOURCENAME ?= linux-$(KERNELRELEASE)
 export KDEB_SOURCENAME

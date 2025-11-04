@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_MTD_TESTS) += mtd_oobtest.o
 obj-$(CONFIG_MTD_TESTS) += mtd_pagetest.o
 obj-$(CONFIG_MTD_TESTS) += mtd_readtest.o

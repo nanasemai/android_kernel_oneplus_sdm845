@@ -2,6 +2,7 @@
 # Makefile
 #
 
+ccflags-y += -I$(src)
 ifdef CONFIG_FUNCTION_TRACER
 CFLAGS_REMOVE_ashldi3.o = -pg
 CFLAGS_REMOVE_ashrdi3.o = -pg

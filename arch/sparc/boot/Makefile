@@ -3,6 +3,7 @@
 # Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
 # Copyright (C) 1997,1998 Jakub Jelinek (jj@ultra.linux.cz)
 
+ccflags-y += -I$(src)
 ROOT_IMG	:= /usr/src/root.img
 ELFTOAOUT	:= elftoaout
 

@@ -2,6 +2,7 @@
 # Makefile for the MB93090-MB00 motherboard stuff
 #
 
+ccflags-y += -I$(src)
 ifeq "$(CONFIG_PCI)" "y"
 obj-y := pci-frv.o pci-irq.o pci-vdk.o
 

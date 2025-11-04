@@ -1,4 +1,5 @@
 # SPEAR Platform Support
+ccflags-y += -I$(src)
 snd-soc-spear-pcm-objs := spear_pcm.o
 snd-soc-spear-spdif-in-objs := spdif_in.o
 snd-soc-spear-spdif-out-objs := spdif_out.o

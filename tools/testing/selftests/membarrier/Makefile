@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 CFLAGS += -g -I../../../../usr/include/
 
 TEST_PROGS := membarrier_test

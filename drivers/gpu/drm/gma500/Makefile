@@ -1,6 +1,7 @@
 #
 #	KMS driver for the GMA500
 #
+ccflags-y += -I$(src)
 ccflags-y += -I$(srctree)/include/drm
 
 gma500_gfx-y += \

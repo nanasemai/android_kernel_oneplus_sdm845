@@ -2,6 +2,7 @@
 ## Makefile for the linux hfsplus filesystem routines.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_HFSPLUS_FS) += hfsplus.o
 
 hfsplus-objs := super.o options.o inode.o ioctl.o extents.o catalog.o dir.o btree.o \

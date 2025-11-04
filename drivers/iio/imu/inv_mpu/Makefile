@@ -2,6 +2,7 @@
 # Makefile for Invensense inv-mpu-iio device.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_INV_MPU_IIO) += inv-mpu-iio.o
 
 inv-mpu-iio-objs += inv_mpu_common.o

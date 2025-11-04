@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 rtl8192de-objs :=		\
 		dm.o		\
 		fw.o		\

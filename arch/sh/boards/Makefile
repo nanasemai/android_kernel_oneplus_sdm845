@@ -1,6 +1,7 @@
 #
 # Specific board support, not covered by a mach group.
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_SH_MAGIC_PANEL_R2)	+= board-magicpanelr2.o
 obj-$(CONFIG_SH_SECUREEDGE5410)	+= board-secureedge5410.o
 obj-$(CONFIG_SH_SH2007)		+= board-sh2007.o

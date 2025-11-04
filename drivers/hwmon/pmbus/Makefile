@@ -2,6 +2,7 @@
 # Makefile for PMBus chip drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_PMBUS)		+= pmbus_core.o
 obj-$(CONFIG_SENSORS_PMBUS)	+= pmbus.o
 obj-$(CONFIG_SENSORS_ADM1275)	+= adm1275.o

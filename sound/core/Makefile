@@ -3,6 +3,7 @@
 # Copyright (c) 1999,2001 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-y     := sound.o init.o memory.o control.o misc.o device.o
 ifneq ($(CONFIG_SND_PROC_FS),)
 snd-y += info.o

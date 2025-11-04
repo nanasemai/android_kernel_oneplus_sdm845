@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_DW_DMAC_CORE)	+= dw_dmac_core.o
 dw_dmac_core-objs	:= core.o
 

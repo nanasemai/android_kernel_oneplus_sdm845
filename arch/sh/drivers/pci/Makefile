@@ -1,6 +1,7 @@
 #
 # Makefile for the PCI specific kernel interface routines under Linux.
 #
+ccflags-y += -I$(src)
 obj-y					+= common.o pci.o
 
 obj-$(CONFIG_CPU_SUBTYPE_SH7751)	+= pci-sh7751.o ops-sh4.o

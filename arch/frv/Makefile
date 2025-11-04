@@ -23,6 +23,7 @@
 # Copyright (C) 1994 by Hamish Macdonald
 #
 
+ccflags-y += -I$(src)
 ifdef CONFIG_MMU
 UTS_SYSNAME = -DUTS_SYSNAME=\"Linux\"
 else

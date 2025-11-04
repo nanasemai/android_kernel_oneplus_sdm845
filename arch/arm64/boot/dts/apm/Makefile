@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 dtb-$(CONFIG_ARCH_XGENE) += apm-mustang.dtb
 dtb-$(CONFIG_ARCH_XGENE) += apm-merlin.dtb
 

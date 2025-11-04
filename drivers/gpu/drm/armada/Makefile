@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 armada-y	:= armada_crtc.o armada_drv.o armada_fb.o armada_fbdev.o \
 		   armada_gem.o armada_overlay.o
 armada-y	+= armada_510.o

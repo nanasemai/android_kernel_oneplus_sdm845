@@ -2,6 +2,7 @@
 #  Makefile for the Linux Controller Area Network core.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_CAN)	+= can.o
 can-y			:= af_can.o
 can-$(CONFIG_PROC_FS)	+= proc.o

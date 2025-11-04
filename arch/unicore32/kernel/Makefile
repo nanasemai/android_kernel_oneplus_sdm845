@@ -3,6 +3,7 @@
 #
 
 # Object file lists.
+ccflags-y += -I$(src)
 obj-y				:= dma.o elf.o entry.o process.o ptrace.o
 obj-y				+= setup.o signal.o sys.o stacktrace.o traps.o
 

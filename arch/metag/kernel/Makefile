@@ -2,6 +2,7 @@
 # Makefile for the Linux/Meta kernel.
 #
 
+ccflags-y += -I$(src)
 extra-y	+= head.o
 extra-y	+= vmlinux.lds
 

@@ -9,6 +9,7 @@
 # Changed by many, many contributors over the years.
 #
 
+ccflags-y += -I$(src)
 KASAN_SANITIZE			:= n
 OBJECT_FILES_NON_STANDARD	:= y
 

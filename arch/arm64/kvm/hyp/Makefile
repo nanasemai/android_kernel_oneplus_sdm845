@@ -2,6 +2,7 @@
 # Makefile for Kernel-based Virtual Machine module, HYP part
 #
 
+ccflags-y += -I$(src)
 ccflags-y += -fno-stack-protector -DDISABLE_BRANCH_PROFILING
 
 ifeq ($(cc-name),clang)

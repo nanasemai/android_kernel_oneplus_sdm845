@@ -2,6 +2,7 @@
 # Makefile for the Linux eCryptfs
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ECRYPT_FS) += ecryptfs.o
 
 ecryptfs-y := dentry.o file.o inode.o main.o super.o mmap.o read_write.o \

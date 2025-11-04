@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FMC) += fmc.o
 
 fmc-y = fmc-core.o

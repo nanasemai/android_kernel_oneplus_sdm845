@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_MLX4_CORE)		+= mlx4_core.o
 
 mlx4_core-y :=	alloc.o catas.o cmd.o cq.o eq.o fw.o fw_qos.o icm.o intf.o \

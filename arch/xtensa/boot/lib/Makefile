@@ -2,6 +2,7 @@
 # Makefile for some libs needed by zImage.
 #
 
+ccflags-y += -I$(src)
 zlib	:= inffast.c inflate.c inftrees.c
 
 lib-y	+= $(zlib:.c=.o) zmem.o

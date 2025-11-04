@@ -2,6 +2,7 @@
 # Arch-specific CryptoAPI modules.
 #
 
+ccflags-y += -I$(src)
 OBJECT_FILES_NON_STANDARD := y
 
 avx_supported := $(call as-instr,vpxor %xmm0$(comma)%xmm0$(comma)%xmm0,yes,no)

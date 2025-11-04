@@ -1,5 +1,6 @@
 # Makefile for the Linux logos
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_LOGO)			+= logo.o
 obj-$(CONFIG_LOGO_LINUX_MONO)		+= logo_linux_mono.o
 obj-$(CONFIG_LOGO_LINUX_VGA16)		+= logo_linux_vga16.o

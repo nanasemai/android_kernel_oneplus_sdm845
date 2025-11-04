@@ -4,6 +4,7 @@
 # create a compressed vmlinux image from the original vmlinux
 #
 
+ccflags-y += -I$(src)
 targets		:= vmlinux vmlinux.bin vmlinux.bin.gz head.o misc.o piggy.o
 
 OBJECTS = $(obj)/head.o $(obj)/misc.o

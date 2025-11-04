@@ -1,6 +1,7 @@
 #
 # Makefile for the PowerPC 85xx linux kernel.
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_SMP) += smp.o
 obj-$(CONFIG_FSL_PMC)		  += mpc85xx_pm_ops.o
 

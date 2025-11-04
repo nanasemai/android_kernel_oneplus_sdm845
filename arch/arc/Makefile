@@ -6,6 +6,7 @@
 # published by the Free Software Foundation.
 #
 
+ccflags-y += -I$(src)
 UTS_MACHINE := arc
 
 KBUILD_DEFCONFIG := nsim_hs_defconfig

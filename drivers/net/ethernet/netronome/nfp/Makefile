@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_NFP_NETVF)	+= nfp_netvf.o
 
 nfp_netvf-objs := \

@@ -2,6 +2,7 @@
 # Makefile for parisc-specific library files
 #
 
+ccflags-y += -I$(src)
 lib-y	:= lusercopy.o bitops.o checksum.o io.o memset.o memcpy.o \
 	   ucmpdi2.o delay.o
 

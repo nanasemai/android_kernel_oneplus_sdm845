@@ -2,6 +2,7 @@
 # Makefile
 #
 
+ccflags-y += -I$(src)
 ifdef CONFIG_FUNCTION_TRACER
 # Do not trace early boot code and low level code
 CFLAGS_REMOVE_timer.o = -pg

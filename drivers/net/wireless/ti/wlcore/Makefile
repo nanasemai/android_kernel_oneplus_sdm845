@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 wlcore-objs		= main.o cmd.o io.o event.o tx.o rx.o ps.o acx.o \
 			  boot.o init.o debugfs.o scan.o sysfs.o vendor_cmd.o
 

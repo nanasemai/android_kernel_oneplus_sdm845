@@ -7,4 +7,5 @@
 #  (at your option) any later version.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_NEC_MARKEINS) += irq.o setup.o led.o platform.o

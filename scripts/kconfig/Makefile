@@ -2,6 +2,7 @@
 # Kernel configuration targets
 # These targets are used from top-level makefile
 
+ccflags-y += -I$(src)
 PHONY += xconfig gconfig menuconfig config silentoldconfig update-po-config \
 	localmodconfig localyesconfig
 

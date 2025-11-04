@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_OPROFILE) += oprofile.o
 
 CFLAGS_common.o	+= -DUTS_MACHINE='"$(UTS_MACHINE)"'

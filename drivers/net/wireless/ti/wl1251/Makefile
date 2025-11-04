@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 wl1251-objs		= main.o event.o tx.o rx.o ps.o cmd.o \
 			  acx.o boot.o init.o debugfs.o io.o
 wl1251_spi-objs		+= spi.o

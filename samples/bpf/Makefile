@@ -1,4 +1,5 @@
 # kbuild trick to avoid linker error. Can be omitted if a module is built.
+ccflags-y += -I$(src)
 obj- := dummy.o
 
 # List of programs to build

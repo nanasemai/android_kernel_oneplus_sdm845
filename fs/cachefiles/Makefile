@@ -2,6 +2,7 @@
 # Makefile for caching in a mounted filesystem
 #
 
+ccflags-y += -I$(src)
 cachefiles-y := \
 	bind.o \
 	daemon.o \

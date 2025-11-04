@@ -2,6 +2,7 @@
 # Makefile for mmp specific clk
 #
 
+ccflags-y += -I$(src)
 obj-y += clk-apbc.o clk-apmu.o clk-frac.o clk-mix.o clk-gate.o clk.o
 
 obj-$(CONFIG_RESET_CONTROLLER) += reset.o

@@ -2,6 +2,7 @@
 # Makefile for SuperH-specific library files..
 #
 
+ccflags-y += -I$(src)
 lib-y  = delay.o memmove.o memchr.o \
 	 checksum.o strlen.o div64.o div64-generic.o
 

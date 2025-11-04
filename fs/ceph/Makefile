@@ -2,6 +2,7 @@
 # Makefile for CEPH filesystem.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_CEPH_FS) += ceph.o
 
 ceph-y := super.o inode.o dir.o file.o locks.o addr.o ioctl.o \

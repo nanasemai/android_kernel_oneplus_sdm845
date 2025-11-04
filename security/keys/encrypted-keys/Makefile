@@ -2,6 +2,7 @@
 # Makefile for encrypted keys
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ENCRYPTED_KEYS) += encrypted-keys.o
 
 encrypted-keys-y := encrypted.o ecryptfs_format.o

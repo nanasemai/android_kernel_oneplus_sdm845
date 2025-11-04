@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 OBJECT_FILES_NON_STANDARD_wakeup_$(BITS).o := y
 
 obj-$(CONFIG_ACPI)		+= boot.o

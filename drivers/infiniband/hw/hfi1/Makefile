@@ -5,6 +5,7 @@
 #
 # Called from the kernel module build system.
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_INFINIBAND_HFI1) += hfi1.o
 
 hfi1-y := affinity.o chip.o device.o driver.o efivar.o \

@@ -6,6 +6,7 @@
 # for more details.
 #
 
+ccflags-y += -I$(src)
 targets	:= vmlinux.bin
 
 $(obj)/vmlinux.bin: vmlinux FORCE

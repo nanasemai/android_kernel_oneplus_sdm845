@@ -1,6 +1,7 @@
 # Makefile for powerpc selftests
 
 # ARCH can be overridden by the user for cross compiling
+ccflags-y += -I$(src)
 ARCH ?= $(shell uname -m)
 ARCH := $(shell echo $(ARCH) | sed -e s/ppc.*/powerpc/)
 

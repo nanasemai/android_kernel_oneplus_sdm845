@@ -5,6 +5,7 @@
 #
 # This file is released under the GPLv2
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_FSL_MC_BUS) += mc-bus-driver.o
 
 mc-bus-driver-objs := fsl-mc-bus.o \

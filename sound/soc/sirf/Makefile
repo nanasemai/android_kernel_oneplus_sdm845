@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 snd-soc-sirf-audio-objs := sirf-audio.o
 snd-soc-sirf-audio-port-objs := sirf-audio-port.o
 snd-soc-sirf-usp-objs := sirf-usp.o

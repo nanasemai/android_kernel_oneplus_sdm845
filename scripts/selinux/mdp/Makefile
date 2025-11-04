@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 hostprogs-y	:= mdp
 HOST_EXTRACFLAGS += -Isecurity/selinux/include
 

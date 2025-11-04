@@ -4,6 +4,7 @@
 # Copyright (C) 2001 Russell King
 #
 
+ccflags-y += -I$(src)
 gen := arch/$(ARCH)/include/generated
 kapi := $(gen)/asm
 uapi := $(gen)/uapi/asm

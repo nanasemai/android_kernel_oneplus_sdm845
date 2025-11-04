@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 snd-aoa-codec-onyx-objs := onyx.o
 snd-aoa-codec-tas-objs := tas.o
 snd-aoa-codec-toonie-objs := toonie.o

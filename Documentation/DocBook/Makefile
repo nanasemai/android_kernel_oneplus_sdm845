@@ -6,6 +6,7 @@
 # To add a new book the only step required is to add the book to the
 # list of DOCBOOKS.
 
+ccflags-y += -I$(src)
 DOCBOOKS := z8530book.xml  \
 	    kernel-hacking.xml kernel-locking.xml deviceiobook.xml \
 	    writing_usb_driver.xml networking.xml \

@@ -3,6 +3,7 @@
 # Copyright (c) 2001 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-cs4231-objs := cs4231.o
 snd-cs4236-objs := cs4236.o cs4236_lib.o
 

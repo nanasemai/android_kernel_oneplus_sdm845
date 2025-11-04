@@ -4,6 +4,7 @@
 # for more details.
 #
 
+ccflags-y += -I$(src)
 UIMAGE_LOADADDR = $(CONFIG_KERNEL_LOAD_ADDRESS)
 UIMAGE_COMPRESSION = gzip
 

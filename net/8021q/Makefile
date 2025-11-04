@@ -1,6 +1,7 @@
 #
 # Makefile for the Linux VLAN layer.
 #
+ccflags-y += -I$(src)
 obj-$(subst m,y,$(CONFIG_VLAN_8021Q))	+= vlan_core.o
 obj-$(CONFIG_VLAN_8021Q)		+= 8021q.o
 

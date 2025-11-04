@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 dtb-$(CONFIG_ARCH_ALPINE)	+= alpine-v2-evp.dtb
 
 always		:= $(dtb-y)

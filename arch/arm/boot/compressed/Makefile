@@ -4,6 +4,7 @@
 # create a compressed vmlinuz image from the original vmlinux
 #
 
+ccflags-y += -I$(src)
 OBJS		=
 
 AFLAGS_head.o += -DTEXT_OFFSET=$(TEXT_OFFSET)

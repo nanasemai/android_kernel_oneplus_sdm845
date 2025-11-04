@@ -3,6 +3,7 @@
 #
 
 # tell define_trace.h where to find the xhci trace header
+ccflags-y += -I$(src)
 CFLAGS_xhci-trace.o := -I$(src)
 
 fhci-y := fhci-hcd.o fhci-hub.o fhci-q.o

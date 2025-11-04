@@ -2,6 +2,7 @@
 # Makefile for the ORANGEFS filesystem.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ORANGEFS_FS) += orangefs.o
 
 orangefs-objs := acl.o file.o orangefs-cache.o orangefs-utils.o xattr.o \

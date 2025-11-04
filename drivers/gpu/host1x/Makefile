@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 host1x-y = \
 	bus.o \
 	syncpt.o \

@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ATA)		+= libata.o
 
 # non-SFF interface

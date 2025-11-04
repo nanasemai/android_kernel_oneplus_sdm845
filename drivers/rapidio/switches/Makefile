@@ -2,6 +2,7 @@
 # Makefile for RIO switches
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_RAPIDIO_TSI57X)	+= tsi57x.o
 obj-$(CONFIG_RAPIDIO_CPS_XX)	+= idtcps.o
 obj-$(CONFIG_RAPIDIO_TSI568)	+= tsi568.o

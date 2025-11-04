@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 dts-dirs	+= brcm
 dts-dirs	+= cavium-octeon
 dts-dirs	+= ingenic

@@ -2,6 +2,7 @@
 # Makefile for PCI-Express Root Port Advanced Error Reporting Driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_PCIEAER) += aerdriver.o
 
 obj-$(CONFIG_PCIE_ECRC)	+= ecrc.o

@@ -8,6 +8,7 @@
 # ---------------------------------------------------------------------------
 # fixdep: 	 Used to generate dependency information during build process
 
+ccflags-y += -I$(src)
 hostprogs-y	:= fixdep
 hostprogs-$(CONFIG_BUILD_BIN2C)     += bin2c
 always		:= $(hostprogs-y)

@@ -1,4 +1,5 @@
 ## DMA engines
+ccflags-y += -I$(src)
 snd-soc-dma-sh7760-objs	:= dma-sh7760.o
 obj-$(CONFIG_SND_SOC_PCM_SH7760)	+= snd-soc-dma-sh7760.o
 

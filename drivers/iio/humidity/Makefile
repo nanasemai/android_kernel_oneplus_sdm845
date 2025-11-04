@@ -2,6 +2,7 @@
 # Makefile for IIO humidity sensor drivers
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_AM2315) += am2315.o
 obj-$(CONFIG_DHT11) += dht11.o
 obj-$(CONFIG_HDC100X) += hdc100x.o

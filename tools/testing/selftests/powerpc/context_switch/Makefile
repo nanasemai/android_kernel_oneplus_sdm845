@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_PROGS := cp_abort
 
 all: $(TEST_PROGS)

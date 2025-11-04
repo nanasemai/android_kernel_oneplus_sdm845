@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 CFLAGS += -iquote../../../../include/uapi -Wall
 peeksiginfo: peeksiginfo.c
 

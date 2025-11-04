@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_UWB)		+= uwb.o
 obj-$(CONFIG_UWB_WHCI)		+= umc.o whci.o whc-rc.o
 obj-$(CONFIG_UWB_HWA)		+= hwa-rc.o

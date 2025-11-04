@@ -3,6 +3,7 @@
 # Makefile for the ASB2305 board
 #
 ###############################################################################
+ccflags-y += -I$(src)
 obj-y   := unit-init.o leds.o
 
 obj-$(CONFIG_PCI) += pci.o pci-asb2305.o pci-irq.o

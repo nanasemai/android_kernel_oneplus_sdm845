@@ -4,6 +4,7 @@
 # create a compressed vmlinux image from the original vmlinux
 #
 
+ccflags-y += -I$(src)
 KCOV_INSTRUMENT := n
 
 targets	:= vmlinux.lds vmlinux vmlinux.bin vmlinux.bin.gz vmlinux.bin.bz2

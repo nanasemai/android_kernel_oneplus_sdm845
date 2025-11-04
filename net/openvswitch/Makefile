@@ -2,6 +2,7 @@
 # Makefile for Open vSwitch.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_OPENVSWITCH) += openvswitch.o
 
 openvswitch-y := \

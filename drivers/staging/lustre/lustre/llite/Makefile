@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_LUSTRE_FS) += lustre.o
 lustre-y := dcache.o dir.o file.o llite_close.o llite_lib.o llite_nfs.o \
 	    rw.o namei.o symlink.o llite_mmap.o range_lock.o \

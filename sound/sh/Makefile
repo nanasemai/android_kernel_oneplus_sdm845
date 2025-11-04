@@ -2,6 +2,7 @@
 # Makefile for ALSA
 #
 
+ccflags-y += -I$(src)
 snd-aica-objs := aica.o
 snd-sh_dac_audio-objs := sh_dac_audio.o
 

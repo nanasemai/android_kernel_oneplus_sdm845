@@ -2,6 +2,7 @@
 # Makefile for the linux alpha-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 ccflags-y := -Werror
 
 obj-y	:= init.o fault.o

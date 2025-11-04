@@ -2,6 +2,7 @@
 # Makefile for the Linux/SuperH kernel.
 #
 
+ccflags-y += -I$(src)
 extra-y	:= head_$(BITS).o vmlinux.lds
 
 ifdef CONFIG_FUNCTION_TRACER

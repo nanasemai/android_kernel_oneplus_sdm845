@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_KS7010) += ks7010.o
 
 ccflags-y 	     += -DKS_WLAN_DEBUG=0

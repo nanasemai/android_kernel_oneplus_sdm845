@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_SOC_EMMA2RH)	+= common/
 
 #

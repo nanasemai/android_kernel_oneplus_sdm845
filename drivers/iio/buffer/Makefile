@@ -3,6 +3,7 @@
 #
 
 # When adding new entries keep the list in alphabetical order
+ccflags-y += -I$(src)
 obj-$(CONFIG_IIO_BUFFER_CB) += industrialio-buffer-cb.o
 obj-$(CONFIG_IIO_BUFFER_DMA) += industrialio-buffer-dma.o
 obj-$(CONFIG_IIO_BUFFER_DMAENGINE) += industrialio-buffer-dmaengine.o

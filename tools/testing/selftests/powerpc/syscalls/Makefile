@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_PROGS := ipc_unmuxed
 
 CFLAGS += -I../../../../../usr/include

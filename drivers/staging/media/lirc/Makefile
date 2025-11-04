@@ -3,6 +3,7 @@
 
 # Each configuration option enables a list of files.
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_LIRC_BT829)	+= lirc_bt829.o
 obj-$(CONFIG_LIRC_IMON)		+= lirc_imon.o
 obj-$(CONFIG_LIRC_PARALLEL)	+= lirc_parallel.o

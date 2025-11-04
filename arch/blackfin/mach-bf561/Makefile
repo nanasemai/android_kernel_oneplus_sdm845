@@ -2,6 +2,7 @@
 # arch/blackfin/mach-bf561/Makefile
 #
 
+ccflags-y += -I$(src)
 obj-y := ints-priority.o dma.o
 
 obj-$(CONFIG_BF561_COREB) += coreb.o

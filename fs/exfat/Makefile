@@ -2,6 +2,7 @@
 #
 # Makefile for the linux exFAT filesystem support.
 #
+ccflags-y += -I$(src)
 ifneq ($(KERNELRELEASE),)
 obj-$(CONFIG_EXFAT_FS) += exfat.o
 

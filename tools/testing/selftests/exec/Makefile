@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 CFLAGS = -Wall
 BINARIES = execveat
 DEPS = execveat.symlink execveat.denatured script subdir

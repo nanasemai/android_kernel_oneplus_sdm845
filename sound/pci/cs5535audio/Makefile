@@ -2,6 +2,7 @@
 # Makefile for cs5535audio
 #
 
+ccflags-y += -I$(src)
 snd-cs5535audio-y := cs5535audio.o cs5535audio_pcm.o
 snd-cs5535audio-$(CONFIG_PM_SLEEP) += cs5535audio_pm.o
 snd-cs5535audio-$(CONFIG_OLPC) += cs5535audio_olpc.o

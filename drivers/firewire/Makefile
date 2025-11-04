@@ -2,6 +2,7 @@
 # Makefile for the Linux IEEE 1394 implementation
 #
 
+ccflags-y += -I$(src)
 firewire-core-y += core-card.o core-cdev.o core-device.o \
                    core-iso.o core-topology.o core-transaction.o
 firewire-ohci-y += ohci.o

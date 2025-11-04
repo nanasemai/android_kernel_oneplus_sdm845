@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 SOURCES	:= $(wildcard [0-9]*x[0-9]*.S)
 
 BIN	:= $(patsubst %.S, %.bin, $(SOURCES))

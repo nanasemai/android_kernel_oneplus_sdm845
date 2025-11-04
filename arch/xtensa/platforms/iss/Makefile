@@ -4,6 +4,7 @@
 # "prom monitor" library routines under Linux.
 #
 
+ccflags-y += -I$(src)
 obj-y			= setup.o
 obj-$(CONFIG_TTY)	+= console.o
 obj-$(CONFIG_NET)	+= network.o

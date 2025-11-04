@@ -17,6 +17,7 @@
 # Mike Shaver, Helge Deller and Martin K. Petersen
 #
 
+ccflags-y += -I$(src)
 KBUILD_IMAGE := vmlinuz
 
 KBUILD_DEFCONFIG := default_defconfig

@@ -3,6 +3,7 @@
 # Copyright (c) 2001 by Jaroslav Kysela <perex@suse.cz>
 #
 
+ccflags-y += -I$(src)
 snd-azt1605-objs := azt1605.o
 snd-azt2316-objs := azt2316.o
 

@@ -3,4 +3,5 @@
 # Makefile for the ASB2303 board
 #
 ###############################################################################
+ccflags-y += -I$(src)
 obj-y   := unit-init.o smc91111.o flash.o leds.o

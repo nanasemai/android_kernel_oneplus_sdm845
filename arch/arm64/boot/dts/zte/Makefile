@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 dtb-$(CONFIG_ARCH_ZX) += zx296718-evb.dtb
 
 always		:= $(dtb-y)

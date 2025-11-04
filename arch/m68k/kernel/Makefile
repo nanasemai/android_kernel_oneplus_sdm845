@@ -2,6 +2,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 extra-$(CONFIG_AMIGA)	:= head.o
 extra-$(CONFIG_ATARI)	:= head.o
 extra-$(CONFIG_MAC)	:= head.o

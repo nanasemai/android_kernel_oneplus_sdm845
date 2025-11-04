@@ -1,4 +1,5 @@
 # auto-detect subdirs
+ccflags-y += -I$(src)
 ifeq ($(CONFIG_ARCH_SDM845), y)
 include $(srctree)/techpack/audio/config/sdm845auto.conf
 export $(shell sed 's/=.*//' $(srctree)/techpack/audio/config/sdm845auto.conf)

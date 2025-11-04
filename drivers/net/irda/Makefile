@@ -6,6 +6,7 @@
 #
 
 # FIR drivers
+ccflags-y += -I$(src)
 obj-$(CONFIG_USB_IRDA)		+= irda-usb.o
 obj-$(CONFIG_SIGMATEL_FIR)	+= stir4200.o
 obj-$(CONFIG_NSC_FIR)		+= nsc-ircc.o

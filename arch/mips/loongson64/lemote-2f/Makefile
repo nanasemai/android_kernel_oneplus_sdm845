@@ -2,6 +2,7 @@
 # Makefile for lemote loongson2f family machines
 #
 
+ccflags-y += -I$(src)
 obj-y += clock.o machtype.o irq.o reset.o ec_kb3310b.o
 
 #

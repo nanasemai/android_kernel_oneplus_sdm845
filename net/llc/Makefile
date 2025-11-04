@@ -12,6 +12,7 @@
 # See the GNU General Public License for more details.
 ###########################################################################
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_LLC) += llc.o
 
 llc-y := llc_core.o llc_input.o llc_output.o

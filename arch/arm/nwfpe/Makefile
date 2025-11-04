@@ -2,6 +2,7 @@
 # Copyright (C) 1998, 1999, 2001 Philip Blundell
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FPE_NWFPE)		+= nwfpe.o
 
 nwfpe-y				+= fpa11.o fpa11_cpdo.o fpa11_cpdt.o \

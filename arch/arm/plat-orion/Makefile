@@ -1,6 +1,7 @@
 #
 # Makefile for the linux kernel.
 #
+ccflags-y += -I$(src)
 ccflags-$(CONFIG_ARCH_MULTIPLATFORM) := -I$(srctree)/$(src)/include
 
 orion-gpio-$(CONFIG_GPIOLIB)      += gpio.o

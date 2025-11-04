@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y += coretech/
 obj-y += drivers/
 obj-y += fs/

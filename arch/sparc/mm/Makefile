@@ -1,6 +1,7 @@
 # Makefile for the linux Sparc-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 asflags-y := -ansi
 ccflags-y := -Werror
 

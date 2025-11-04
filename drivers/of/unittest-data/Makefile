@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y += testcases.dtb.o
 
 targets += testcases.dtb testcases.dtb.S

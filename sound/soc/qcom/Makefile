@@ -1,4 +1,5 @@
 # Platform
+ccflags-y += -I$(src)
 snd-soc-lpass-cpu-objs := lpass-cpu.o
 snd-soc-lpass-platform-objs := lpass-platform.o
 snd-soc-lpass-ipq806x-objs := lpass-ipq806x.o

@@ -3,6 +3,7 @@
 # Licensed under the GPL
 #
 
+ccflags-y += -I$(src)
 hostfs-objs := hostfs_kern.o hostfs_user.o
 
 obj-y :=

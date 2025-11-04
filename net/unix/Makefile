@@ -2,6 +2,7 @@
 # Makefile for the Linux unix domain socket layer.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_UNIX)	+= unix.o
 
 unix-y			:= af_unix.o garbage.o

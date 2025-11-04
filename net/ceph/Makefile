@@ -1,6 +1,7 @@
 #
 # Makefile for CEPH filesystem.
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_CEPH_LIB) += libceph.o
 
 libceph-y := ceph_common.o messenger.o msgpool.o buffer.o pagelist.o \

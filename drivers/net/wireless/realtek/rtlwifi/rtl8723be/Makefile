@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 rtl8723be-objs :=		\
 		dm.o		\
 		fw.o		\

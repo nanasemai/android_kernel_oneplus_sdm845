@@ -3,6 +3,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 asflags-y := -ansi
 ccflags-y := -Werror
 

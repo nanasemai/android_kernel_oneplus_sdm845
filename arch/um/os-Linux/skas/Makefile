@@ -3,6 +3,7 @@
 # Licensed under the GPL
 #
 
+ccflags-y += -I$(src)
 obj-y := mem.o process.o
 
 USER_OBJS := $(obj-y)

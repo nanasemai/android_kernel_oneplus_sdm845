@@ -3,6 +3,7 @@
 #
 
 # ACPI drivers
+ccflags-y += -I$(src)
 obj-$(CONFIG_I2C_SCMI)		+= i2c-scmi.o
 
 # PC SMBus host controller drivers

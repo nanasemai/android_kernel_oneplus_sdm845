@@ -2,6 +2,7 @@
 # Makefile for the MB862xx framebuffer driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FB_MB862XX) += mb862xxfb.o
 
 mb862xxfb-y := mb862xxfbdrv.o mb862xxfb_accel.o

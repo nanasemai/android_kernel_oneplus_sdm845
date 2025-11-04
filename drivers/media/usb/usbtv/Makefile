@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 usbtv-y := usbtv-core.o \
 	usbtv-video.o \
 	usbtv-audio.o

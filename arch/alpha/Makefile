@@ -8,6 +8,7 @@
 # Copyright (C) 1994 by Linus Torvalds
 #
 
+ccflags-y += -I$(src)
 NM := $(NM) -B
 
 LDFLAGS_vmlinux	:= -static -N #-relax

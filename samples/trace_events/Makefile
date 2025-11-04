@@ -9,6 +9,7 @@
 #
 # Here trace-events-sample.c does the CREATE_TRACE_POINTS.
 #
+ccflags-y += -I$(src)
 CFLAGS_trace-events-sample.o := -I$(src)
 
 obj-$(CONFIG_SAMPLE_TRACE_EVENTS) += trace-events-sample.o

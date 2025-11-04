@@ -2,6 +2,7 @@
 # Create a compressed vmlinux image from the original vmlinux
 #
 
+ccflags-y += -I$(src)
 targets		:= vmlinux vmlinux.bin vmlinux.bin.gz head.o misc.o piggy.o
 
 LDFLAGS_vmlinux := -Ttext $(CONFIG_KERNEL_ZIMAGE_BASE_ADDRESS) -e startup_32

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 dtb-$(CONFIG_ARCH_ZYNQMP) += zynqmp-ep108.dtb
 
 always		:= $(dtb-y)

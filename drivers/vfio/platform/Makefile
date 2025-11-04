@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 vfio-platform-base-y := vfio_platform_common.o vfio_platform_irq.o
 vfio-platform-y := vfio_platform.o
 

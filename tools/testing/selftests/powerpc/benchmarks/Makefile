@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_PROGS := gettimeofday context_switch mmap_bench futex_bench
 
 CFLAGS += -O2

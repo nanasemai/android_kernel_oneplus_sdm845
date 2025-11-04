@@ -3,6 +3,7 @@
 # Licensed under the GPL
 #
 
+ccflags-y += -I$(src)
 obj-y := clone.o mmu.o process.o syscall.o uaccess.o
 
 # clone.o is in the stub, so it can't be built with profiling

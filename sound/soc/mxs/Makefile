@@ -1,4 +1,5 @@
 # MXS Platform Support
+ccflags-y += -I$(src)
 snd-soc-mxs-objs := mxs-saif.o
 snd-soc-mxs-pcm-objs := mxs-pcm.o
 

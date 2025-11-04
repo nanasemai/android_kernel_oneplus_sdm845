@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_OPROFILE)	+= oprofile.o
 
 oprofile-core-y	+= buffer_sync.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 atmel-hlcdc-dc-y := atmel_hlcdc_crtc.o \
 		atmel_hlcdc_dc.o \
 		atmel_hlcdc_layer.o \

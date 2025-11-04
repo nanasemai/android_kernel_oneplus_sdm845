@@ -2,6 +2,7 @@
 # Makefile for the linux m68k-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 obj-y	:= init.o
 
 obj-$(CONFIG_MMU)		+= cache.o fault.o

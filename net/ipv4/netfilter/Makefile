@@ -3,6 +3,7 @@
 #
 
 # objects for l3 independent conntrack
+ccflags-y += -I$(src)
 nf_conntrack_ipv4-y	:=  nf_conntrack_l3proto_ipv4.o nf_conntrack_proto_icmp.o
 
 # connection tracking

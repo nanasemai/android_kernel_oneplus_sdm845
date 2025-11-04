@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_PROGS := watchdog-test
 
 all: $(TEST_PROGS)

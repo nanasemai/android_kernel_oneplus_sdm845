@@ -1,4 +1,5 @@
 # OMAP Platform Support
+ccflags-y += -I$(src)
 snd-soc-omap-objs := omap-pcm.o
 snd-soc-omap-dmic-objs := omap-dmic.o
 snd-soc-omap-mcbsp-objs := omap-mcbsp.o mcbsp.o

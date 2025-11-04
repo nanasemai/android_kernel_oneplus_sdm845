@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_44x)	+= misc_44x.o
 ifneq ($(CONFIG_PPC4xx_CPM),y)
 obj-$(CONFIG_44x)	+= idle.o

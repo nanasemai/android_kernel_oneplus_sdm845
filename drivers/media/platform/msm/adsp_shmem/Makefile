@@ -1,1 +1,2 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_ADSP_SHMEM) += adsp-shmem-device.o

@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 ccflags-y		:= -Idrivers/scsi
 
 # 16-bit client drivers

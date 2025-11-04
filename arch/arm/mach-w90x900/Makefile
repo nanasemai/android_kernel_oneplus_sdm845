@@ -4,6 +4,7 @@
 
 # Object file lists.
 
+ccflags-y += -I$(src)
 obj-y				:= irq.o time.o mfp.o gpio.o clock.o
 obj-y				+= clksel.o dev.o cpu.o
 # W90X900 CPU support files

@@ -7,6 +7,7 @@
 #
 
 # select defconfig based on actual architecture
+ccflags-y += -I$(src)
 ifeq ($(SUBARCH),x86)
   ifeq ($(shell uname -m),x86_64)
         KBUILD_DEFCONFIG := x86_64_defconfig

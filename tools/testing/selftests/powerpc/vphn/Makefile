@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_PROGS := test-vphn
 
 CFLAGS += -m64

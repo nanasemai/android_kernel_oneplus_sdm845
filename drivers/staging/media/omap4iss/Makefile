@@ -1,5 +1,6 @@
 # Makefile for OMAP4 ISS driver
 
+ccflags-y += -I$(src)
 omap4-iss-objs += \
 	iss.o iss_csi2.o iss_csiphy.o iss_ipipeif.o iss_ipipe.o iss_resizer.o iss_video.o
 

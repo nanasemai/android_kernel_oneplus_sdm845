@@ -3,6 +3,7 @@
 #
 
 # See arch/parisc/math-emu/README
+ccflags-y += -I$(src)
 ccflags-y := -Wno-parentheses -Wno-implicit-function-declaration \
 	-Wno-uninitialized -Wno-strict-prototypes -Wno-return-type \
 	-Wno-implicit-int

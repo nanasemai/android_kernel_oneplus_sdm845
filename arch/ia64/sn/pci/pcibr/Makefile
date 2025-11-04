@@ -7,6 +7,7 @@
 #
 # Makefile for the sn2 io routines.
 
+ccflags-y += -I$(src)
 ccflags-y := -Iarch/ia64/sn/include
 
 obj-y				+=  pcibr_dma.o pcibr_reg.o \

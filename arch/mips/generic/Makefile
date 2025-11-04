@@ -8,6 +8,7 @@
 # option) any later version.
 #
 
+ccflags-y += -I$(src)
 obj-y += init.o
 obj-y += irq.o
 obj-y += proc.o

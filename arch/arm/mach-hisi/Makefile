@@ -2,6 +2,7 @@
 # Makefile for Hisilicon processors family
 #
 
+ccflags-y += -I$(src)
 CFLAGS_platmcpm.o	:= -march=armv7-a
 
 obj-y	+= hisilicon.o

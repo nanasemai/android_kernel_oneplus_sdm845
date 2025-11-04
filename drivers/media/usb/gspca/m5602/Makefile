@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_USB_M5602) += gspca_m5602.o
 
 gspca_m5602-objs := m5602_core.o \

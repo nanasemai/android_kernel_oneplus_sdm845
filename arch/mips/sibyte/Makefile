@@ -1,6 +1,7 @@
 #
 # Sibyte SB1250 / BCM1480 family of SOCs
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_SIBYTE_BCM112X)	+= sb1250/
 obj-$(CONFIG_SIBYTE_BCM112X)	+= common/
 obj-$(CONFIG_SIBYTE_SB1250)	+= sb1250/

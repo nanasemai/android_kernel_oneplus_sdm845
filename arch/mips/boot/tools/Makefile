@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 hostprogs-y	+= relocs
 relocs-objs	+= relocs_32.o
 relocs-objs	+= relocs_64.o

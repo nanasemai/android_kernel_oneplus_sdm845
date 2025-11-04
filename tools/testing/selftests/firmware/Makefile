@@ -1,6 +1,7 @@
 # Makefile for firmware loading selftests
 
 # No binaries, but make sure arg-less "make" doesn't trigger "run_tests"
+ccflags-y += -I$(src)
 all:
 
 TEST_PROGS := fw_filesystem.sh fw_userhelper.sh

@@ -3,6 +3,7 @@
 # Copyright (c) 2001 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-dummy-objs := dummy.o
 snd-aloop-objs := aloop.o
 snd-mtpav-objs := mtpav.o

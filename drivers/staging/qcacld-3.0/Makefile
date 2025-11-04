@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 KERNEL_SRC ?= /lib/modules/$(shell uname -r)/build
 
 # The Make variable $(M) must point to the directory that contains the module

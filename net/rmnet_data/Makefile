@@ -2,6 +2,7 @@
 # Makefile for the RMNET Data module
 #
 
+ccflags-y += -I$(src)
 rmnet_data-y		 := rmnet_data_main.o
 rmnet_data-y		 += rmnet_data_config.o
 rmnet_data-y		 += rmnet_data_vnd.o

@@ -1,6 +1,7 @@
 #
 # Makefile for the PMC-Sierra MSP SOCs
 #
+ccflags-y += -I$(src)
 obj-y += msp_prom.o msp_setup.o msp_irq.o \
 	 msp_time.o msp_serial.o msp_elb.o
 obj-$(CONFIG_PMC_MSP7120_GW) += msp_hwbutton.o

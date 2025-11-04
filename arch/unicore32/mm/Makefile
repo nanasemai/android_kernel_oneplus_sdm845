@@ -2,6 +2,7 @@
 # Makefile for the linux unicore-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 obj-y				:= extable.o fault.o init.o pgd.o mmu.o
 obj-y				+= flush.o ioremap.o
 

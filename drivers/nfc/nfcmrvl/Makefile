@@ -2,6 +2,7 @@
 # Makefile for NFCMRVL NCI based NFC driver
 #
 
+ccflags-y += -I$(src)
 nfcmrvl-y += main.o fw_dnld.o
 obj-$(CONFIG_NFC_MRVL) += nfcmrvl.o
 

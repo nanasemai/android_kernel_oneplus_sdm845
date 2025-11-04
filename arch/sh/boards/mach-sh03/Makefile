@@ -2,4 +2,5 @@
 # Makefile for the Interface (CTP/PCI-SH03) specific parts of the kernel
 #
 
+ccflags-y += -I$(src)
 obj-y	 := setup.o rtc.o

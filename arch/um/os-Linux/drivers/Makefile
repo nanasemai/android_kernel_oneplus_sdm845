@@ -3,6 +3,7 @@
 # Licensed under the GPL
 #
 
+ccflags-y += -I$(src)
 ethertap-objs := ethertap_kern.o ethertap_user.o
 tuntap-objs := tuntap_kern.o tuntap_user.o
 

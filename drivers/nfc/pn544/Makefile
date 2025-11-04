@@ -2,6 +2,7 @@
 # Makefile for PN544 HCI based NFC driver
 #
 
+ccflags-y += -I$(src)
 pn544_i2c-objs  = i2c.o
 pn544_mei-objs  = mei.o
 

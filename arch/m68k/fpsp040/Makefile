@@ -2,6 +2,7 @@
 # Makefile for Linux arch/m68k/fpsp040 source directory
 #
 
+ccflags-y += -I$(src)
 obj-y    := bindec.o binstr.o decbin.o do_func.o gen_except.o get_op.o \
 	    kernel_ex.o res_func.o round.o sacos.o sasin.o satan.o satanh.o \
 	    scosh.o setox.o sgetem.o sint.o slog2.o slogn.o \

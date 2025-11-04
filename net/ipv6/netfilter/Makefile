@@ -3,6 +3,7 @@
 #
 
 # Link order matters here.
+ccflags-y += -I$(src)
 obj-$(CONFIG_IP6_NF_IPTABLES) += ip6_tables.o
 obj-$(CONFIG_IP6_NF_FILTER) += ip6table_filter.o
 obj-$(CONFIG_IP6_NF_MANGLE) += ip6table_mangle.o

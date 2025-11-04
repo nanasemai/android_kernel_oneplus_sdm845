@@ -2,6 +2,7 @@
 
 # Each configuration option enables a list of files.
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ISDN_DIVAS)		+= divadidd.o divas.o
 obj-$(CONFIG_ISDN_DIVAS_MAINT)		+= diva_mnt.o
 obj-$(CONFIG_ISDN_DIVAS_USERIDI)	+= diva_idi.o

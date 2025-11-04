@@ -2,6 +2,7 @@
 # Makefile for the Linux Coda filesystem routines.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_CODA_FS) += coda.o
 
 coda-objs := psdev.o cache.o cnode.o inode.o dir.o file.o upcall.o \

@@ -2,6 +2,7 @@
 # Makefile for the linux kernel.
 #
 
+ccflags-y += -I$(src)
 obj-pci-y	:=
 obj-pci-n	:=
 

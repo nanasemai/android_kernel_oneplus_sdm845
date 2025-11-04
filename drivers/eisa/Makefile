@@ -1,5 +1,6 @@
 # Makefile for the Linux device tree
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_EISA)	        += eisa-bus.o
 obj-${CONFIG_EISA_PCI_EISA}     += pci_eisa.o
 

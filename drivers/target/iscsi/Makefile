@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 iscsi_target_mod-y +=		iscsi_target_parameters.o \
 				iscsi_target_seq_pdu_list.o \
 				iscsi_target_auth.o \

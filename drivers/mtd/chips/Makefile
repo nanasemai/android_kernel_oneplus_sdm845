@@ -2,6 +2,7 @@
 # linux/drivers/chips/Makefile
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_MTD)		+= chipreg.o
 obj-$(CONFIG_MTD_CFI)		+= cfi_probe.o
 obj-$(CONFIG_MTD_CFI_UTIL)	+= cfi_util.o

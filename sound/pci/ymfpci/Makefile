@@ -3,6 +3,7 @@
 # Copyright (c) 2001 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-ymfpci-objs := ymfpci.o ymfpci_main.o
 
 # Toplevel Module Dependency

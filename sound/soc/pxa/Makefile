@@ -1,4 +1,5 @@
 # PXA Platform Support
+ccflags-y += -I$(src)
 snd-soc-pxa2xx-objs := pxa2xx-pcm.o
 snd-soc-pxa2xx-ac97-objs := pxa2xx-ac97.o
 snd-soc-pxa2xx-i2s-objs := pxa2xx-i2s.o

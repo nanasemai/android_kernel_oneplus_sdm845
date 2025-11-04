@@ -8,6 +8,7 @@
 # as published by the Free Software Foundation; version 2
 # of the License.
 
+ccflags-y += -I$(src)
 include ../../scripts/Makefile.include
 
 all: acpidbg acpidump ec

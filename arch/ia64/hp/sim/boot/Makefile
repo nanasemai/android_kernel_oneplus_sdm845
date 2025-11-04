@@ -8,6 +8,7 @@
 # Copyright (C) 1998, 2003 by David Mosberger-Tang <davidm@hpl.hp.com>
 #
 
+ccflags-y += -I$(src)
 targets-$(CONFIG_IA64_HP_SIM)  += bootloader
 targets := vmlinux.bin vmlinux.gz $(targets-y)
 

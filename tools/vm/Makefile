@@ -1,5 +1,6 @@
 # Makefile for vm tools
 #
+ccflags-y += -I$(src)
 TARGETS=page-types slabinfo page_owner_sort
 
 LIB_DIR = ../lib/api

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y := -Idrivers/net/ethernet/chelsio/cxgb4
 
 obj-$(CONFIG_CHELSIO_LIB) += libcxgb.o

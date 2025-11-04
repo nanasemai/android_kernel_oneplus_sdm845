@@ -2,6 +2,7 @@
 # Makefile for ALSA
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_SND_ARMAACI)	+= snd-aaci.o
 snd-aaci-objs			:= aaci.o
 

@@ -7,6 +7,7 @@
 #
 # Makefile for the sn pci general routines.
 
+ccflags-y += -I$(src)
 ccflags-y := -Iarch/ia64/sn/include
 
 obj-y := pci_dma.o tioca_provider.o tioce_provider.o pcibr/

@@ -2,6 +2,7 @@
 # Makefile for the linux s390-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 obj-y		:= init.o fault.o extmem.o mmap.o vmem.o maccess.o
 obj-y		+= page-states.o gup.o pageattr.o mem_detect.o
 obj-y		+= pgtable.o pgalloc.o

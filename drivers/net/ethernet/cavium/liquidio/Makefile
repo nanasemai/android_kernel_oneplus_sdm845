@@ -1,6 +1,7 @@
 #
 # Cavium Liquidio ethernet device driver
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_LIQUIDIO) += liquidio.o
 
 liquidio-$(CONFIG_LIQUIDIO) += lio_ethtool.o \

@@ -2,6 +2,7 @@
 # Makefile for the video capture/playback device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_VIDEO_M32R_AR_M64278) += arv.o
 
 obj-$(CONFIG_VIDEO_VIA_CAMERA) += via-camera.o

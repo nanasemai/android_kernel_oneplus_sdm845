@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_RC_MAP) += rc-adstech-dvb-t-pci.o \
 			rc-alink-dtu-m.o \
 			rc-anysee.o \

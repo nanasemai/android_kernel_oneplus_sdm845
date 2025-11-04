@@ -1,6 +1,7 @@
 #
 # Makefile for the MN10300-specific profiling code
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_OPROFILE) += oprofile.o
 
 DRIVER_OBJS = $(addprefix ../../../drivers/oprofile/, \

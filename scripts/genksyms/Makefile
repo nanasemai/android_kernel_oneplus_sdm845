@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 hostprogs-y	:= genksyms
 always		:= $(hostprogs-y)
 

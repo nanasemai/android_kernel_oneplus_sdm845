@@ -2,6 +2,7 @@
 # Makefile for arch/parisc/kernel
 #
 
+ccflags-y += -I$(src)
 extra-y			:= head.o vmlinux.lds
 
 obj-y	     	:= cache.o pacache.o setup.o traps.o time.o irq.o \

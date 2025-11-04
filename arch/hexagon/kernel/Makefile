@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 extra-y := head.o vmlinux.lds
 
 obj-$(CONFIG_SMP) += smp.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 CC := $(CROSS_COMPILE)gcc
 PROGS := watchdog-simple
 

@@ -2,6 +2,7 @@
 # Makefile for the kernel security code
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_KEYS)			+= keys/
 subdir-$(CONFIG_SECURITY_SELINUX)	+= selinux
 subdir-$(CONFIG_SECURITY_SMACK)		+= smack

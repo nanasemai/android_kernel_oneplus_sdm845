@@ -5,6 +5,7 @@
 # Copyright (C) 2008 Wind River Systems, Inc.
 #   written by Ralf Baechle <ralf@linux-mips.org>
 #
+ccflags-y += -I$(src)
 obj-y				+= malta-display.o
 obj-y				+= malta-dt.o
 obj-y				+= malta-dtshim.o

@@ -1,4 +1,5 @@
 # ROCKCHIP Platform Support
+ccflags-y += -I$(src)
 snd-soc-rockchip-i2s-objs := rockchip_i2s.o
 snd-soc-rockchip-spdif-objs := rockchip_spdif.o
 

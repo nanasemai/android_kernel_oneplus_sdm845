@@ -3,6 +3,7 @@
 # Measurement Architecture(IMA).
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_IMA) += ima.o
 
 ima-y := ima_fs.o ima_queue.o ima_init.o ima_main.o ima_crypto.o ima_api.o \

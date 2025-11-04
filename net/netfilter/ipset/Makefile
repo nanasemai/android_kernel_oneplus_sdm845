@@ -2,6 +2,7 @@
 # Makefile for the ipset modules
 #
 
+ccflags-y += -I$(src)
 ip_set-y := ip_set_core.o ip_set_getport.o pfxlen.o
 
 # ipset core

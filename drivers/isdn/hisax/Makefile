@@ -4,6 +4,7 @@
 
 # Define maximum number of cards
 
+ccflags-y += -I$(src)
 ccflags-y      := -DHISAX_MAX_CARDS=$(CONFIG_HISAX_MAX_CARDS)
 
 obj-$(CONFIG_ISDN_DRV_HISAX)		+= hisax.o

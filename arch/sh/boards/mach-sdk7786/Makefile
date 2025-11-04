@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y	:= fpga.o irq.o nmi.o setup.o
 
 obj-$(CONFIG_GPIOLIB)		+= gpio.o

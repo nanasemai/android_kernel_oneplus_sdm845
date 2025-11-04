@@ -30,6 +30,7 @@
 # Makefile for the VMware vmxnet3 ethernet NIC driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_VMXNET3) += vmxnet3.o
 
 vmxnet3-objs := vmxnet3_drv.o vmxnet3_ethtool.o

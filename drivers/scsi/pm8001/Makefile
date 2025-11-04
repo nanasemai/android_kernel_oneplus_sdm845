@@ -4,6 +4,7 @@
 # Copyright (C) 2008-2009  USI Co., Ltd.
 
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_SCSI_PM8001) += pm80xx.o
 pm80xx-y += pm8001_init.o \
 		pm8001_sas.o  \

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_USE_OF) += board-dt.o
 obj-$(CONFIG_SMP)	+= platsmp.o
 obj-$(CONFIG_MSM_PM_LEGACY)	+=hotplug.o

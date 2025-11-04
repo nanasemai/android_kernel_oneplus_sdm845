@@ -4,6 +4,7 @@
 # create an romImage file suitable for burning to flash/mmc from zImage
 #
 
+ccflags-y += -I$(src)
 targets		:= vmlinux head.o zeropage.bin piggy.o
 load-y		:= 0
 

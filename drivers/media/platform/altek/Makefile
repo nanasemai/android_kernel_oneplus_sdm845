@@ -1,5 +1,6 @@
 # Makefile for Altek mini isp driver
 
+ccflags-y += -I$(src)
 ccflags-y += -DNEW_ABS
 
 # add obj to linux kernel

@@ -1,4 +1,5 @@
 # arch/m32r/platforms/Makefile
+ccflags-y += -I$(src)
 obj-$(CONFIG_PLAT_M32104UT)	+= m32104ut/
 obj-$(CONFIG_PLAT_M32700UT)	+= m32700ut/
 obj-$(CONFIG_PLAT_MAPPI)	+= mappi/

@@ -2,6 +2,7 @@
 # Makefile for native language support
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_NLS)		+= nls_base.o
 
 obj-$(CONFIG_NLS_CODEPAGE_437)	+= nls_cp437.o

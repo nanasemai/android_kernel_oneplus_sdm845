@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 KASAN_SANITIZE := n
 UBSAN_SANITIZE_kasan.o := n
 KCOV_INSTRUMENT := n

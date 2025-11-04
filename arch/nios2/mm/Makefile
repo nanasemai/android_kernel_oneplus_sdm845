@@ -2,6 +2,7 @@
 # Makefile for the Nios2-specific parts of the memory manager.
 #
 
+ccflags-y += -I$(src)
 obj-y	+= cacheflush.o
 obj-y	+= dma-mapping.o
 obj-y	+= extable.o

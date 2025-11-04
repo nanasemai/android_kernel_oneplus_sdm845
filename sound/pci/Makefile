@@ -3,6 +3,7 @@
 # Copyright (c) 2001 by Jaroslav Kysela <perex@perex.cz>
 #
 
+ccflags-y += -I$(src)
 snd-ad1889-objs := ad1889.o
 snd-als300-objs := als300.o
 snd-als4000-objs := als4000.o

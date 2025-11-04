@@ -1,4 +1,5 @@
 # MTK Platform Support
+ccflags-y += -I$(src)
 obj-$(CONFIG_SND_SOC_MT8173) += mt8173-afe-pcm.o
 # Machine support
 obj-$(CONFIG_SND_SOC_MT8173_MAX98090) += mt8173-max98090.o

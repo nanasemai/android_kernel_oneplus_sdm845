@@ -3,6 +3,7 @@
 #
 
 # Common objects
+ccflags-y += -I$(src)
 obj-y				:= timer.o
 
 # CPU objects

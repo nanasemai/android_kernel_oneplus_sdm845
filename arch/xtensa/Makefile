@@ -14,6 +14,7 @@
 # Core configuration.
 # (Use VAR=<xtensa_config> to use another default compiler.)
 
+ccflags-y += -I$(src)
 variant-y := $(patsubst "%",%,$(CONFIG_XTENSA_VARIANT_NAME))
 
 VARIANT = $(variant-y)

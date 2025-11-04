@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_USB_STV06XX) += gspca_stv06xx.o
 
 gspca_stv06xx-objs := stv06xx.o \

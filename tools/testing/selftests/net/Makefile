@@ -1,5 +1,6 @@
 # Makefile for net selftests
 
+ccflags-y += -I$(src)
 CFLAGS = -Wall -O2 -g
 
 CFLAGS += -I../../../../usr/include/

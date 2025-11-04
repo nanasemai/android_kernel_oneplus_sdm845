@@ -2,6 +2,7 @@
 # Makefile for Unisys channel
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_UNISYS_VISORNIC)	+= visornic.o
 
 visornic-y := visornic_main.o

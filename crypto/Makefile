@@ -2,6 +2,7 @@
 # Cryptographic API
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_CRYPTO) += crypto.o
 crypto-y := api.o cipher.o compress.o memneq.o
 

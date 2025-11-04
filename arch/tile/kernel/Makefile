@@ -2,6 +2,7 @@
 # Makefile for the Linux/TILE kernel.
 #
 
+ccflags-y += -I$(src)
 extra-y := vmlinux.lds head_$(BITS).o
 obj-y := backtrace.o entry.o hvglue.o irq.o messaging.o \
 	pci-dma.o proc.o process.o ptrace.o reboot.o \

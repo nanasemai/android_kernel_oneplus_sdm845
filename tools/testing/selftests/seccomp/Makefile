@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_PROGS := seccomp_bpf
 CFLAGS += -Wl,-no-as-needed -Wall
 LDFLAGS += -lpthread

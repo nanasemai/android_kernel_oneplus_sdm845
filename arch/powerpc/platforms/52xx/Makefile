@@ -1,6 +1,7 @@
 #
 # Makefile for 52xx based boards
 #
+ccflags-y += -I$(src)
 obj-y				+= mpc52xx_pic.o mpc52xx_common.o mpc52xx_gpt.o
 obj-$(CONFIG_PCI)		+= mpc52xx_pci.o
 

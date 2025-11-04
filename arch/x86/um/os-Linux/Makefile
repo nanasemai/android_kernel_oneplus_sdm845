@@ -3,6 +3,7 @@
 # Licensed under the GPL
 #
 
+ccflags-y += -I$(src)
 obj-y = registers.o task_size.o mcontext.o
 
 obj-$(CONFIG_X86_32) += tls.o

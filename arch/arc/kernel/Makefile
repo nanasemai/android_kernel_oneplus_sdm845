@@ -6,6 +6,7 @@
 # published by the Free Software Foundation.
 
 # Pass UTS_MACHINE for user_regset definition
+ccflags-y += -I$(src)
 CFLAGS_ptrace.o		+= -DUTS_MACHINE='"$(UTS_MACHINE)"'
 
 obj-y	:= arcksyms.o setup.o irq.o time.o reset.o ptrace.o process.o devtree.o

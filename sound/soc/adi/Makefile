@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 snd-soc-adi-axi-i2s-objs := axi-i2s.o
 snd-soc-adi-axi-spdif-objs := axi-spdif.o
 

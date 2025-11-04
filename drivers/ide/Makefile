@@ -2,6 +2,7 @@
 # link order is important here
 #
 
+ccflags-y += -I$(src)
 ccflags-y				:= -Idrivers/ide
 
 ide-core-y += ide.o ide-ioctls.o ide-io.o ide-iops.o ide-lib.o ide-probe.o \

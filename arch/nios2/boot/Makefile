@@ -6,6 +6,7 @@
 # for more details.
 #
 
+ccflags-y += -I$(src)
 UIMAGE_LOADADDR = $(shell $(NM) vmlinux | awk '$$NF == "_stext" {print $$1}')
 UIMAGE_ENTRYADDR = $(shell $(NM) vmlinux | awk '$$NF == "_start" {print $$1}')
 UIMAGE_COMPRESSION = gzip

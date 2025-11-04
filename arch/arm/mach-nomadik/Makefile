@@ -8,4 +8,5 @@
 # Object file lists.
 
 # Cpu revision
+ccflags-y += -I$(src)
 obj-$(CONFIG_NOMADIK_8815) += cpu-8815.o

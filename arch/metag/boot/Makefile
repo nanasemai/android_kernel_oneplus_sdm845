@@ -6,6 +6,7 @@
 # Copyright (C) 2007,2012  Imagination Technologies Ltd.
 #
 
+ccflags-y += -I$(src)
 suffix-y := bin
 suffix-$(CONFIG_KERNEL_GZIP)	:= gz
 suffix-$(CONFIG_KERNEL_BZIP2)	:= bz2

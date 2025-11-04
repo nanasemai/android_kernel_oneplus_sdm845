@@ -2,6 +2,7 @@
 # Makefile for the 8390 network device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_MAC8390) += mac8390.o
 obj-$(CONFIG_APNE) += apne.o 8390.o
 obj-$(CONFIG_ARM_ETHERH) += etherh.o

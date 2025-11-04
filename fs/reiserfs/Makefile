@@ -2,6 +2,7 @@
 # Makefile for the linux reiser-filesystem routines.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_REISERFS_FS) += reiserfs.o
 
 reiserfs-objs := bitmap.o do_balan.o namei.o inode.o file.o dir.o fix_node.o \

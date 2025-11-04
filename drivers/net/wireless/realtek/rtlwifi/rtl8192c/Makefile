@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 rtl8192c-common-objs :=		\
 		main.o		\
 		dm_common.o	\

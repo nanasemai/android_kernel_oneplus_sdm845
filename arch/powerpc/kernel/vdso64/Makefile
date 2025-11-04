@@ -1,5 +1,6 @@
 # List of files in the vdso, has to be asm only for now
 
+ccflags-y += -I$(src)
 obj-vdso64 = sigtramp.o gettimeofday.o datapage.o cacheflush.o note.o getcpu.o
 
 # Build rules

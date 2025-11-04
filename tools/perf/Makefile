@@ -10,6 +10,7 @@
 # Clear out the built-in rules GNU make defines by default (such as .o targets),
 # so that we pass through all targets to Makefile.perf:
 #
+ccflags-y += -I$(src)
 .SUFFIXES:
 
 #

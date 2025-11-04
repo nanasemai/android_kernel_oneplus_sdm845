@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_SND_SOC_MSM_QDSP6V2_INTF) += audio_calibration.o audio_cal_utils.o \
 						q6adm.o q6afe.o q6asm.o q6audio-v2.o q6voice.o q6core.o \
 						rtac.o q6lsm.o audio_slimslave.o adsp_err.o msm_audio_ion.o

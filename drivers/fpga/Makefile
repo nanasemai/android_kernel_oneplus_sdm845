@@ -3,6 +3,7 @@
 #
 
 # Core FPGA Manager Framework
+ccflags-y += -I$(src)
 obj-$(CONFIG_FPGA)			+= fpga-mgr.o
 
 # FPGA Manager Drivers

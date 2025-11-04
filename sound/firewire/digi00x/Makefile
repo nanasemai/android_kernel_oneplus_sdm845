@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 snd-firewire-digi00x-objs := amdtp-dot.o digi00x-stream.o digi00x-proc.o \
 			     digi00x-pcm.o digi00x-hwdep.o \
 			     digi00x-transaction.o digi00x-midi.o digi00x.o

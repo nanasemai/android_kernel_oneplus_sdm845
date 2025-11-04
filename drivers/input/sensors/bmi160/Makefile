@@ -2,6 +2,7 @@
 # Makefile for Bosch sensor driver.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_BOSCH_DRIVER_LOG_FUNC) += bs_log.o
 obj-y += bstclass.o
 ifeq ($(CONFIG_BOSCH_DRIVER_LOG_FUNC),y)

@@ -4,6 +4,7 @@
 # Arch-specific CryptoAPI modules.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_CRYPTO_AES_PPC_SPE) += aes-ppc-spe.o
 obj-$(CONFIG_CRYPTO_MD5_PPC) += md5-ppc.o
 obj-$(CONFIG_CRYPTO_SHA1_PPC) += sha1-powerpc.o

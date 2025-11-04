@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_QCA402X) += htca_mbox/htca_mbox.o
 obj-$(CONFIG_QCA402X) += htca_mbox/htca_mbox_compl.o
 obj-$(CONFIG_QCA402X) += htca_mbox/htca_mbox_events.o

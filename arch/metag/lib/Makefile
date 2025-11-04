@@ -2,6 +2,7 @@
 # Makefile for Meta-specific library files.
 #
 
+ccflags-y += -I$(src)
 lib-y += usercopy.o
 lib-y += copy_page.o
 lib-y += clear_page.o

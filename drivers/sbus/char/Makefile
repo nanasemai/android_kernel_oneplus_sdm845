@@ -7,6 +7,7 @@
 # Rewritten to use lists instead of if-statements.
 #
 
+ccflags-y += -I$(src)
 bbc-objs := bbc_i2c.o bbc_envctrl.o
 
 obj-$(CONFIG_ENVCTRL)			+= envctrl.o

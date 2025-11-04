@@ -2,6 +2,7 @@
 # Makefile for the drm device driver.  This driver provides support for the
 # Direct Rendering Infrastructure (DRI) in XFree86 4.1.0 and higher.
 
+ccflags-y += -I$(src)
 FULL_AMD_PATH=$(src)/..
 
 ccflags-y := -Iinclude/drm -I$(FULL_AMD_PATH)/include/asic_reg \

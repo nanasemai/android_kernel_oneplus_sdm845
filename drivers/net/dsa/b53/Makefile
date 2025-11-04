@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_B53)		+= b53_common.o
 
 obj-$(CONFIG_B53_SPI_DRIVER)	+= b53_spi.o

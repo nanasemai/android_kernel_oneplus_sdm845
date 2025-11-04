@@ -2,6 +2,7 @@
 # Makefile for radios with Silicon Labs Si470x FM Radio Receivers
 #
 
+ccflags-y += -I$(src)
 radio-usb-si470x-objs	:= radio-si470x-usb.o radio-si470x-common.o
 radio-i2c-si470x-objs	:= radio-si470x-i2c.o radio-si470x-common.o
 

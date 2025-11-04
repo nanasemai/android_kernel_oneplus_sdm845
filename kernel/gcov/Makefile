@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y := -DSRCTREE='"$(srctree)"' -DOBJTREE='"$(objtree)"'
 
 obj-y := base.o fs.o

@@ -13,6 +13,7 @@
 #               2007,2008,2012 by Imagination Technologies Ltd.
 #
 
+ccflags-y += -I$(src)
 LDFLAGS					:=
 OBJCOPYFLAGS				:= -O binary -R .note -R .comment -S
 

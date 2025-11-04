@@ -1,6 +1,7 @@
 # Unified Makefile for i386 and x86_64
 
 # select defconfig based on actual architecture
+ccflags-y += -I$(src)
 ifeq ($(ARCH),x86)
   ifeq ($(shell uname -m),x86_64)
         KBUILD_DEFCONFIG := x86_64_defconfig

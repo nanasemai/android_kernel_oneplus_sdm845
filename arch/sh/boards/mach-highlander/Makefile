@@ -1,6 +1,7 @@
 #
 # Makefile for the Highlander specific parts of the kernel
 #
+ccflags-y += -I$(src)
 obj-y				:= setup.o
 obj-$(CONFIG_SH_R7780RP)	+= irq-r7780rp.o
 obj-$(CONFIG_SH_R7780MP)	+= irq-r7780mp.o

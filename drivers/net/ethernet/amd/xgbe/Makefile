@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_AMD_XGBE) += amd-xgbe.o
 
 amd-xgbe-objs := xgbe-main.o xgbe-drv.o xgbe-dev.o \

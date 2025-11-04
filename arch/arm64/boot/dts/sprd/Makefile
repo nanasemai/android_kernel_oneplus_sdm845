@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 dtb-$(CONFIG_ARCH_SPRD) += sc9836-openphone.dtb
 
 always		:= $(dtb-y)

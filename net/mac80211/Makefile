@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_MAC80211) += mac80211.o
 
 # mac80211 objects

@@ -2,6 +2,7 @@
 # Makefile for caching inode integrity data (iint)
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_INTEGRITY) += integrity.o
 
 integrity-y := iint.o

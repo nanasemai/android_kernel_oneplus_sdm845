@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_GSI) += gsi.o gsi_dbg.o
 
 ifdef CONFIG_X86

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ifeq ($(CONFIG_SMP),y)
 obj-$(CONFIG_ARCH_MEDIATEK) += platsmp.o
 endif

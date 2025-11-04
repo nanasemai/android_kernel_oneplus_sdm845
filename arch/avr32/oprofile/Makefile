@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_OPROFILE) += oprofile.o
 
 oprofile-y		:= $(addprefix ../../../drivers/oprofile/,	\

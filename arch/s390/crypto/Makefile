@@ -2,6 +2,7 @@
 # Cryptographic API
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_CRYPTO_SHA1_S390) += sha1_s390.o sha_common.o
 obj-$(CONFIG_CRYPTO_SHA256_S390) += sha256_s390.o sha_common.o
 obj-$(CONFIG_CRYPTO_SHA512_S390) += sha512_s390.o sha_common.o

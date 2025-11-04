@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y := cpu.o system.o irq-common.o
 
 obj-$(CONFIG_SOC_IMX21) += mm-imx21.o

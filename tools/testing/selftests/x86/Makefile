@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 all:
 
 include ../lib.mk

@@ -3,6 +3,7 @@
 #
 
 # Common support (must be linked before board specific support)
+ccflags-y += -I$(src)
 obj-y				+= devices.o generic.o irq.o reset.o
 obj-$(CONFIG_PM)		+= pm.o sleep.o standby.o
 

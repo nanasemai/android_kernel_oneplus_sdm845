@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 kirin-drm-y := kirin_drm_drv.o \
 	       kirin_drm_ade.o
 

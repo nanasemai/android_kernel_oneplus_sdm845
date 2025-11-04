@@ -2,6 +2,7 @@
 # Build the appropriate CPU version support
 #
 
+ccflags-y += -I$(src)
 ifdef CONFIG_FUNCTION_TRACER
 CFLAGS_REMOVE_cache.o = -pg
 endif

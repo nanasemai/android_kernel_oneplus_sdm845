@@ -2,6 +2,7 @@
 # Makefile for the Linux nfs filesystem routines.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_NFS_FS) += nfs.o
 
 CFLAGS_nfstrace.o += -I$(src)

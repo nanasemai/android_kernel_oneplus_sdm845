@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-$(CONFIG_USB_WUSB_CBAF_DEBUG) := -DDEBUG
 
 obj-$(CONFIG_USB_WUSB)		+= wusbcore.o

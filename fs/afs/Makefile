@@ -2,6 +2,7 @@
 # Makefile for Red Hat Linux AFS client.
 #
 
+ccflags-y += -I$(src)
 afs-cache-$(CONFIG_AFS_FSCACHE) := cache.o
 
 kafs-objs := \

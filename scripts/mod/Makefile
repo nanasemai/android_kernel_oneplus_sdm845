@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 OBJECT_FILES_NON_STANDARD := y
 CFLAGS_empty.o += $(DISABLE_LTO)
 

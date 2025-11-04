@@ -2,6 +2,7 @@
 # Expects kernel.sysctl_writes_strict=1.
 
 # No binaries, but make sure arg-less "make" doesn't trigger "run_tests".
+ccflags-y += -I$(src)
 all:
 
 TEST_PROGS := run_numerictests run_stringtests

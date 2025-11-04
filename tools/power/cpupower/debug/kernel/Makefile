@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-m	:=
 
 KDIR	:= /lib/modules/$(shell uname -r)/build

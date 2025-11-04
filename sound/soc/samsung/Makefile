@@ -1,4 +1,5 @@
 # S3c24XX Platform Support
+ccflags-y += -I$(src)
 snd-soc-s3c-dma-objs := dmaengine.o
 snd-soc-idma-objs := idma.o
 snd-soc-s3c24xx-i2s-objs := s3c24xx-i2s.o

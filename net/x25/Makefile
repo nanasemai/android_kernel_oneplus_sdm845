@@ -2,6 +2,7 @@
 # Makefile for the Linux X.25 Packet layer.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_X25) += x25.o
 
 x25-y			:= af_x25.o x25_dev.o x25_facilities.o x25_in.o \

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ath5k-y				+= caps.o
 ath5k-y				+= initvals.o
 ath5k-y				+= eeprom.o

@@ -3,6 +3,7 @@
 # Copyright (c) 2003 by Giuliano Pochini <pochini@shiny.it>
 #
 
+ccflags-y += -I$(src)
 snd-darla20-objs := darla20.o
 snd-gina20-objs := gina20.o
 snd-layla20-objs := layla20.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 always := gdb-scripts
 
 SRCTREE := $(shell cd $(srctree) && /bin/pwd)

@@ -2,6 +2,7 @@
 # Makefile for Kernel-based Virtual Machine module
 #
 
+ccflags-y += -I$(src)
 plus_virt := $(call as-instr,.arch_extension virt,+virt)
 ifeq ($(plus_virt),+virt)
 	plus_virt_def := -DREQUIRES_VIRT=1

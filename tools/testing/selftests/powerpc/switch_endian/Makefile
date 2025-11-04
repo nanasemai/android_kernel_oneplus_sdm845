@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 TEST_PROGS := switch_endian_test
 
 ASFLAGS += -O2 -Wall -g -nostdlib -m64

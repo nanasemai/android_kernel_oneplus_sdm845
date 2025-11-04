@@ -2,6 +2,7 @@
 # Makefile for the Linux SuperH-specific device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-y		+= dma/
 
 obj-$(CONFIG_PCI)		+= pci/

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_ARCH_IOP13XX) += setup.o
 obj-$(CONFIG_ARCH_IOP13XX) += irq.o
 obj-$(CONFIG_ARCH_IOP13XX) += pci.o

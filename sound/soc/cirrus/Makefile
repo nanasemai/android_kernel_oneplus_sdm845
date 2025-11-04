@@ -1,4 +1,5 @@
 # EP93xx Platform Support
+ccflags-y += -I$(src)
 snd-soc-ep93xx-objs				:= ep93xx-pcm.o
 snd-soc-ep93xx-i2s-objs	 			:= ep93xx-i2s.o
 snd-soc-ep93xx-ac97-objs 			:= ep93xx-ac97.o

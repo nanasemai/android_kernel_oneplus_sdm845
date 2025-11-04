@@ -3,6 +3,7 @@
 #
 
 # Interconnect bus drivers for ARM platforms
+ccflags-y += -I$(src)
 obj-$(CONFIG_ARM_CCI)		+= arm-cci.o
 obj-$(CONFIG_ARM_CCN)		+= arm-ccn.o
 

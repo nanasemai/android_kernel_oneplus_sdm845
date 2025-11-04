@@ -2,6 +2,7 @@
 # Makefile for ALSA
 #
 
+ccflags-y += -I$(src)
 snd-harmony-objs := harmony.o
 
 # Toplevel Module Dependency

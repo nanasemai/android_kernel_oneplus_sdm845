@@ -1,6 +1,7 @@
 #
 # Makefile for PN533 NFC driver
 #
+ccflags-y += -I$(src)
 pn533_usb-objs  = usb.o
 pn533_i2c-objs  = i2c.o
 

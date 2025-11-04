@@ -14,6 +14,7 @@
 # Copyright (C) 2002,2011 Greg Ungerer <gerg@snapgear.com>
 #
 
+ccflags-y += -I$(src)
 KBUILD_DEFCONFIG := multi_defconfig
 
 ifneq ($(SUBARCH),$(ARCH))

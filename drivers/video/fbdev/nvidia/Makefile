@@ -2,6 +2,7 @@
 # Makefile for the nVidia framebuffer driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FB_NVIDIA)          += nvidiafb.o
 
 nvidiafb-y                       := nvidia.o nv_hw.o nv_setup.o \

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_SAMPLE_CONNECTOR) += cn_test.o
 
 # List of programs to build

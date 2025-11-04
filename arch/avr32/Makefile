@@ -6,6 +6,7 @@
 # Copyright (C) 2004-2006 Atmel Corporation.
 
 # Default target when executing plain make
+ccflags-y += -I$(src)
 .PHONY: all
 all: uImage vmlinux.elf
 

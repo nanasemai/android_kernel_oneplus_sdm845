@@ -2,6 +2,7 @@
 # arch/blackfin/kernel/Makefile
 #
 
+ccflags-y += -I$(src)
 extra-y := vmlinux.lds
 
 obj-y := \

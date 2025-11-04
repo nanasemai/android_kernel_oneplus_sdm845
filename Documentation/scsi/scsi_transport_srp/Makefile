@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 all: rport_state_diagram.svg rport_state_diagram.png
 
 rport_state_diagram.svg: rport_state_diagram.dot

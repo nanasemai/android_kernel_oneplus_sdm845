@@ -1,6 +1,7 @@
 # Makefile for the Sun Boot PROM interface library under
 # Linux.
 #
+ccflags-y += -I$(src)
 asflags := -ansi
 ccflags := -Werror
 

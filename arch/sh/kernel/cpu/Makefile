@@ -2,6 +2,7 @@
 # Makefile for the Linux/SuperH CPU-specifc backends.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_CPU_SH2)		= sh2/
 obj-$(CONFIG_CPU_SH2A)		= sh2a/
 obj-$(CONFIG_CPU_SH3)		= sh3/

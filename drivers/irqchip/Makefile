@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_IRQCHIP)			+= irqchip.o
 
 obj-$(CONFIG_ALPINE_MSI)		+= irq-alpine-msi.o

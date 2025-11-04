@@ -2,6 +2,7 @@
 # Makefile for the Linux NFC subsystem.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_NFC) += nfc.o
 obj-$(CONFIG_NFC_NCI) += nci/
 obj-$(CONFIG_NFC_HCI) += hci/

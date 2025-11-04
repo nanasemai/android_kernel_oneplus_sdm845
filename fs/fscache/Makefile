@@ -2,6 +2,7 @@
 # Makefile for general filesystem caching code
 #
 
+ccflags-y += -I$(src)
 fscache-y := \
 	cache.o \
 	cookie.o \

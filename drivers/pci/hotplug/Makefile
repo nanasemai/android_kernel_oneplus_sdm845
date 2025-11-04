@@ -2,6 +2,7 @@
 # Makefile for the Linux kernel pci hotplug controller drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_HOTPLUG_PCI)		+= pci_hotplug.o
 obj-$(CONFIG_HOTPLUG_PCI_COMPAQ)	+= cpqphp.o
 obj-$(CONFIG_HOTPLUG_PCI_IBM)		+= ibmphp.o

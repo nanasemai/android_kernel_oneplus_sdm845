@@ -1,4 +1,5 @@
 # Platform specific code goes here
+ccflags-y += -I$(src)
 obj-y	+= atom/
 obj-y	+= ce4100/
 obj-y	+= efi/

@@ -4,6 +4,7 @@
 
 # Object file lists.
 
+ccflags-y += -I$(src)
 obj-y			:= common.o dma.o isa-irq.o
 
 pci-y			+= dc21285.o

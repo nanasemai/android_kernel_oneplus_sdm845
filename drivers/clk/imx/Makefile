@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 obj-y += \
 	clk.o \
 	clk-busy.o \

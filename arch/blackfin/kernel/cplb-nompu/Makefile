@@ -2,6 +2,7 @@
 # arch/blackfin/kernel/cplb-nompu/Makefile
 #
 
+ccflags-y += -I$(src)
 obj-y := cplbinit.o cplbmgr.o
 
 CFLAGS_cplbmgr.o := -ffixed-I0 -ffixed-I1 -ffixed-I2 -ffixed-I3 \

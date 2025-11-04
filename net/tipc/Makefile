@@ -2,6 +2,7 @@
 # Makefile for the Linux TIPC layer
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_TIPC) := tipc.o
 
 tipc-y	+= addr.o bcast.o bearer.o \

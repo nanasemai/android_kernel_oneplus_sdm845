@@ -1,4 +1,5 @@
 # Family-Level Interface Shim (FLIS)
+ccflags-y += -I$(src)
 obj-$(subst m,y,$(CONFIG_PINCTRL_MERRIFIELD)) += platform_mrfld_pinctrl.o
 # SDHCI Devices
 obj-$(subst m,y,$(CONFIG_MMC_SDHCI_PCI)) += platform_mrfld_sd.o

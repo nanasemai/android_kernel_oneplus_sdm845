@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_IBM_ASM) := ibmasm.o
 
 ibmasm-y :=	module.o      \

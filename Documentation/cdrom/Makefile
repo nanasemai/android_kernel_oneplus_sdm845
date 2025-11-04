@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 LATEXFILE = cdrom-standard
 
 all:

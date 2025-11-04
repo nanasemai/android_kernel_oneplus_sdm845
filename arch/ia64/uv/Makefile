@@ -9,4 +9,5 @@
 # Makefile for the sn uv subplatform
 #
 
+ccflags-y += -I$(src)
 obj-y += kernel/

@@ -9,6 +9,7 @@
 # sn2 specific kernel files
 #
 
+ccflags-y += -I$(src)
 ccflags-y := -Iarch/ia64/sn/include
 
 obj-y += cache.o io.o ptc_deadlock.o sn2_smp.o sn_proc_fs.o \

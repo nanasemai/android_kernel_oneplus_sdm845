@@ -5,5 +5,6 @@
 # Makefile for the Alchemy Au1xx0 CPUs, generic files.
 #
 
+ccflags-y += -I$(src)
 obj-y += prom.o time.o clock.o platform.o power.o gpiolib.o \
 	 setup.o sleeper.o dma.o dbdma.o vss.o irq.o usb.o

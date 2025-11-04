@@ -8,6 +8,7 @@
 # Copyright (C) 2006-2009 Felix Fietkau <nbd@openwrt.org>
 #
 
+ccflags-y += -I$(src)
 obj-y += board.o prom.o devices.o
 
 obj-$(CONFIG_EARLY_PRINTK) += early_printk.o

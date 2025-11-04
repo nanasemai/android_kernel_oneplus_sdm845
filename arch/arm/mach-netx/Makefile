@@ -4,6 +4,7 @@
 
 # Object file lists.
 
+ccflags-y += -I$(src)
 obj-y			+= time.o generic.o pfifo.o xc.o
 
 # Specific board support

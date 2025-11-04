@@ -2,6 +2,7 @@
 # Makefile for the Linux JFS filesystem routines.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_JFS_FS) += jfs.o
 
 jfs-y    := super.o file.o inode.o namei.o jfs_mount.o jfs_umount.o \

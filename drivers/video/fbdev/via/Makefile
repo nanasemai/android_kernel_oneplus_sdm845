@@ -2,6 +2,7 @@
 # Makefile for the VIA framebuffer driver (for Linux Kernel 2.6)
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FB_VIA) += viafb.o
 
 viafb-y	:=viafbdev.o hw.o via_i2c.o dvi.o lcd.o ioctl.o accel.o \

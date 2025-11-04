@@ -12,6 +12,7 @@
 #
 ###############################################################################
 
+ccflags-y += -I$(src)
 KBUILD_DEFCONFIG := asb2303_defconfig
 
 CCSPECS	:= $(shell $(CC) -v 2>&1 | grep "^Reading specs from " | head -1 | cut -c20-)
