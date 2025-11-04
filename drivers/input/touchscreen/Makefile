@@ -4,8 +4,9 @@
 
 # Each configuration option enables a list of files.
 
-ccflags-y += -I$(src)
+
 wm97xx-ts-y := wm97xx-core.o
+ccflags-y += -I$(src)
 
 obj-$(CONFIG_TOUCHSCREEN_PROPERTIES)	+= of_touchscreen.o
 obj-$(CONFIG_TOUCHSCREEN_88PM860X)	+= 88pm860x-ts.o
