@@ -1,4 +1,3 @@
-ccflags-y += -I$(src)
 VERSION = 4
 PATCHLEVEL = 9
 SUBLEVEL = 337
