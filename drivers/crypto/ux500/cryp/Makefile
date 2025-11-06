@@ -3,6 +3,7 @@
 # * Author: shujuan.chen@stericsson.com for ST-Ericsson.
 # * License terms: GNU General Public License (GPL) version 2  */
 
+ccflags-y += -I$(src)
 ifdef CONFIG_CRYPTO_DEV_UX500_DEBUG
 CFLAGS_cryp_core.o := -DDEBUG
 CFLAGS_cryp.o := -DDEBUG

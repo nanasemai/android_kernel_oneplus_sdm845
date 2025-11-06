@@ -4,6 +4,7 @@
 # See the README file in this directory for more info. <paulsch@us.ibm.com>
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_MWAVE) += mwave.o
 
 mwave-y := mwavedd.o smapi.o tp3780i.o 3780i.o

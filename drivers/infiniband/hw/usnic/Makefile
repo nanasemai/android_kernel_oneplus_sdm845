@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y := -Idrivers/net/ethernet/cisco/enic
 
 obj-$(CONFIG_INFINIBAND_USNIC)+= usnic_verbs.o

@@ -1,1 +1,2 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_VIDEO_DT3155)	+= dt3155.o

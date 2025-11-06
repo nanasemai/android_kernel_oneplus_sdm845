@@ -2,6 +2,7 @@
 # Makefile for the OMAP1 framebuffer device driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FB_OMAP) += omapfb.o
 
 objs-yy := omapfb_main.o lcdc.o

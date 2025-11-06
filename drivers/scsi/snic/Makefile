@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_SCSI_SNIC) += snic.o
 
 snic-y := \

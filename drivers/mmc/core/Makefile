@@ -2,6 +2,7 @@
 # Makefile for the kernel mmc core.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_MMC)		+= mmc_core.o
 mmc_core-y			:= core.o bus.o host.o \
 				   mmc.o mmc_ops.o sd.o sd_ops.o \

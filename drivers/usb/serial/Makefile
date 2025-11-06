@@ -4,6 +4,7 @@
 
 # Object file lists.
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_USB_SERIAL)			+= usbserial.o
 
 usbserial-y := usb-serial.o generic.o bus.o

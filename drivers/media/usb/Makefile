@@ -3,6 +3,7 @@
 #
 
 # DVB USB-only drivers
+ccflags-y += -I$(src)
 obj-y += ttusb-dec/ ttusb-budget/ dvb-usb/ dvb-usb-v2/ siano/ b2c2/
 obj-y += zr364xx/ stkwebcam/ s2255/
 

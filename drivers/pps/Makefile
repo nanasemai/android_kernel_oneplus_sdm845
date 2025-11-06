@@ -2,6 +2,7 @@
 # Makefile for the PPS core.
 #
 
+ccflags-y += -I$(src)
 pps_core-y			:= pps.o kapi.o sysfs.o
 pps_core-$(CONFIG_NTP_PPS)	+= kc.o
 obj-$(CONFIG_PPS)		:= pps_core.o

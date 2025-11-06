@@ -2,6 +2,7 @@
 # Makefile for the STMicroelectronics sensor common modules.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_IIO_ST_SENSORS_I2C) += st_sensors_i2c.o
 obj-$(CONFIG_IIO_ST_SENSORS_SPI) += st_sensors_spi.o
 obj-$(CONFIG_IIO_ST_SENSORS_CORE) += st_sensors.o

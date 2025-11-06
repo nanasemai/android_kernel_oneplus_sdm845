@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_MSM_VIDC_3X_V4L2) := 	msm_v4l2_vidc.o \
 				msm_vidc_common.o \
 				msm_vidc.o \

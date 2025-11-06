@@ -2,6 +2,7 @@
 # S/390 block devices
 #
 
+ccflags-y += -I$(src)
 dasd_eckd_mod-objs := dasd_eckd.o dasd_3990_erp.o dasd_alias.o
 dasd_fba_mod-objs  := dasd_fba.o
 dasd_diag_mod-objs := dasd_diag.o

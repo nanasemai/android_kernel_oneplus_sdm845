@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y := -Idrivers/net/ethernet/chelsio/cxgb4
 ccflags-y += -Idrivers/net/ethernet/chelsio/libcxgb
 ccflags-y += -Idrivers/target/iscsi

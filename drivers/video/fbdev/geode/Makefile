@@ -1,5 +1,6 @@
 # Makefile for the Geode family framebuffer drivers
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FB_GEODE_GX1) += gx1fb.o
 obj-$(CONFIG_FB_GEODE_GX)  += gxfb.o
 obj-$(CONFIG_FB_GEODE_LX)  += lxfb.o

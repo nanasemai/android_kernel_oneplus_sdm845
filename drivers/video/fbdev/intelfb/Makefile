@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_FB_INTEL) += intelfb.o
 
 intelfb-y := intelfbdrv.o intelfbhw.o

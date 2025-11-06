@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_CNSS_LOGGER) += logger.o
 
 logger-y += main.o	\

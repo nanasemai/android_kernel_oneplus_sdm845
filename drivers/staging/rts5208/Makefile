@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_RTS5208) := rts5208.o
 
 ccflags-y := -Idrivers/scsi

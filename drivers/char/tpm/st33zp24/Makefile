@@ -2,6 +2,7 @@
 # Makefile for ST33ZP24 TPM 1.2 driver
 #
 
+ccflags-y += -I$(src)
 tpm_st33zp24-objs = st33zp24.o
 obj-$(CONFIG_TCG_TIS_ST33ZP24) += tpm_st33zp24.o
 

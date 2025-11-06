@@ -1,4 +1,5 @@
 # Makefile for MHI driver
+ccflags-y += -I$(src)
 obj-y += mhi_mmio.o
 obj-y += mhi.o
 obj-y += mhi_ring.o

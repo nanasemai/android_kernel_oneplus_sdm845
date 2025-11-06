@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 earth-pt3-objs += pt3.o pt3_i2c.o pt3_dma.o
 
 obj-$(CONFIG_DVB_PT3) += earth-pt3.o

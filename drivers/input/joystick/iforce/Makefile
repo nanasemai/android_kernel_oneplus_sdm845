@@ -4,6 +4,7 @@
 # By Johann Deneux <johann.deneux@gmail.com>
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_JOYSTICK_IFORCE)	+= iforce.o
 
 iforce-y := iforce-ff.o iforce-main.o iforce-packets.o

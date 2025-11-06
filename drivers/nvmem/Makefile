@@ -2,6 +2,7 @@
 # Makefile for nvmem drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_NVMEM)		+= nvmem_core.o
 nvmem_core-y			:= core.o
 

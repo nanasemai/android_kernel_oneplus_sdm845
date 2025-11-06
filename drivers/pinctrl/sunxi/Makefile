@@ -1,4 +1,5 @@
 # Core
+ccflags-y += -I$(src)
 obj-y					+= pinctrl-sunxi.o
 
 # SoC Drivers

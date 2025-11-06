@@ -2,6 +2,7 @@
 # Makefile for memory devices
 #
 
+ccflags-y += -I$(src)
 ifeq ($(CONFIG_DDR),y)
 obj-$(CONFIG_OF)		+= of_memory.o
 endif

@@ -3,6 +3,7 @@
 #
 
 # Core functionality.
+ccflags-y += -I$(src)
 obj-$(CONFIG_MTD)		+= mtd.o
 mtd-y				:= mtdcore.o mtdsuper.o mtdconcat.o mtdpart.o mtdchar.o
 

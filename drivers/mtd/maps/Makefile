@@ -2,6 +2,7 @@
 # linux/drivers/maps/Makefile
 #
 
+ccflags-y += -I$(src)
 ifeq ($(CONFIG_MTD_COMPLEX_MAPPINGS),y)
 obj-$(CONFIG_MTD)		+= map_funcs.o
 endif

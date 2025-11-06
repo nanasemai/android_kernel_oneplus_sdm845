@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y	+= xenbus.o
 obj-y	+= xenbus_dev_frontend.o
 

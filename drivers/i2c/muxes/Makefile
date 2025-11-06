@@ -1,6 +1,7 @@
 #
 # Makefile for multiplexer I2C chip drivers.
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_I2C_ARB_GPIO_CHALLENGE)	+= i2c-arb-gpio-challenge.o
 
 obj-$(CONFIG_I2C_DEMUX_PINCTRL)		+= i2c-demux-pinctrl.o

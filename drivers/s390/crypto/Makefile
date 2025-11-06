@@ -2,6 +2,7 @@
 # S/390 crypto devices
 #
 
+ccflags-y += -I$(src)
 ap-objs := ap_bus.o
 # zcrypt_api depends on ap
 obj-$(CONFIG_ZCRYPT) += ap.o zcrypt_api.o

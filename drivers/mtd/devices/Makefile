@@ -2,6 +2,7 @@
 # linux/drivers/mtd/devices/Makefile
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_MTD_DOCG3)		+= docg3.o
 obj-$(CONFIG_MTD_SLRAM)		+= slram.o
 obj-$(CONFIG_MTD_PHRAM)		+= phram.o

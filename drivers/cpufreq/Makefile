@@ -1,4 +1,5 @@
 # CPUfreq core
+ccflags-y += -I$(src)
 obj-$(CONFIG_CPU_FREQ)			+= cpufreq.o freq_table.o
 
 # CPUfreq stats

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ifeq ($(strip $(V)), 1)
   Q =
 else

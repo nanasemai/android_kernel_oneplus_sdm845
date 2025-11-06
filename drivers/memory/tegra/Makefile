@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 tegra-mc-y := mc.o
 
 tegra-mc-$(CONFIG_ARCH_TEGRA_3x_SOC)  += tegra30.o

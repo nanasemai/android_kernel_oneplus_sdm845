@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 vfio-platform-calxedaxgmac-y := vfio_platform_calxedaxgmac.o
 vfio-platform-amdxgbe-y := vfio_platform_amdxgbe.o
 

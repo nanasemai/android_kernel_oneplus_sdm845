@@ -2,6 +2,7 @@
 # Makefile for the 'event manager' sub-component of powerplay.
 # It provides the event management services for the driver.
 
+ccflags-y += -I$(src)
 EVENT_MGR = eventmgr.o eventinit.o eventmanagement.o  \
 		eventactionchains.o eventsubchains.o eventtasks.o psm.o
 

@@ -2,6 +2,7 @@
 # Makefile for sunxi specific clk
 #
 
+ccflags-y += -I$(src)
 obj-y += clk-sunxi.o clk-factors.o
 obj-y += clk-a10-codec.o
 obj-y += clk-a10-hosc.o

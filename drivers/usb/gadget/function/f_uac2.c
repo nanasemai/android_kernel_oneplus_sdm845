@@ -1731,18 +1731,6 @@ static struct usb_function *afunc_alloc(struct usb_function_instance *fi)
 
 DECLARE_USB_FUNCTION_INIT(uac2, afunc_alloc_inst, afunc_alloc);
 
-static int afunc_init(void)
-{
-	return usb_function_register(&uac2usb_func);
-}
-module_init(afunc_init);
-
-static void __exit afunc_exit(void)
-{
-	usb_function_unregister(&uac2usb_func);
-}
-module_exit(afunc_exit);
-
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Yadwinder Singh");
 MODULE_AUTHOR("Jaswinder Singh");

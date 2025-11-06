@@ -4,6 +4,7 @@
 
 # Each configuration option enables a list of files.
 
+ccflags-y += -I$(src)
 wm97xx-ts-y := wm97xx-core.o
 
 obj-$(CONFIG_TOUCHSCREEN_PROPERTIES)	+= of_touchscreen.o
@@ -108,5 +109,8 @@ obj-$(CONFIG_TOUCHSCREEN_GT9XX_v28)		+= gt9xx_v2.8/
 obj-$(CONFIG_TOUCHSCREEN_HIMAX_CHIPSET)	+= hxchipset/
 obj-$(CONFIG_TOUCHSCREEN_EKTF3XXX_CHIPSET) += ektf3xxx/
 obj-$(CONFIG_TOUCHSCREEN_SYNAPTICS_S3320_I2C_RMI) += synaptics_driver_s3320.o
+CFLAGS_synaptics_driver_s3320.o := -Wno-indentation -Wno-misleading-indentation -Wno-format
+CFLAGS_synaptics_s3320_redremote.o := -Wno-indentation -Wno-misleading-indentation -Wno-format
+CFLAGS_synaptics_dsx_fw_update.o := -Wno-indentation -Wno-misleading-indentation -Wno-format
 obj-$(CONFIG_TOUCHSCREEN_SYNAPTICS_S3320_I2C_RMI) += synaptics_s3320_redremote.o
 obj-$(CONFIG_TOUCHSCREEN_SYNAPTICS_S3320_I2C_RMI) += synaptics_dsx_fw_update.o

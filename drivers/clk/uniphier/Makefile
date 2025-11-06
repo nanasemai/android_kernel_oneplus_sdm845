@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y	+= clk-uniphier-core.o
 obj-y	+= clk-uniphier-fixed-factor.o
 obj-y	+= clk-uniphier-fixed-rate.o

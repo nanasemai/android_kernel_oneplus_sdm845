@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_USB_BDC_UDC)	+= bdc.o
 bdc-y	:= bdc_core.o bdc_cmd.o bdc_ep.o bdc_udc.o
 

@@ -1,6 +1,7 @@
 #
 # Makefile for the CAAM backend and dependent components
 #
+ccflags-y += -I$(src)
 ifeq ($(CONFIG_CRYPTO_DEV_FSL_CAAM_DEBUG), y)
 	ccflags-y := -DDEBUG
 endif

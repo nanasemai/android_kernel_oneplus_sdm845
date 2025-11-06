@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-$(CONFIG_USBIP_DEBUG) := -DDEBUG
 
 obj-$(CONFIG_USBIP_CORE) += usbip-core.o

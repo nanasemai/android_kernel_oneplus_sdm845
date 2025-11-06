@@ -3,6 +3,7 @@
 #
 
 # Core functionality.
+ccflags-y += -I$(src)
 obj-$(CONFIG_MTD_ONENAND)		+= onenand.o
 
 # Board specific.

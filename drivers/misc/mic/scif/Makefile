@@ -2,6 +2,7 @@
 # Makefile - SCIF driver.
 # Copyright(c) 2014, Intel Corporation.
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_SCIF) += scif.o
 scif-objs := scif_main.o
 scif-objs += scif_peer_bus.o

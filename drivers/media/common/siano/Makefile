@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 smsmdtv-objs := smscoreapi.o sms-cards.o smsendian.o
 smsdvb-objs := smsdvb-main.o
 

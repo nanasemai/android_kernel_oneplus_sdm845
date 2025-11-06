@@ -2,6 +2,7 @@
 # Hisilicon Clock specific Makefile
 #
 
+ccflags-y += -I$(src)
 obj-y	+= clk.o clkgate-separated.o clkdivider-hi6220.o
 
 obj-$(CONFIG_ARCH_HI3xxx)	+= clk-hi3620.o

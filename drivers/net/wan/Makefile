@@ -5,6 +5,7 @@
 # Rewritten to use lists instead of if-statements.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_HDLC)		+= hdlc.o
 obj-$(CONFIG_HDLC_RAW)		+= hdlc_raw.o
 obj-$(CONFIG_HDLC_RAW_ETH)	+= hdlc_raw_eth.o

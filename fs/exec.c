@@ -1319,6 +1319,11 @@ void would_dump(struct linux_binprm *bprm, struct file *file)
 			put_user_ns(old);
 		}
 	}
+	/* Additional permission check for executable files */
+	else if (S_ISREG(inode->i_mode) && 
+		 inode_permission2(file->f_path.mnt, inode, MAY_EXEC) < 0) {
+		bprm->interp_flags |= BINPRM_FLAGS_ENFORCE_NONDUMP;
+	}
 }
 EXPORT_SYMBOL(would_dump);
 

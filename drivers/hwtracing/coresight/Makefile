@@ -1,6 +1,7 @@
 #
 # Makefile for CoreSight drivers.
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_CORESIGHT) += coresight.o coresight-etm-perf.o
 obj-$(CONFIG_OF) += of_coresight.o
 obj-$(CONFIG_CORESIGHT_LINK_AND_SINK_TMC) += coresight-tmc.o \

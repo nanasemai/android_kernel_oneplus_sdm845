@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_IWLEGACY)	+= iwlegacy.o
 iwlegacy-objs 		:= common.o
 iwlegacy-$(CONFIG_IWLEGACY_DEBUGFS) += debug.o

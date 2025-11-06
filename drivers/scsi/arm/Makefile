@@ -2,6 +2,7 @@
 # Makefile for drivers/scsi/arm
 #
 
+ccflags-y += -I$(src)
 acornscsi_mod-objs	:= acornscsi.o acornscsi-io.o
 
 obj-$(CONFIG_SCSI_ACORNSCSI_3)	+= acornscsi_mod.o queue.o msgqueue.o

@@ -2,6 +2,7 @@
 # DMA Engine Helpers
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_SH_DMAE_BASE) += shdma-base.o shdma-of.o
 
 #

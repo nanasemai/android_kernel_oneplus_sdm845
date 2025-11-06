@@ -2,6 +2,7 @@
 #  Makefile for the Linux Controller Area Network USB drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_CAN_EMS_USB) += ems_usb.o
 obj-$(CONFIG_CAN_ESD_USB2) += esd_usb2.o
 obj-$(CONFIG_CAN_GS_USB) += gs_usb.o

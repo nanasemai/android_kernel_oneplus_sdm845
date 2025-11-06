@@ -3,4 +3,5 @@
 # of AMDSOC/AMDGPU drm driver.
 # It provides the HW control for ACP related functionalities.
 
+ccflags-y += -I$(src)
 AMD_ACP_FILES := $(AMDACPPATH)/acp_hw.o

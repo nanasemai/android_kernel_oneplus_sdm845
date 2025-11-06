@@ -1,4 +1,5 @@
 # b43legacy core
+ccflags-y += -I$(src)
 b43legacy-y				+= main.o
 b43legacy-y				+= ilt.o
 b43legacy-y				+= phy.o

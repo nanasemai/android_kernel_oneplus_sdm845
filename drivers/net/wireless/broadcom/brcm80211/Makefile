@@ -16,6 +16,7 @@
 # CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 # common flags
+ccflags-y += -I$(src)
 subdir-ccflags-$(CONFIG_BRCMDBG)	+= -DDEBUG
 
 obj-$(CONFIG_BRCMUTIL)	+= brcmutil/

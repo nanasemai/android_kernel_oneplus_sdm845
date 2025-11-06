@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_PS3_VUART) += ps3-vuart.o
 obj-$(CONFIG_PS3_PS3AV) += ps3av_mod.o
 ps3av_mod-y		:= ps3av.o ps3av_cmd.o

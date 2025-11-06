@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y := -I$(srctree)/drivers/devfreq/ \
 	-I$(srctree)/drivers/media/platform/msm/vidc_3x/
 

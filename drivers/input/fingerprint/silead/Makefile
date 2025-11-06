@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-$(CONFIG_FINGERPRINT_SILEAD) += -DBSP_SIL_PLAT_QCOM
 ccflags-$(CONFIG_FINGERPRINT_SILEAD) += -DBSP_SIL_POWER_SUPPLY_REGULATOR
 obj-$(CONFIG_FINGERPRINT_SILEAD)	+= silead_fp_platform.o

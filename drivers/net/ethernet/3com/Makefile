@@ -2,6 +2,7 @@
 # Makefile for the 3Com Ethernet device drivers
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_EL3) += 3c509.o
 obj-$(CONFIG_3C515) += 3c515.o
 obj-$(CONFIG_PCMCIA_3C589) += 3c589_cs.o

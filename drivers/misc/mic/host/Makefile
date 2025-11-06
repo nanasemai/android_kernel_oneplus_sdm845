@@ -2,6 +2,7 @@
 # Makefile - Intel MIC Linux driver.
 # Copyright(c) 2013, Intel Corporation.
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_INTEL_MIC_HOST) += mic_host.o
 mic_host-objs := mic_main.o
 mic_host-objs += mic_x100.o

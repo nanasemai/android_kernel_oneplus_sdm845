@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_SMS_USB_DRV) += smsusb.o
 
 ccflags-y += -Idrivers/media/dvb-core

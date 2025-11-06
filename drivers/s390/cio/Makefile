@@ -3,6 +3,7 @@
 #
 
 # The following is required for define_trace.h to find ./trace.h
+ccflags-y += -I$(src)
 CFLAGS_trace.o := -I$(src)
 
 obj-y += airq.o blacklist.o chsc.o cio.o css.o chp.o idset.o isc.o \

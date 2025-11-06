@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y += events.o
 
 events-y += events_base.o

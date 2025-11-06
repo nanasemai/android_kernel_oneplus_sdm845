@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 btcoexist-objs :=	halbtc8723b2ant.o	\
 			halbtcoutsrc.o		\
 			rtl_btc.o

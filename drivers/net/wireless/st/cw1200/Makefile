@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 cw1200_core-y := \
 		fwio.o \
 		txrx.o \

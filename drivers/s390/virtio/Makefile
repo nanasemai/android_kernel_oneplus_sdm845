@@ -6,6 +6,7 @@
 # it under the terms of the GNU General Public License (version 2 only)
 # as published by the Free Software Foundation.
 
+ccflags-y += -I$(src)
 s390-virtio-objs := virtio_ccw.o
 ifdef CONFIG_S390_GUEST_OLD_TRANSPORT
 s390-virtio-objs += kvm_virtio.o

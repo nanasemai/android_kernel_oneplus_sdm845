@@ -3,6 +3,7 @@
 #
 
 # Each configuration option enables a list of files.
+ccflags-y += -I$(src)
 FEATURE_USE_CCI := false
 #FEATURE_USE_CCI := true
 

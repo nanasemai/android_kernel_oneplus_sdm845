@@ -4,6 +4,7 @@
 
 # Each configuration option enables a list of files.
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_TOUCHSCREEN_FTS)	+=  focaltech_core.o
 obj-$(CONFIG_TOUCHSCREEN_FTS)	+=  focaltech_ex_fun.o
 obj-$(CONFIG_TOUCHSCREEN_FTS)	+=  focaltech_ex_mode.o

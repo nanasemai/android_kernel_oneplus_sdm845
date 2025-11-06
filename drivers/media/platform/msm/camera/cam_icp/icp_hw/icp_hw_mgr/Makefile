@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y += -Idrivers/media/platform/msm/camera/isp/isp_hw/include
 ccflags-y += -Idrivers/media/platform/msm/camera/cam_icp/icp_hw/include
 ccflags-y += -Idrivers/media/platform/msm/camera/isp/isp_hw/hw_utils/include

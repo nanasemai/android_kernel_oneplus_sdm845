@@ -2,6 +2,7 @@
 # Makefile for the S3 Savage framebuffer driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FB_SAVAGE)			+= savagefb.o
 
 savagefb-y				+= savagefb_driver.o

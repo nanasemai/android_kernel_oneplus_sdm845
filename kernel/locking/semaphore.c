@@ -32,6 +32,7 @@
 #include <linux/semaphore.h>
 #include <linux/spinlock.h>
 #include <linux/ftrace.h>
+#include <linux/slab.h>
 
 static noinline void __down(struct semaphore *sem);
 static noinline int __down_interruptible(struct semaphore *sem);
@@ -202,14 +203,16 @@ struct semaphore_waiter {
  * 'timeout' parameter for the cases without timeouts.
  */
 static inline int __sched __down_common(struct semaphore *sem, long state,
-								long timeout)
+						long timeout)
 {
 	struct task_struct *task = current;
-	struct semaphore_waiter waiter;
+	struct semaphore_waiter *waiter = kmalloc(sizeof(struct semaphore_waiter), GFP_KERNEL);
+	if (!waiter)
+		return -ENOMEM;
 
-	list_add_tail(&waiter.list, &sem->wait_list);
-	waiter.task = task;
-	waiter.up = false;
+	list_add_tail(&waiter->list, &sem->wait_list);
+	waiter->task = task;
+	waiter->up = false;
 
 	for (;;) {
 		if (signal_pending_state(state, task))
@@ -220,16 +223,20 @@ static inline int __sched __down_common(struct semaphore *sem, long state,
 		raw_spin_unlock_irq(&sem->lock);
 		timeout = schedule_timeout(timeout);
 		raw_spin_lock_irq(&sem->lock);
-		if (waiter.up)
+		if (waiter->up) {
+			kfree(waiter);
 			return 0;
+		}
 	}
 
  timed_out:
-	list_del(&waiter.list);
+	list_del(&waiter->list);
+	kfree(waiter);
 	return -ETIME;
 
  interrupted:
-	list_del(&waiter.list);
+	list_del(&waiter->list);
+	kfree(waiter);
 	return -EINTR;
 }
 
@@ -255,7 +262,12 @@ static noinline int __sched __down_timeout(struct semaphore *sem, long timeout)
 
 static noinline void __sched __up(struct semaphore *sem)
 {
-	struct semaphore_waiter *waiter = list_first_entry(&sem->wait_list,
+	struct semaphore_waiter *waiter;
+	
+	if (list_empty(&sem->wait_list))
+		return;
+		
+	waiter = list_first_entry(&sem->wait_list,
 						struct semaphore_waiter, list);
 	list_del(&waiter->list);
 	waiter->up = true;

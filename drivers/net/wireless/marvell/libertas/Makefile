@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 libertas-y += cfg.o
 libertas-y += cmd.o
 libertas-y += cmdresp.o

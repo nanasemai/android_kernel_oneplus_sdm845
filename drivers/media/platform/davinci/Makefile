@@ -3,6 +3,7 @@
 #
 
 #VPIF Display driver
+ccflags-y += -I$(src)
 obj-$(CONFIG_VIDEO_DAVINCI_VPIF_DISPLAY) += vpif.o vpif_display.o
 #VPIF Capture driver
 obj-$(CONFIG_VIDEO_DAVINCI_VPIF_CAPTURE) += vpif.o vpif_capture.o

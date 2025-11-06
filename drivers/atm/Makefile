@@ -2,6 +2,7 @@
 # Makefile for the Linux network (ATM) device drivers.
 #
 
+ccflags-y += -I$(src)
 fore_200e-y	:= fore200e.o
 
 obj-$(CONFIG_ATM_ZATM)		+= zatm.o uPD98402.o

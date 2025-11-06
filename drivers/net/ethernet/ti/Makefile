@@ -2,6 +2,7 @@
 # Makefile for the TI network device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_TI_CPSW) += cpsw-common.o
 obj-$(CONFIG_TI_DAVINCI_EMAC) += cpsw-common.o
 

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 GVT_DIR := gvt
 GVT_SOURCE := gvt.o
 

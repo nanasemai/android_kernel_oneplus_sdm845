@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 vfio_virqfd-y := virqfd.o
 
 obj-$(CONFIG_VFIO) += vfio.o

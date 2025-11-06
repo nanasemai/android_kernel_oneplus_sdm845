@@ -25,6 +25,7 @@
 # Makefile for the FUJITSU Extended Socket network device driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FUJITSU_ES) += fjes.o
 
 fjes-objs := fjes_main.o fjes_hw.o fjes_ethtool.o

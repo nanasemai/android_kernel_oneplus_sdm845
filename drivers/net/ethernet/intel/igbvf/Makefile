@@ -29,6 +29,7 @@
 # Makefile for the Intel(R) 82576 VF ethernet driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_IGBVF) += igbvf.o
 
 igbvf-objs := vf.o \

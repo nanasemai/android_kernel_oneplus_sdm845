@@ -1,5 +1,6 @@
 # $Id: Makefile
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_LIBFC) += libfc.o
 
 libfc-objs := \

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ivtv-objs	:= ivtv-routing.o ivtv-cards.o ivtv-controls.o \
 		   ivtv-driver.o ivtv-fileops.o ivtv-firmware.o \
 		   ivtv-gpio.o ivtv-i2c.o ivtv-ioctl.o ivtv-irq.o \

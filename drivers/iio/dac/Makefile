@@ -3,6 +3,7 @@
 #
 
 # When adding new entries keep the list in alphabetical order
+ccflags-y += -I$(src)
 obj-$(CONFIG_AD5360) += ad5360.o
 obj-$(CONFIG_AD5380) += ad5380.o
 obj-$(CONFIG_AD5421) += ad5421.o

@@ -2,6 +2,7 @@
 # Makefile for the Xilinx OPB hwicap driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_XILINX_HWICAP) += xilinx_hwicap_m.o 
  
 xilinx_hwicap_m-y := xilinx_hwicap.o fifo_icap.o buffer_icap.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_PINCTRL_SH_PFC)	+= core.o pinctrl.o
 obj-$(CONFIG_PINCTRL_SH_PFC_GPIO)	+= gpio.o
 obj-$(CONFIG_PINCTRL_PFC_EMEV2)	+= pfc-emev2.o

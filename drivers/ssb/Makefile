@@ -1,4 +1,5 @@
 # core
+ccflags-y += -I$(src)
 ssb-y					+= main.o scan.o
 ssb-$(CONFIG_SSB_EMBEDDED)		+= embedded.o
 ssb-$(CONFIG_SSB_SPROM)			+= sprom.o

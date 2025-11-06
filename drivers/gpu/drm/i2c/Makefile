@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y := -Iinclude/drm
 
 ch7006-y := ch7006_drv.o ch7006_mode.o

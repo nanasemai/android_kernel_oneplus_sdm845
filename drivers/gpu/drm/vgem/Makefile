@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y := -Iinclude/drm
 vgem-y := vgem_drv.o vgem_fence.o
 

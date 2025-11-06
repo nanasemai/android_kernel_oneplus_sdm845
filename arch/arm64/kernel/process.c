@@ -193,7 +193,7 @@ static void show_data(unsigned long addr, int nbytes, const char *name)
 	if (addr < KIMAGE_VADDR || addr > -256UL)
 		return;
 
-	printk("\n%s: %#lx:\n", name, addr);
+	printk("\n%s: %#p:\n", name, (void *)addr);
 
 	/*
 	 * round address down to a 32 bit boundary
@@ -263,7 +263,7 @@ void __show_regs(struct pt_regs *regs)
 		printk("x%-2d: %016llx ", i, regs->regs[i]);
 		i--;
 
-		if (i % 2 == 0) {
+		if (i >= 0 && i % 2 == 0) {
 			pr_cont("x%-2d: %016llx ", i, regs->regs[i]);
 			i--;
 		}

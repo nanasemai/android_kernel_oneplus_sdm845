@@ -2,6 +2,7 @@
 # Makefile for the kernel multimedia device drivers.
 #
 
+ccflags-y += -I$(src)
 ifeq ($(CONFIG_MEDIA_CEC_EDID),y)
   obj-$(CONFIG_MEDIA_SUPPORT) += cec-edid.o
 endif

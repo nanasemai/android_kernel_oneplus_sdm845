@@ -3,6 +3,7 @@
 # Copyright (c) 2014-2016, Intel Corporation.
 #
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_INTEL_ISH_HID) += intel-ishtp.o
 intel-ishtp-objs := ishtp/init.o
 intel-ishtp-objs += ishtp/hbm.o

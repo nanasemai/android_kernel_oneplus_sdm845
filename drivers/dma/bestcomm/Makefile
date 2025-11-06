@@ -2,6 +2,7 @@
 # Makefile for BestComm & co
 #
 
+ccflags-y += -I$(src)
 bestcomm-core-objs	:= bestcomm.o sram.o
 bestcomm-ata-objs	:= ata.o bcom_ata_task.o
 bestcomm-fec-objs	:= fec.o bcom_fec_rx_task.o bcom_fec_tx_task.o

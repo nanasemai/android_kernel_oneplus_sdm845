@@ -2,6 +2,7 @@
 # Makefile for the kernel DVB frontend device drivers.
 #
 
+ccflags-y += -I$(src)
 ccflags-y += -I$(srctree)/drivers/media/dvb-core/
 ccflags-y += -I$(srctree)/drivers/media/tuners/
 

@@ -2,6 +2,7 @@
 # Makefile for the Motorola 8xx FEC ethernet controller
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_SERIAL_CPM) += cpm_uart.o
 
 # Select the correct platform objects.

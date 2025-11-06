@@ -2,6 +2,7 @@
 # Makefile for the Intel 810/815 framebuffer driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FB_I810)		+= i810fb.o
 
 i810fb-objs                     := i810_main.o i810_accel.o

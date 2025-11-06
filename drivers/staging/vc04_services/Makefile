@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_BCM2708_VCHIQ)	+= vchiq.o
 
 vchiq-objs := \

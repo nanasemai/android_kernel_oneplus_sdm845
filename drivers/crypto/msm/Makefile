@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_CRYPTO_DEV_QCOM_MSM_QCE) += qce50.o
 obj-$(CONFIG_CRYPTO_DEV_QCEDEV) += qcedev.o
 obj-$(CONFIG_CRYPTO_DEV_QCEDEV) += qcedev_smmu.o

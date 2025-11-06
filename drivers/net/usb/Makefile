@@ -2,6 +2,7 @@
 # Makefile for USB Network drivers
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_USB_CATC)		+= catc.o
 obj-$(CONFIG_USB_KAWETH)	+= kaweth.o
 obj-$(CONFIG_USB_PEGASUS)	+= pegasus.o

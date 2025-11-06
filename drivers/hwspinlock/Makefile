@@ -2,6 +2,7 @@
 # Generic Hardware Spinlock framework
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_HWSPINLOCK)		+= hwspinlock_core.o
 obj-$(CONFIG_HWSPINLOCK_OMAP)		+= omap_hwspinlock.o
 obj-$(CONFIG_HWSPINLOCK_QCOM)		+= qcom_hwspinlock.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-$(CONFIG_CAIF_DEBUG) := -DDEBUG
 
 # Serial interface

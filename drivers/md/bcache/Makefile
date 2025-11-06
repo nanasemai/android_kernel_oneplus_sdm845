@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_BCACHE)	+= bcache.o
 
 bcache-y		:= alloc.o bset.o btree.o closure.o debug.o extents.o\

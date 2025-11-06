@@ -1,4 +1,5 @@
 # mpt3sas makefile
+ccflags-y += -I$(src)
 obj-$(CONFIG_SCSI_MPT3SAS) += mpt3sas.o
 mpt3sas-y +=  mpt3sas_base.o     \
 		mpt3sas_config.o \

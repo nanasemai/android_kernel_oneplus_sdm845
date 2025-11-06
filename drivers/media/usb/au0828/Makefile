@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 au0828-objs	:= au0828-core.o au0828-i2c.o au0828-cards.o au0828-dvb.o
 
 ifeq ($(CONFIG_VIDEO_AU0828_V4L2),y)

@@ -2,6 +2,7 @@
 # Makefile for the AMD network device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_A2065) += a2065.o
 obj-$(CONFIG_AMD8111_ETH) += amd8111e.o
 obj-$(CONFIG_ARM_AM79C961A) += am79c961a.o

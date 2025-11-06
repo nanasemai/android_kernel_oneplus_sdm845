@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y := -Iinclude/drm
 
 # Please keep these build lists sorted!

@@ -2,6 +2,7 @@
 # Makefile for the kernel Parallel port device drivers.
 #
 
+ccflags-y += -I$(src)
 parport-objs	:= share.o ieee1284.o ieee1284_ops.o procfs.o
 
 ifeq ($(CONFIG_PARPORT_1284),y)

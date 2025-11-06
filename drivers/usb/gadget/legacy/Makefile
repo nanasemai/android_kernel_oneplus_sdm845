@@ -2,6 +2,7 @@
 # USB gadget drivers
 #
 
+ccflags-y += -I$(src)
 ccflags-y			:= -I$(srctree)/drivers/usb/gadget/
 ccflags-y			+= -I$(srctree)/drivers/usb/gadget/udc/
 ccflags-y			+= -I$(srctree)/drivers/usb/gadget/function/

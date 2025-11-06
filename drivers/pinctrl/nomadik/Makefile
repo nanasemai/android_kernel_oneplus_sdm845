@@ -1,4 +1,5 @@
 # Nomadik family pin control drivers
+ccflags-y += -I$(src)
 obj-$(CONFIG_PINCTRL_ABX500)	+= pinctrl-abx500.o
 obj-$(CONFIG_PINCTRL_AB8500)	+= pinctrl-ab8500.o
 obj-$(CONFIG_PINCTRL_AB8540)	+= pinctrl-ab8540.o

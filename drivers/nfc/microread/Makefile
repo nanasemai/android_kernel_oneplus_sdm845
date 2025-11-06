@@ -2,6 +2,7 @@
 # Makefile for Microread HCI based NFC driver
 #
 
+ccflags-y += -I$(src)
 microread_i2c-objs  = i2c.o
 microread_mei-objs  = mei.o
 

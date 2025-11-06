@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_LUSTRE_FS) += ptlrpc.o
 LDLM := ../../lustre/ldlm/
 

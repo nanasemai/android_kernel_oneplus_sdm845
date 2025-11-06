@@ -5,6 +5,7 @@
 
 # Each configuration option enables a list of files.
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_BLK_DEV_IDECD)	+=              cdrom.o
 obj-$(CONFIG_BLK_DEV_SR)	+=              cdrom.o
 obj-$(CONFIG_PARIDE_PCD)	+=		cdrom.o

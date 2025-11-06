@@ -2,6 +2,7 @@
 # Makefile for the Freescale network device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_FEC) += fec.o
 fec-objs :=fec_main.o fec_ptp.o
 CFLAGS_fec_main.o := -D__CHECK_ENDIAN__

@@ -1,6 +1,7 @@
 #
 # Makefile for the drm device driver.  This driver provides support for the
 
+ccflags-y += -I$(src)
 ccflags-y := -Iinclude/drm
 ttm-y := ttm_memory.o ttm_tt.o ttm_bo.o \
 	ttm_bo_util.o ttm_bo_vm.o ttm_module.o \

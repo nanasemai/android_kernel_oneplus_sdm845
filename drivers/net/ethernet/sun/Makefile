@@ -2,6 +2,7 @@
 # Makefile for the Sun network device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_HAPPYMEAL) += sunhme.o
 obj-$(CONFIG_SUNQE) += sunqe.o
 obj-$(CONFIG_SUNBMAC) += sunbmac.o

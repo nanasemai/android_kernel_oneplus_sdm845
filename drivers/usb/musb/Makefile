@@ -3,6 +3,7 @@
 #
 
 # define_trace.h needs to know how to find our header
+ccflags-y += -I$(src)
 CFLAGS_musb_trace.o	:= -I$(src)
 
 obj-$(CONFIG_USB_MUSB_HDRC) += musb_hdrc.o

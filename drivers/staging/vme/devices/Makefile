@@ -2,6 +2,7 @@
 # Makefile for the VME device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_VME_USER)		+= vme_user.o
 
 vme_pio2-objs	:= vme_pio2_cntr.o vme_pio2_gpio.o vme_pio2_core.o

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_AIM_NETWORK) += aim_network.o
 
 aim_network-objs := networking.o

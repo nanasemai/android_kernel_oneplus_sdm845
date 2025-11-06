@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y += -Idrivers/media/platform/msm/camera_oneplus/cam_utils
 ccflags-y += -Idrivers/media/platform/msm/camera_oneplus/cam_cpas/include
 ccflags-y += -Idrivers/media/platform/msm/camera_oneplus/cam_sensor_module/cam_sensor_utils

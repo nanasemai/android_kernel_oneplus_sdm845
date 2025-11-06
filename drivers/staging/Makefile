@@ -1,5 +1,6 @@
 # Makefile for staging directory
 
+ccflags-y += -I$(src)
 obj-y				+= media/
 obj-$(CONFIG_SLICOSS)		+= slicoss/
 obj-$(CONFIG_PRISM2_USB)	+= wlan-ng/

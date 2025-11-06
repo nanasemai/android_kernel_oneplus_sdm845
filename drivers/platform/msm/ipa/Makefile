@@ -1,3 +1,6 @@
+ccflags-y += -I$(src)
+ccflags-y += -I$(src)/ipa_v2
+ccflags-y += -I$(src)/ipa_v3
 ifdef CONFIG_X86
 ccflags-y += -DIPA_EMULATION_COMPILE=1
 else

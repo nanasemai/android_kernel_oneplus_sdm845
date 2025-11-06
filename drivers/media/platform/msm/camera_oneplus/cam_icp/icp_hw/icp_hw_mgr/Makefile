@@ -1,4 +1,5 @@
-ccflags-y += -Idrivers/media/platform/msm/camera_oneplus/isp/isp_hw/include
+ccflags-y += -I$(src)
+ccflags-y += -Idrivers/media/platform/msm/camera_oneplus/cam_isp/isp_hw_mgr/include
 ccflags-y += -Idrivers/media/platform/msm/camera_oneplus/cam_icp/icp_hw/include
 ccflags-y += -Idrivers/media/platform/msm/camera_oneplus/isp/isp_hw/hw_utils/include
 ccflags-y += -Idrivers/media/platform/msm/camera_oneplus/isp/isp_hw/isp_hw_mgr/

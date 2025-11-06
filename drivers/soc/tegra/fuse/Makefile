@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y					+= fuse-tegra.o
 obj-y					+= fuse-tegra30.o
 obj-y					+= tegra-apbmisc.o

@@ -1,5 +1,6 @@
 # Generic MAILBOX API
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_MAILBOX)		+= mailbox.o
 
 obj-$(CONFIG_MAILBOX_TEST)	+= mailbox-test.o

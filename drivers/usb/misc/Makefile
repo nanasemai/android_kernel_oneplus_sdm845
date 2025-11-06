@@ -2,6 +2,7 @@
 # Makefile for the rest of the USB drivers
 # (the ones that don't fit into any other categories)
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_USB_ADUTUX)		+= adutux.o
 obj-$(CONFIG_USB_APPLEDISPLAY)		+= appledisplay.o
 obj-$(CONFIG_USB_CYPRESS_CY7C63)	+= cypress_cy7c63.o

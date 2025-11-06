@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 rtllib-objs :=			\
 	dot11d.o		\
 	rtllib_module.o		\

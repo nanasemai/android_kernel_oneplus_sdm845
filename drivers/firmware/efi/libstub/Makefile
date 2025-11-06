@@ -4,6 +4,7 @@
 # things like ftrace and stack-protector are likely to cause trouble if left
 # enabled, even if doing so doesn't break the build.
 #
+ccflags-y += -I$(src)
 cflags-$(CONFIG_X86_32)		:= -march=i386
 cflags-$(CONFIG_X86_64)		:= -mcmodel=small
 cflags-$(CONFIG_X86)		+= -m$(BITS) -D__KERNEL__ $(LINUX_INCLUDE) -O2 \

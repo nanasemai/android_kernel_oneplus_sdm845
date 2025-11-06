@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 NIC_SELECT = RTL8192U
 
 ccflags-y := -O2

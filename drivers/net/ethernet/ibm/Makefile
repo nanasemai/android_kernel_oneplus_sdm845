@@ -2,6 +2,7 @@
 # Makefile for th IBM network device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_IBMVETH) += ibmveth.o
 obj-$(CONFIG_IBMVNIC) += ibmvnic.o
 obj-$(CONFIG_IBM_EMAC) += emac/

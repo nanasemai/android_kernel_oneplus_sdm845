@@ -2,6 +2,7 @@
 # Makefile for the modular ISDN driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_MISDN) += mISDN_core.o
 obj-$(CONFIG_MISDN_DSP) += mISDN_dsp.o
 obj-$(CONFIG_MISDN_L1OIP) += l1oip.o

@@ -2,6 +2,7 @@
 # Makefile for the Intel 82586/82593/82596 chipset device drivers.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_ARM_ETHER1) += ether1.o
 obj-$(CONFIG_SUN3_82586) += sun3_82586.o
 obj-$(CONFIG_LASI_82596) += lasi_82596.o

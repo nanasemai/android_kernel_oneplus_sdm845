@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_OMAP2_DSS_INIT) += omapdss-boot-init.o
 obj-$(CONFIG_OMAP2_DSS) += omapdss.o
 # Core DSS files

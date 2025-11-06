@@ -3,6 +3,7 @@
 # Specifically the 1000,1200,5200,5245
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_LANMEDIA) += lmc.o
 
 lmc-objs := lmc_debug.o lmc_media.o lmc_main.o lmc_proto.o

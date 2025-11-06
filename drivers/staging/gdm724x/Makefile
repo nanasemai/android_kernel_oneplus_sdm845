@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-$(CONFIG_LTE_GDM724X) := gdmulte.o
 gdmulte-y += gdm_lte.o netlink_k.o
 gdmulte-y += gdm_usb.o gdm_endian.o

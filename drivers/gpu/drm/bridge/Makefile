@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 ccflags-y := -Iinclude/drm
 
 obj-$(CONFIG_DRM_ANALOGIX_ANX78XX) += analogix-anx78xx.o

@@ -2,6 +2,7 @@
 # Makefile for the USB input drivers
 #
 
+ccflags-y += -I$(src)
 usbhid-y	:= hid-core.o hid-quirks.o
 usbhid-$(CONFIG_USB_HIDDEV)	+= hiddev.o
 usbhid-$(CONFIG_HID_PID)	+= hid-pidff.o

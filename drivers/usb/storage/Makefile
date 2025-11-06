@@ -5,6 +5,7 @@
 # Rewritten to use lists instead of if-statements.
 #
 
+ccflags-y += -I$(src)
 ccflags-y := -Idrivers/scsi
 
 obj-$(CONFIG_USB_UAS)		+= uas.o

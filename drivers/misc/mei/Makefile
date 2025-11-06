@@ -2,6 +2,7 @@
 # Makefile - Intel Management Engine Interface (Intel MEI) Linux driver
 # Copyright (c) 2010-2014, Intel Corporation.
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_INTEL_MEI) += mei.o
 mei-objs := init.o
 mei-objs += hbm.o

@@ -1,6 +1,7 @@
 #
 # Makefile for the SuperH specific drivers.
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_SH_INTC)			+= intc/
 ifneq ($(CONFIG_COMMON_CLK),y)
 obj-$(CONFIG_HAVE_CLK)			+= clk/

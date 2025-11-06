@@ -4,6 +4,7 @@
 # All rights reserved.
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_BNA) += bna.o
 
 bna-objs := bnad.o bnad_ethtool.o bnad_debugfs.o bna_enet.o bna_tx_rx.o

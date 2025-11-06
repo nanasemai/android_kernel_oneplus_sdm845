@@ -1,4 +1,5 @@
 # Core
+ccflags-y += -I$(src)
 obj-y				+= pinctrl-mtk-common.o
 
 # SoC Drivers

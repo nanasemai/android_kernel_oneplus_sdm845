@@ -4,6 +4,7 @@
 
 # I/O SAPIC is also on IA64 platforms.
 # The two could be merged into a common source some day.
+ccflags-y += -I$(src)
 obj-$(CONFIG_IOSAPIC)		+= iosapic.o
 obj-$(CONFIG_IOMMU_SBA)		+= sba_iommu.o
 obj-$(CONFIG_PCI_LBA)		+= lba_pci.o

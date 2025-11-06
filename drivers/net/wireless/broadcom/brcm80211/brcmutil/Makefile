@@ -15,6 +15,7 @@
 # OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 # CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
+ccflags-y += -I$(src)
 ccflags-y :=				\
 	-Idrivers/net/wireless/broadcom/brcm80211/brcmutil \
 	-Idrivers/net/wireless/broadcom/brcm80211/include

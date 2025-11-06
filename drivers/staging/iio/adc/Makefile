@@ -2,6 +2,7 @@
 # Makefile for industrial I/O ADC drivers
 #
 
+ccflags-y += -I$(src)
 ad7606-y := ad7606_core.o ad7606_ring.o
 obj-$(CONFIG_AD7606_IFACE_PARALLEL) += ad7606_par.o
 obj-$(CONFIG_AD7606_IFACE_SPI) += ad7606_spi.o

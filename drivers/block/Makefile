@@ -5,6 +5,7 @@
 # Rewritten to use lists instead of if-statements.
 # 
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_MAC_FLOPPY)	+= swim3.o
 obj-$(CONFIG_BLK_DEV_SWIM)	+= swim_mod.o
 obj-$(CONFIG_BLK_DEV_FD)	+= floppy.o

@@ -1,4 +1,5 @@
 # For include/trace/define_trace.h to include trace.h
+ccflags-y += -I$(src)
 CFLAGS_regmap.o := -I$(src)
 
 obj-$(CONFIG_REGMAP) += regmap.o regcache.o

@@ -2,6 +2,7 @@
 # Makefile for ACPICA Core interpreter
 #
 
+ccflags-y += -I$(src)
 ccflags-y			:= -Os -DBUILDING_ACPICA
 ccflags-$(CONFIG_ACPI_DEBUG)	+= -DACPI_DEBUG_OUTPUT
 

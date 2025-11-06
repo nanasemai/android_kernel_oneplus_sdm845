@@ -2,6 +2,7 @@
 # Makefile for Heterogenous System Architecture support for AMD GPU devices
 #
 
+ccflags-y += -I$(src)
 ccflags-y := -Iinclude/drm -Idrivers/gpu/drm/amd/include/  \
 		-Idrivers/gpu/drm/amd/include/asic_reg
 

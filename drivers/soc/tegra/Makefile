@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 obj-y += fuse/
 
 obj-y += common.o

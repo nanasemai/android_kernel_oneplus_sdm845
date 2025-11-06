@@ -2,6 +2,7 @@
 # Makefile for ST_NCI NCI based NFC driver
 #
 
+ccflags-y += -I$(src)
 st-nci-objs = ndlc.o core.o se.o vendor_cmds.o
 obj-$(CONFIG_NFC_ST_NCI)     += st-nci.o
 

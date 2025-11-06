@@ -5,6 +5,7 @@
 # Rewritten to use lists instead of if-statements.
 #
 
+ccflags-y += -I$(src)
 obj-y				+= irqchip/
 obj-y				+= bus/
 

@@ -1,6 +1,7 @@
 #
 # Makefile for the MSM specific device drivers.
 #
+ccflags-y += -I$(src)
 obj-$(CONFIG_GSI) += gsi/
 obj-$(CONFIG_IPA) += ipa/
 obj-$(CONFIG_IPA3) += ipa/

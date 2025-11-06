@@ -22,6 +22,7 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA
 
+ccflags-y += -I$(src)
 ccflags-$(CONFIG_SCSI_MVSAS_DEBUG) := -DMV_DEBUG
 
 obj-$(CONFIG_SCSI_MVSAS) += mvsas.o

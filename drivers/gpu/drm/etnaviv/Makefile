@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 etnaviv-y := \
 	etnaviv_buffer.o \
 	etnaviv_cmd_parser.o \

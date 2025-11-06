@@ -7,6 +7,7 @@
 #
 
 # When adding new entries keep the list in alphabetical order
+ccflags-y += -I$(src)
 obj-y += hid-sensors/
 obj-y += ms_sensors/
 obj-y += ssp_sensors/

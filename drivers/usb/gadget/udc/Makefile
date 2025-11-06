@@ -1,4 +1,5 @@
 # define_trace.h needs to know how to find our header
+ccflags-y += -I$(src)
 CFLAGS_trace.o			:= -I$(src)
 
 udc-core-y			:= core.o trace.o

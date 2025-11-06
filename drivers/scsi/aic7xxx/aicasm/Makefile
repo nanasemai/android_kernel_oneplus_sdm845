@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 PROG=	aicasm
 
 .SUFFIXES= .l .y .c .h

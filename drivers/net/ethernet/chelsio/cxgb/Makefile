@@ -2,6 +2,7 @@
 # Chelsio T1 driver
 #
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_CHELSIO_T1) += cxgb.o
 
 cxgb-$(CONFIG_CHELSIO_T1_1G) += mv88e1xxx.o vsc7326.o

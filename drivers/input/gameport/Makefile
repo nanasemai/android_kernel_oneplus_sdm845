@@ -4,6 +4,7 @@
 
 # Each configuration option enables a list of files.
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_GAMEPORT)		+= gameport.o
 obj-$(CONFIG_GAMEPORT_EMU10K1)	+= emu10k1-gp.o
 obj-$(CONFIG_GAMEPORT_FM801)	+= fm801-gp.o

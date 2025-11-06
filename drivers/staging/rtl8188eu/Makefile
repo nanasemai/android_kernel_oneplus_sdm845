@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 r8188eu-y :=				\
 		core/rtw_ap.o		\
 		core/rtw_cmd.o		\
