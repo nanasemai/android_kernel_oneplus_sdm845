@@ -1,5 +1,6 @@
 #  Makefile for the Hexagon arch
 
+ccflags-y += -I$(src)
 KBUILD_DEFCONFIG = comet_defconfig
 
 # Do not use GP-relative jumps

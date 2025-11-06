@@ -5,6 +5,7 @@
 # architecture-specific flags and dependencies.
 #
 
+ccflags-y += -I$(src)
 KBUILD_DEFCONFIG := m32700ut.smp_defconfig
 
 LDFLAGS		:=

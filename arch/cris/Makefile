@@ -10,6 +10,7 @@
 # License.  See the file "COPYING" in the main directory of this archive
 # for more details.
 
+ccflags-y += -I$(src)
 KBUILD_DEFCONFIG := etrax-100lx_v2_defconfig
 
 arch-y := v10

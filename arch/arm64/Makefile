@@ -10,6 +10,7 @@
 #
 # Copyright (C) 1995-2001 by Russell King
 
+ccflags-y += -I$(src)
 LDFLAGS_vmlinux	:=-p --no-undefined -X
 CPPFLAGS_vmlinux.lds = -DTEXT_OFFSET=$(TEXT_OFFSET)
 GZFLAGS		:=-9

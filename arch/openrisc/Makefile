@@ -17,6 +17,7 @@
 # Based on:
 # arch/i386/Makefile
 
+ccflags-y += -I$(src)
 KBUILD_DEFCONFIG := or1ksim_defconfig
 
 LDFLAGS         :=

@@ -1,3 +1,4 @@
+ccflags-y += -I$(src)
 KBUILD_DEFCONFIG := mmu_defconfig
 
 ifeq ($(CONFIG_MMU),y)

@@ -9,6 +9,7 @@
 # License.  See the file "COPYING" in the main directory of this archive
 # for more details.
 #
+ccflags-y += -I$(src)
 ifneq ($(SUBARCH),$(ARCH))
   ifeq ($(CROSS_COMPILE),)
     CROSS_COMPILE := $(call cc-cross-prefix, $(UTS_MACHINE)-linux-  $(UTS_MACHINE)-linux-gnu-  $(UTS_MACHINE)-unknown-linux-gnu-)

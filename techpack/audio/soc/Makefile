@@ -1,4 +1,5 @@
 
+ccflags-y += -I$(src)
 obj-$(CONFIG_REGMAP_SWR) += regmap-swr.o
 obj-$(CONFIG_PINCTRL_WCD)	+= pinctrl-wcd.o
 obj-$(CONFIG_PINCTRL_LPI)	+= pinctrl-lpi.o

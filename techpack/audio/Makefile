@@ -1,4 +1,5 @@
 # Use USERINCLUDE when you must reference the UAPI directories only.
+ccflags-y += -I$(src)
 USERINCLUDE     += \
                 -I$(srctree)/techpack/audio/include/uapi \
 

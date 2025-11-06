@@ -10,6 +10,7 @@
 #
 # Copyright (C) 2002~2010 by Guan Xue-tao
 #
+ccflags-y += -I$(src)
 ifneq ($(SUBARCH),$(ARCH))
 	ifeq ($(CROSS_COMPILE),)
 		CROSS_COMPILE := $(call cc-cross-prefix, unicore32-linux-)

@@ -14,6 +14,7 @@
 # Nios2 port by Wind River Systems Inc trough:
 #   fredrik.markstrom@gmail.com and ivarholmqvist@gmail.com
 
+ccflags-y += -I$(src)
 KBUILD_DEFCONFIG := 3c120_defconfig
 
 UTS_SYSNAME = Linux

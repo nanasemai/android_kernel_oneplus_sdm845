@@ -6,6 +6,7 @@
 # for more details.
 #
 
+ccflags-y += -I$(src)
 KBUILD_DEFCONFIG := spct6600_defconfig
 CROSS_COMPILE := score-linux-
 

@@ -12,6 +12,7 @@
 # Development Environment) we can set CROSS_COMPILE based on that.
 # If we're not cross-compiling, make sure we're on the right architecture.
 # Only bother to test for a few common targets, to avoid useless errors.
+ccflags-y += -I$(src)
 ifeq ($(CROSS_COMPILE),)
   ifdef TILERA_ROOT
     CROSS_COMPILE := $(TILERA_ROOT)/bin/tile-

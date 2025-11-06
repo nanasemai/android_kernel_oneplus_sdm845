@@ -13,6 +13,7 @@
 # Copyright (C) 1994 by Linus Torvalds
 #
 
+ccflags-y += -I$(src)
 LD_BFD		:= elf64-s390
 LDFLAGS		:= -m elf64_s390
 KBUILD_AFLAGS_MODULE += -fPIC

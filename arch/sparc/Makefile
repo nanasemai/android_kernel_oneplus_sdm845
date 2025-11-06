@@ -8,6 +8,7 @@
 # Copyright (C) 1998 Jakub Jelinek (jj@ultra.linux.cz)
 
 # We are not yet configured - so test on arch
+ccflags-y += -I$(src)
 ifeq ($(ARCH),sparc)
         KBUILD_DEFCONFIG := sparc32_defconfig
 else
